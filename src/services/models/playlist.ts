@@ -1,4 +1,4 @@
-import type { firestore } from "firebase/app";
+import type firebase from "firebase/app";
 import type { Song } from "services/models/song";
 
 export type Playlist = {
@@ -7,7 +7,7 @@ export type Playlist = {
   image: string | null;
   songs: Song[];
   songsCount: number;
-  updatedAt: firestore.Timestamp | null;
+  updatedAt: firebase.firestore.Timestamp | null;
 };
 
 export const blankPlaylist: Playlist = {

@@ -1,13 +1,13 @@
 import "./index.css";
 
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import theme from "asset/theme";
 import firebase from "firebase/app";
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
+import theme from "./asset/theme";
 import firebaseConfig from "./firebase-config";
 import FirebaseApp from "./FirebaseApp";
 

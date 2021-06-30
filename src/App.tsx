@@ -1,15 +1,15 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
-import Footer from "components/common/footer/Footer";
-import NavigationBar from "components/common/menubar/NavigationBar";
-import MakePlaylist from "components/MakePlaylist";
-import Playlist from "components/Playlist";
-import Playlists from "components/Playlists";
-import Signin from "components/Signin";
 import type { FC } from "react";
 import React, { useContext } from "react";
 import { Redirect, Route, Switch } from "react-router";
 
+import Footer from "./components/common/footer/Footer";
+import NavigationBar from "./components/common/menubar/NavigationBar";
+import MakePlaylist from "./components/MakePlaylist";
+import Playlist from "./components/Playlist";
+import Playlists from "./components/Playlists";
+import Signin from "./components/Signin";
 import { UserContext } from "./contexts";
 import paths from "./paths";
 

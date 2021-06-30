@@ -15,7 +15,7 @@ import { blankSong } from "services/models/song";
 import type { User } from "services/models/user";
 
 const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
-  const { id } = useParams();
+  const { id } = useParams<{ id?: string }>();
   const playlist = usePlaylist({
     id: id,
   });

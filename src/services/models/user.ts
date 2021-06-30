@@ -1,4 +1,4 @@
-import type { firestore } from "firebase/app";
+import type firebase from "firebase/app";
 
 export type User = {
   id?: string;
@@ -8,8 +8,8 @@ export type User = {
   photoUrl: string | null;
   provider: string;
   providerUid: string;
-  createdAt: firestore.Timestamp | null;
-  updatedAt: firestore.Timestamp | null;
+  createdAt: firebase.firestore.Timestamp | null;
+  updatedAt: firebase.firestore.Timestamp | null;
 };
 
 export const blankUser: User = {

@@ -4,11 +4,11 @@ import "firebase/firestore";
 import firebase from "firebase/app";
 import type { FC } from "react";
 import React, { useEffect, useRef, useState } from "react";
-import findUser from "services/find-user";
-import type { User } from "services/models/user";
-import writeUser from "services/write-user";
 
 import { FirebaseContext, UserContext } from "./contexts";
+import findUser from "./services/find-user";
+import type { User } from "./services/models/user";
+import writeUser from "./services/write-user";
 
 const FirebaseApp: FC = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);

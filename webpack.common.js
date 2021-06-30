@@ -42,6 +42,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".json"],
+    modules: [path.resolve("./node_modules"), path.resolve("./src")],
   },
   target: ["web", "es6"],
 };
