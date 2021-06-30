@@ -58,5 +58,11 @@ module.exports = {
       files: ["src/pages/**/*.tsx"],
       rules: { "import/no-default-export": "off" },
     },
+    {
+      files: ["**/*.stories.*"],
+      rules: {
+        "import/no-anonymous-default-export": "off",
+      },
+    },
   ],
 };

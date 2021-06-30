@@ -2,21 +2,6 @@
   "name": "my-favorite-gear",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.4",
-    "@material-ui/icons": "^4.11.2",
-    "axios": "^0.21.1",
-    "firebase": "^8.6.8",
-    "lodash": "^4.17.21",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-firebaseui": "^5.0.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-share": "^4.4.0",
-    "sprintf-js": "^1.1.2",
-    "web-vitals": "^2.0.1"
-  },
   "scripts": {
     "start": "webpack serve --config ./webpack.dev.js --mode development",
     "build": "webpack --progress --config ./webpack.prod.js --mode production",
@@ -36,22 +21,6 @@
       "npm run fix:prettier"
     ]
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -63,6 +32,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "firebase": "^8.6.8",
+    "lodash": "^4.17.21",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-firebaseui": "^5.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-share": "^4.4.0",
+    "sprintf-js": "^1.1.2",
+    "web-vitals": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -91,10 +75,12 @@
     "@types/react-router": "^5.1.15",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-share": "^4.0.0",
+    "@types/sprintf-js": "^1.1.2",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",

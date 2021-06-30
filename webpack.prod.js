@@ -1,5 +1,6 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
+const CleanPlugin = require("clean-webpack-plugin");
 
 console.log(
   "///////////////////////////\n" +
@@ -9,4 +10,5 @@ console.log(
 process.env.NODE_ENV = "production";
 module.exports = merge(common, {
   mode: "production",
+  plugins: [new CleanPlugin.CleanWebpackPlugin()],
 });
