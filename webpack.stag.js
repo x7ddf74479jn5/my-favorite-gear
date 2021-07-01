@@ -1,30 +1,19 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
-const webpack = require("webpack");
+const CleanPlugin = require("clean-webpack-plugin");
 require("dotenv").config({ path: __dirname + "/.env.dev" });
 
 console.log(
   "///////////////////////////\n" +
-    "webpack.dev.js is loaded.\n" +
+    "webpack.stag.js is loaded.\n" +
     "///////////////////////////\n"
 );
 process.env.NODE_ENV = "development";
 
 module.exports = merge(common, {
   mode: "development",
-  devtool: "eval-source-map",
-  devServer: {
-    port: 3000,
-    publicPath: "/",
-    contentBase: "./dist",
-    watchContentBase: true,
-    open: false,
-    hot: true,
-    historyApiFallback: {
-      rewrites: [{ from: /^\/*/, to: "/" }],
-    },
-  },
   plugins: [
+    new CleanPlugin.CleanWebpackPlugin(),
     new webpack.DefinePlugin({
       __FB_API_KEY__: JSON.stringify(process.env.FB_API_KEY),
       __FB_AUTH_DOMAIN__: JSON.stringify(process.env.FB_AUTH_DOMAIN),

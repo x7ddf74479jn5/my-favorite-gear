@@ -1,17 +1,17 @@
 import "./index.css";
 
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import firebase from "firebase/app";
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
+import { initializeFirebase } from "../firebase";
 import App from "./App";
 import theme from "./asset/theme";
-import firebaseConfig from "./firebase-config";
 import FirebaseApp from "./FirebaseApp";
 
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
+initializeFirebase();
 
 ReactDOM.render(
   <BrowserRouter>
