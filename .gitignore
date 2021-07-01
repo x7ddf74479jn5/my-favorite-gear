@@ -25,3 +25,5 @@ yarn-error.log*
 
 /refs
 .eslintcache
+firestore.rules
+/src/firebase-config.ts
