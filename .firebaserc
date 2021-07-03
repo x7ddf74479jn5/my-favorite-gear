@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "my-favorite-gear",
-    "dev": "dev-my-favorite-gear"
+    "dev": "dev-my-favorite-gear",
     "prod": "my-favorite-gear"
   }
 }

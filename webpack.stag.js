@@ -1,6 +1,7 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
 const CleanPlugin = require("clean-webpack-plugin");
+const webpack = require("webpack");
 require("dotenv").config({ path: __dirname + "/.env.dev" });
 
 console.log(
