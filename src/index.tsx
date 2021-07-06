@@ -21,7 +21,7 @@ ReactDOM.render(
       </FirebaseApp>
     </MuiThemeProvider>
   </BrowserRouter>,
-  document.getElementById("root")
+  document.getElementById("root") || document.createElement("div") // for test
 );
 
 // import "./index.css";

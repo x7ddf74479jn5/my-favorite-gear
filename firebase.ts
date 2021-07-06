@@ -12,7 +12,7 @@ export const initializeFirebase = () => {
 
   const isEmulating = window.location.hostname === "localhost";
   if (isEmulating) {
-    // firebase.auth().useEmulator("http://localhost:9099");
+    firebase.auth().useEmulator("http://localhost:9099");
     firebase.firestore().useEmulator("localhost", 8080);
   }
 };

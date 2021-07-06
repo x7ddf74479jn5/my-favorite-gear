@@ -31,8 +31,19 @@ module.exports = function (api) {
 
   const plugins = [];
 
+  const env = {
+    test: {
+      presets: [
+        ["@babel/preset-env", { targets: { node: "current" } }],
+        "@babel/preset-react",
+        "@babel/preset-typescript",
+      ],
+    },
+  };
+
   return {
     presets,
     plugins,
+    env,
   };
 };

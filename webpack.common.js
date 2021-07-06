@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       chunks: ["index"],
-      template: path.resolve(__dirname, "public/index.html"),
+      template: path.resolve(__dirname, "src/index.html"),
       filename: "index.html",
       title: "My Favorite Gear",
       favicon: path.resolve(__dirname, "public/favicon.ico"),
@@ -37,6 +37,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|webp)&/,
+        type: "asset",
       },
     ],
   },
