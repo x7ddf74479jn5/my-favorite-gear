@@ -17,12 +17,12 @@ const Footer: FC = () => {
   return (
     <footer className={classes.footer}>
       <Typography variant="body1" color="textSecondary" align="center">
-        {"俺のオタクソング8選"}
+        {"My Favorite Gear"}
       </Typography>
       <Typography variant="body2" color="textSecondary" align="center">
         {"©2020  "}
-        <Link color="inherit" href="https://twitter.com/ptrst102">
-          {"@ptrst102"}
+        <Link color="inherit" href="https://twitter.com/pandashark6">
+          {"@pandashark6"}
         </Link>
       </Typography>
     </footer>
