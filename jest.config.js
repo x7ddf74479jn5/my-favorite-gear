@@ -30,5 +30,5 @@ module.exports = {
     __FB_MESSAGING_SENDER_ID__: process.env.__FB_MESSAGING_SENDER_ID__,
     __FB_APP_ID__: process.env.__FB_APP_ID__,
   },
-  // testEnvironment: "jsdom",
+  testEnvironment: "jsdom",
 };
