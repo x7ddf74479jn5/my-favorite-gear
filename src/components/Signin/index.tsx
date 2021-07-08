@@ -51,7 +51,8 @@ const Signin: FC = () => {
         ログイン
       </Typography>
       <Typography paragraph align="center" color="textSecondary">
-        「俺のオタクソング8選」のご利用にはログインが必須です。Twitterアカウントでログインできます。
+        「My Favorite
+        Gear」のご利用にはログインが必須です。Twitterアカウントでログインできます。
       </Typography>
       <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={auth} />
     </Container>
