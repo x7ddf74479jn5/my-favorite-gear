@@ -4,85 +4,38 @@ import type Queries from "@testing-library/dom/types/queries";
 import type { RenderResult } from "@testing-library/react";
 import { render } from "@testing-library/react";
 import theme from "asset/theme";
+import type { FirebaseContextValue, UserContextValue } from "contexts";
+import { FirebaseContext, UserContext } from "contexts";
 import React from "react";
+import { blankUser } from "services/models/user";
 
-import { FirebaseContext, UserContext } from "../refs/js/contexts";
-
-// const withMockedRouter = (
-//   router: Partial<NextRouter> = {},
-//   children: React.ReactElement
-// ): React.ReactElement => {
-//   const mockedRouter = {
-//     route: "/",
-//     pathname: "/",
-//     query: {},
-//     asPath: "/",
-//     basePath: "/",
-//     isLocaleDomain: true,
-//     isReady: true,
-//     push: jest.fn(),
-//     prefetch: jest.fn(),
-//     replace: jest.fn(),
-//     reload: jest.fn(),
-//     back: jest.fn(),
-//     beforePopState: jest.fn(),
-//     events: {
-//       on: jest.fn(),
-//       off: jest.fn(),
-//       emit: jest.fn(),
-//     },
-//     isFallback: false,
-//     isPreview: false,
-//     ...router,
-//   };
-
-//   return (
-//     <RouterContext.Provider value={mockedRouter}>
-//       {children}
-//     </RouterContext.Provider>
-//   );
-// };
-
-// const mockRouter: NextRouter = {
-//   route: "/",
-//   pathname: "/",
-//   query: {},
-//   asPath: "/",
-//   basePath: "/",
-//   isLocaleDomain: true,
-//   isReady: true,
-//   push: jest.fn(),
-//   prefetch: jest.fn(),
-//   replace: jest.fn(),
-//   reload: jest.fn(),
-//   back: jest.fn(),
-//   beforePopState: jest.fn(),
-//   events: {
-//     on: jest.fn(),
-//     off: jest.fn(),
-//     emit: jest.fn(),
-//   },
-//   isFallback: false,
-//   isPreview: false,
-// };
-
-// const renderWithRouter = (ui, { route = "/" } = {}) => {
-//   window.history.pushState({}, "Test page", route);
-
-//   return render(ui, { wrapper: BrowserRouter });
-// };
-
-const mockFirebaseContextValue = {
+const mockFirebaseContextValue: FirebaseContextValue = {
   auth: null,
   db: null,
 };
 
-const mockUserContextValue = {
-  user: null,
+const mockUserContextValue: UserContextValue = {
+  user: blankUser,
   credential: null,
   setCredential: () => {
     return undefined;
   },
+};
+
+export const withUserAuth = (
+  children: React.ReactElement,
+  firebaseContextValue: FirebaseContextValue = mockFirebaseContextValue,
+  userContextValue: UserContextValue = mockUserContextValue
+) => {
+  return (
+    <MuiThemeProvider theme={theme}>
+      <FirebaseContext.Provider value={firebaseContextValue}>
+        <UserContext.Provider value={userContextValue}>
+          {children}
+        </UserContext.Provider>
+      </FirebaseContext.Provider>
+    </MuiThemeProvider>
+  );
 };
 
 export const Providers: React.ComponentType<{ children?: any }> = ({
