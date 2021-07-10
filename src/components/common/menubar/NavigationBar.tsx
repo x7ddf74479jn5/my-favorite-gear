@@ -61,7 +61,7 @@ const NavigationBar: FC = () => {
         <Toolbar>
           <Link to={paths.home} className={classes.titleLink}>
             <Typography variant="h6" noWrap>
-              俺のオタクソング8選
+              My Favorite Gear
             </Typography>
           </Link>
           {user ? (
@@ -99,21 +99,21 @@ const NavigationBar: FC = () => {
                   to={`${paths.home}`}
                   onClick={handleClose}
                 >
-                  オタクソング8選編集
+                  My Favorite Gear編集
                 </MenuItem>
                 <MenuItem
                   component={Link}
                   to={`${paths.playlistRoot}${user.id}`}
                   onClick={handleClose}
                 >
-                  {user.screenName}のオタクソング8選
+                  {user.screenName}のMy Favorite Gear
                 </MenuItem>
                 <MenuItem
                   component={Link}
                   to={paths.playlists}
                   onClick={handleClose}
                 >
-                  みんなのオタクソング8選
+                  みんなのMy Favorite Gear
                 </MenuItem>
                 <MenuItem onClick={signOut}>ログアウト</MenuItem>
               </Menu>
