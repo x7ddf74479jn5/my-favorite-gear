@@ -22,7 +22,7 @@ const MakePlaylistContainer: FC<{ user: User }> = ({ user }) => {
       <Typography variant="h6" gutterBottom align="center">
         iTunesから検索
       </Typography>
-      <SearchBox hundler={iTunes.searchSongs} />
+      <SearchBox handler={iTunes.searchSongs} />
       {iTunes.loading ? (
         <Progress />
       ) : (

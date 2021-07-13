@@ -15,14 +15,14 @@ const useStyles = makeStyles((theme: Theme) => {
   });
 });
 interface SearchBoxProps {
-  hundler: (str: string) => void;
+  handler: (str: string) => void;
 }
-const SearchBox: FC<SearchBoxProps> = ({ hundler }) => {
+const SearchBox: FC<SearchBoxProps> = ({ handler }) => {
   const classes = useStyles();
   const [term, setTerm] = useState<string>("");
   const onSubmit = (event: React.FormEvent<HTMLDivElement>) => {
     event.preventDefault();
-    hundler(term);
+    handler(term);
   };
   return (
     <Container maxWidth="xs">
@@ -30,8 +30,8 @@ const SearchBox: FC<SearchBoxProps> = ({ hundler }) => {
         <InputBase
           fullWidth
           className={classes.input}
-          placeholder="iTunesから検索"
-          inputProps={{ "aria-label": "iTunesから検索" }}
+          placeholder="商品を検索"
+          inputProps={{ "aria-label": "商品を検索" }}
           value={term}
           onChange={(e) => {
             setTerm(e.target.value);
