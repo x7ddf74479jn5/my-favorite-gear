@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => {
 const TweetButton: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const classes = useStyles();
   const url = `${paths.urlDomain}${paths.playlistRoot}${playlist.id}`;
-  const title = `${playlist.twitterId}のオタクソング8選\n${playlist.songs
+  const title = `${playlist.twitterId}のMy Favorite Gear\n${playlist.songs
     .map((v) => {
       return `『${v.trackName}』`;
     })
@@ -34,7 +34,7 @@ const TweetButton: FC<{ playlist: Playlist }> = ({ playlist }) => {
       <TwitterShareButton
         title={title}
         url={url}
-        hashtags={["俺のオタクソング8選"]}
+        hashtags={["My Favorite Gear"]}
       >
         <Button
           component="div"
