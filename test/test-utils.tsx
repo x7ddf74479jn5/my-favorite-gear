@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+import "firebase/firestore";
+
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import type Queries from "@testing-library/dom/types/queries";
 import type { RenderResult } from "@testing-library/react";
@@ -6,8 +8,21 @@ import { render } from "@testing-library/react";
 import theme from "asset/theme";
 import type { FirebaseContextValue, UserContextValue } from "contexts";
 import { FirebaseContext, UserContext } from "contexts";
+import firebase from "firebase/app";
 import React from "react";
+import type { User } from "services/models/user";
 import { blankUser } from "services/models/user";
+
+export const correctUserData: User = {
+  screenName: "screenName",
+  displayName: "displayName",
+  description: "description",
+  photoUrl: "https://photoUrl.com",
+  provider: "twitter",
+  providerUid: "providerUid",
+  createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
+  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+};
 
 const mockFirebaseContextValue: FirebaseContextValue = {
   auth: null,

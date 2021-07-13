@@ -34,7 +34,6 @@ const writeUser = async (
   if (!providerUid || !screenName) {
     throw new Error("Invalid credential information.");
   }
-
   // resolve screenname duplication
   const query = await db
     .collection(collectionName.users)
@@ -44,11 +43,9 @@ const writeUser = async (
     const rnd = Math.floor(Math.random() * 10000);
     screenName = `${screenName}${sprintf("%04d", rnd)}`;
   }
-
   let theUser: User | null = null;
   const batch = db.batch();
   const userDoc = await db.collection(collectionName.users).doc(id).get();
-
   if (userDoc.exists) {
     const user = userDoc.data() as User;
     const diff: Partial<User> = {};
@@ -67,7 +64,7 @@ const writeUser = async (
         updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
       });
     }
-    theUser = { ...diff, ...user, id: userDoc.id };
+    theUser = { ...user, ...diff, id: userDoc.id };
   } else {
     const user: User = {
       ...blankUser,
@@ -83,7 +80,6 @@ const writeUser = async (
       updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
     });
     theUser = { ...user, id: userDoc.id };
-
     const counterDoc = db
       .collection(collectionName.docCounters)
       .doc(collectionName.users);
