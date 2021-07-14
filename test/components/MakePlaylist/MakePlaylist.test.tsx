@@ -21,7 +21,5 @@ describe("MakePlaylist", () => {
     expect(
       renderResult.getByTestId("MakePlaylistContainer")
     ).toBeInTheDocument();
-
-    renderResult.debug();
   });
 });

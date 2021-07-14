@@ -71,8 +71,6 @@ describe("App", () => {
       )
     );
 
-    renderResult.debug();
-
     expect(renderResult.container).toHaveTextContent("MakePlaylists");
   });
 
@@ -86,8 +84,6 @@ describe("App", () => {
         mockUserContextValue
       )
     );
-
-    renderResult.debug();
 
     expect(renderResult.container).toHaveTextContent("Signin");
   });

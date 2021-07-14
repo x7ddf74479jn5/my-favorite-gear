@@ -21,7 +21,6 @@ describe("TweetButton", () => {
 
   it("renders correctly", () => {
     const renderResult = render(<TweetButton playlist={testData} />);
-    renderResult.debug();
 
     expect(renderResult.container.firstChild).toHaveAttribute(
       "class",

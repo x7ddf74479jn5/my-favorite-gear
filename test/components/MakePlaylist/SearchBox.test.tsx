@@ -37,8 +37,6 @@ describe("SearchBox", () => {
   it("triggers a submit event", () => {
     const renderResult = render(<SearchBox handler={mockHandler} />);
 
-    renderResult.debug();
-
     const inputElement = renderResult.getByRole("textbox");
     userEvent.type(inputElement, "test");
     expect(inputElement).toHaveValue("test");
