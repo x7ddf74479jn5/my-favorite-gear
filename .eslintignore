@@ -7,3 +7,4 @@ webpack.common.js
 webpack.dev.js
 webpack.prod.js
 webpack.stag.js
+coverage/*
