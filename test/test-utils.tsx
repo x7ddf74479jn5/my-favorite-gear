@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import "firebase/firestore";
 
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import type Queries from "@testing-library/dom/types/queries";
@@ -13,6 +12,10 @@ import React from "react";
 import type { User } from "services/models/user";
 import { blankUser } from "services/models/user";
 
+import { initializeFirebase } from "../firebase";
+
+initializeFirebase();
+
 export const correctUserData: User = {
   screenName: "screenName",
   displayName: "displayName",
@@ -25,8 +28,8 @@ export const correctUserData: User = {
 };
 
 const mockFirebaseContextValue: FirebaseContextValue = {
-  auth: null,
-  db: null,
+  auth: firebase.auth(),
+  db: firebase.firestore(),
 };
 
 const mockUserContextValue: UserContextValue = {
@@ -74,7 +77,7 @@ const customRender = (
   return render(ui, { wrapper: Providers, ...options });
 };
 
-const reTestCase = {
+export const reTestCase = {
   anyWord: expect.stringMatching(/\w+/),
   anyImage: expect.stringMatching(
     /^(data:image\/gif)|\.(png|webp|jpeg|jpg|svg)$/
@@ -85,4 +88,4 @@ const reTestCase = {
 export * from "@testing-library/react";
 
 // override render method
-export { customRender as render, reTestCase };
+export { customRender as render };

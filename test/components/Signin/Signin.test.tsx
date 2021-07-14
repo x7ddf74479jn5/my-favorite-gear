@@ -10,17 +10,6 @@ jest.mock("react-firebaseui/StyledFirebaseAuth", () => {
   return StyledFirebaseAuth;
 });
 
-jest.mock("firebase/app", () => {
-  const firebase = {
-    auth: {
-      TwitterAuthProvider: {
-        PROVIDER_ID: "",
-      },
-    },
-  };
-  return firebase;
-});
-
 describe("Signin", () => {
   it("matches snapshot", () => {
     const renderResult = render(<Signin />);

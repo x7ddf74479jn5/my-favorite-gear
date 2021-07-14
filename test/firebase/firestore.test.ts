@@ -1,3 +1,6 @@
+/**
+ * @jest-environment node
+ */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 import * as firebase from "@firebase/rules-unit-testing";
