@@ -1,6 +1,19 @@
+/**
+ * @jest-environment node
+ */
+
+jest.setTimeout(10000);
+
 import { collectionName } from "services/constants";
 import { blankUser } from "services/models/user";
 import writeUser from "services/write-user";
+
+import { mockFirebaseContextValue } from "../test-utils";
+
+const { db } = mockFirebaseContextValue;
+if (!db) {
+  throw new Error("Firestore must be initialized.");
+}
 
 const mockBatchSet = jest.fn();
 const mockBatchUpdate = jest.fn();
@@ -22,23 +35,7 @@ let mockFirestore = {
   },
 } as any;
 
-jest.mock("firebase/app", () => {
-  const firestore = {
-    FieldValue: {
-      serverTimestamp: () => {
-        return "timestamp";
-      },
-      increment: (step: number) => {
-        return step;
-      },
-    },
-  };
-
-  const firebase = { firestore };
-  return firebase;
-});
-
-beforeEach(() => {
+beforeEach(async () => {
   jest.resetAllMocks();
   jest.clearAllMocks();
   //1st: resolve screenname duplication, 2nd: search current user, 3rd: counterDoc
@@ -69,7 +66,7 @@ describe("writeUser", () => {
     });
 
     const mockUser = {
-      uid: "uid 1",
+      uid: "uid",
       displayName: "displayName 1",
       photoURL: "photoURL 1",
     } as any;
@@ -84,6 +81,7 @@ describe("writeUser", () => {
       },
     } as any;
 
+    // const user = await writeUser(db, mockUser, mockUserCredential);
     const user = await writeUser(mockFirestore, mockUser, mockUserCredential);
 
     expect(mockGet).toBeCalledTimes(2);
@@ -142,6 +140,7 @@ describe("writeUser", () => {
     } as any;
 
     const user = await writeUser(mockFirestore, mockUser, mockUserCredential);
+    // const user = await writeUser(db, mockUser, mockUserCredential);
 
     expect(mockBatchUpdate).toBeCalled();
     expect(mockBatchSet).not.toBeCalled();
@@ -353,7 +352,19 @@ describe("writeUser", () => {
     expect(mockBatchSet).toHaveBeenNthCalledWith(
       2,
       "counterDoc",
-      { count: 1, updatedAt: "timestamp" },
+      {
+        count: expect.objectContaining({
+          _delegate: expect.objectContaining({
+            _methodName: "FieldValue.increment",
+            _operand: 1,
+          }),
+        }),
+        updatedAt: expect.objectContaining({
+          _delegate: expect.objectContaining({
+            _methodName: "FieldValue.serverTimestamp",
+          }),
+        }),
+      },
       { merge: true }
     );
     expect(mockBatchCommit).toBeCalled();
