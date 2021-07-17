@@ -20,7 +20,7 @@ const MakePlaylistContainer: FC<{ user: User }> = ({ user }) => {
   return (
     <>
       <Typography variant="h6" gutterBottom align="center">
-        iTunesから検索
+        商品検索
       </Typography>
       <SearchBox handler={iTunes.searchSongs} />
       {iTunes.loading ? (
@@ -35,8 +35,9 @@ const MakePlaylistContainer: FC<{ user: User }> = ({ user }) => {
       {playlist.playlist.songs.length > 0 ? (
         <>
           <Typography variant="h6" gutterBottom align="center">
-            {user.screenName}のオタクソング8選 ({playlist.playlist.songs.length}
-            曲)
+            {user.screenName}のMy Favorite Gear (
+            {playlist.playlist.songs.length}
+            商品)
           </Typography>
           {playlist.playlist.songs.length === 8 ? (
             <>
@@ -45,7 +46,7 @@ const MakePlaylistContainer: FC<{ user: User }> = ({ user }) => {
             </>
           ) : (
             <Typography paragraph align="center" color="textSecondary">
-              オタクソングを「8曲」登録してください。
+              My Favorite Gearを「8商品」登録してください。
             </Typography>
           )}
           <SongCards

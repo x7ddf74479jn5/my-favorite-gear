@@ -86,3 +86,41 @@ export * from "@testing-library/react";
 
 // override render method
 export { customRender as render };
+
+const seedSongsToPlaylist = () => {
+  const SONG_COUNT = 8;
+  const songs = [];
+  for (let index = 0; index < SONG_COUNT; index++) {
+    songs.push({
+      trackId: "",
+      trackName: `alt ${index + 1}`,
+      artistName: "",
+      collectionName: "",
+      artworkUrl100: null,
+      artworkUrl600: `src ${index + 1}`,
+      trackViewUrl: "",
+      previewUrl: null,
+    });
+  }
+  return songs;
+};
+
+export const testPlaylist = {
+  id: "id",
+  twitterId: "twitterId",
+  image: "image_normal",
+  songs: seedSongsToPlaylist(),
+  songsCount: 8,
+  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+};
+
+export const testSong = {
+  trackId: "trackId",
+  trackName: "alt",
+  artistName: "artistName",
+  collectionName: "collectionName",
+  artworkUrl100: "src",
+  artworkUrl600: "src",
+  trackViewUrl: "https://www.trackView.com",
+  previewUrl: "https://www.preview.com",
+};

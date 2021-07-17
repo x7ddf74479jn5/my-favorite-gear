@@ -1,45 +1,7 @@
 import MakeImage from "components/common/makeImage/MakeImage";
 import React from "react";
 
-import { render } from "../../../test-utils";
-
-const seedSongsToPlaylist = () => {
-  const SONG_COUNT = 8;
-  const songs = [];
-  for (let index = 0; index < SONG_COUNT; index++) {
-    songs.push({
-      trackId: "",
-      trackName: `alt ${index + 1}`,
-      artistName: "",
-      collectionName: "",
-      artworkUrl100: null,
-      artworkUrl600: `src ${index + 1}`,
-      trackViewUrl: "",
-      previewUrl: null,
-    });
-  }
-  return songs;
-};
-
-const testPlaylist = {
-  id: "",
-  twitterId: "twitterId",
-  image: "image_normal",
-  songs: seedSongsToPlaylist(),
-  songsCount: 0,
-  updatedAt: null,
-};
-
-const testSong = {
-  trackId: "",
-  trackName: "alt",
-  artistName: "",
-  collectionName: "",
-  artworkUrl100: null,
-  artworkUrl600: "src",
-  trackViewUrl: "",
-  previewUrl: null,
-};
+import { render, testPlaylist, testSong } from "../../../test-utils";
 
 describe("MakeImage", () => {
   it("matches snapshot", () => {
