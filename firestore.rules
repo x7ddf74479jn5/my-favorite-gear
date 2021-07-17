@@ -32,6 +32,7 @@ service cloud.firestore {
 
     match /users/{userId} {
       allow get: if isUserAuthenticated(userId);
+      allow list: if isAuthenticated();
       allow create: if isUserAuthenticated(userId)
       && isValidUserSchema(request.resource.data)
       && isValidUserData(request.resource.data);

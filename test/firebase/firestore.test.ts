@@ -1,7 +1,6 @@
 /**
  * @jest-environment node
  */
-/* eslint-disable @typescript-eslint/no-var-requires */
 
 import * as firebase from "@firebase/rules-unit-testing";
 import * as admin from "firebase-admin";
@@ -83,6 +82,15 @@ describe("ユーザー認証情報の検証", () => {
     await firebase.assertFails(userDocumentRef.set(correctUserData));
     await firebase.assertFails(userDocumentRef.get());
     await firebase.assertFails(userDocumentRef.update({ screenName: "uid_2" }));
+  });
+
+  test("screenNameが合致したドキュメントは取得できる", async () => {
+    createAdminApp().collection("users").doc("uid_1").set(adminData);
+    const db = createAuthApp({ uid: "uid_2" });
+    const matchedUserDocuments = db
+      .collection("users")
+      .where("screenName", "==", "screenName");
+    await firebase.assertSucceeds(matchedUserDocuments.get());
   });
 });
 
