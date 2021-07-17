@@ -10,9 +10,13 @@ export const initializeFirebase = () => {
     firebase.initializeApp(firebaseConfig);
   }
 
-  const isEmulating = window.location.hostname === "localhost";
+  if (process === undefined) {
+    return;
+  }
+
+  const isEmulating = process.env.NODE_ENV === "development";
   if (isEmulating) {
-    // firebase.auth().useEmulator("http://localhost:9099");
+    firebase.auth().useEmulator("http://localhost:9099");
     firebase.firestore().useEmulator("localhost", 8080);
   }
 };

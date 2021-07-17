@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import type Queries from "@testing-library/dom/types/queries";
 import type { RenderResult } from "@testing-library/react";
@@ -10,7 +8,6 @@ import { FirebaseContext, UserContext } from "contexts";
 import firebase from "firebase/app";
 import React from "react";
 import type { User } from "services/models/user";
-import { blankUser } from "services/models/user";
 
 import { initializeFirebase } from "../firebase";
 
@@ -27,13 +24,13 @@ export const correctUserData: User = {
   updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
 };
 
-const mockFirebaseContextValue: FirebaseContextValue = {
+export const mockFirebaseContextValue: FirebaseContextValue = {
   auth: firebase.auth(),
   db: firebase.firestore(),
 };
 
 const mockUserContextValue: UserContextValue = {
-  user: blankUser,
+  user: correctUserData,
   credential: null,
   setCredential: () => {
     return undefined;
