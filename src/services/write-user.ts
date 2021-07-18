@@ -1,5 +1,5 @@
 import firebase from "firebase/app";
-import { isEmpty } from "lodash";
+import isEmpty from "lodash/isEmpty";
 import { sprintf } from "sprintf-js";
 
 import { collectionName } from "./constants";
