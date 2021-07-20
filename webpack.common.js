@@ -1,35 +1,10 @@
 const path = require("path");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-require("dotenv").config({ path: __dirname + "/.env" });
+const CopyPlugin = require("copy-webpack-plugin");
 
-// const isProduction = process.env.NODE_ENV === "production";
-// const isDevServer = process.env.DEV_SERVER === "true";
-// const publicPath = isProduction ? "/" : `http://localhost:${devServerPort}`;
-
-// export const find = (searchPath: string): string => {
-//   const p = resolvePkg(searchPath);
-//   if (p) {
-//     return p;
-//   }
-//   throw new Error(`Not found: ${searchPath}`);
-// };
-
-// const devServerPlugins: webpack.Configuration["plugins"] = [
-//   new HtmlWebpackPlugin({
-//     template: "public/index.html",
-//     inject: "head",
-//     scriptLoading: "defer",
-//     PUBLIC_URL: "AA",
-//     React: isProduction
-//       ? publicPath + "/scripts/react.production.min.js"
-//       : "/scripts/react.development.js",
-//     ReactDOM: isProduction
-//       ? publicPath + "/scripts/react-dom.production.min.js"
-//       : "/scripts/react-dom.development.js",
-//     BootstrapCSS: "/stylesheets/bootstrap.min.css",
-//   }),
-// ];
+const isProduction = process.env.NODE_ENV === "production";
+const essentialLibs =
+  /(mobx|mobx-react|react-router|react-router-dom|history|web-vital)/;
 
 module.exports = {
   entry: {
@@ -37,27 +12,77 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
-    // publicPath: 'js',
     filename: "js/[name].js",
+    clean: true,
+    publicPath: "/",
+  },
+  cache: {
+    type: "filesystem",
+    buildDependencies: {
+      config: [__filename],
+    },
+  },
+  optimization: {
+    // minimize: isProduction,
+    // minimize: false,
+    // minimizer: ["...", new CssMinimizerPlugin()],
+    splitChunks: {
+      chunks: "initial",
+      cacheGroups: {
+        // default: false,
+        // defaultVendors: false,
+        essential: {
+          name: "essential",
+          chunks: "initial",
+          test: (m) => {
+            return essentialLibs.test(m.resource);
+          },
+          enforce: true,
+        },
+        vendor: {
+          name: "vendor",
+          chunks: "initial",
+          test: (m) => {
+            if (essentialLibs.test(m.resource)) {
+              return false;
+            }
+            return /node_modules/.test(m.resource);
+          },
+          enforce: true,
+        },
+      },
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
-      chunks: ["index"],
-      template: path.resolve(__dirname, "src/index.html"),
+      template: path.resolve(__dirname, "static/index.html"),
       filename: "index.html",
       title: "My Favorite Gear",
-      favicon: path.resolve(__dirname, "public/favicon.ico"),
+      favicon: path.resolve(__dirname, "static/favicon.ico"),
       meta: { description: "test" },
+      React: isProduction
+        ? "https://unpkg.com/react/umd/react.production.min.js"
+        : "",
+      ReactDOM: isProduction
+        ? "https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+        : "",
+      MaterialUI: isProduction
+        ? "https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js"
+        : "",
+      firebase: isProduction
+        ? "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"
+        : "",
+      firebaseAuth: isProduction
+        ? "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"
+        : "",
     }),
-    new webpack.DefinePlugin({
-      __FB_API_KEY__: JSON.stringify(process.env.FB_API_KEY),
-      __FB_AUTH_DOMAIN__: JSON.stringify(process.env.FB_AUTH_DOMAIN),
-      __FB_PROJECT_ID__: JSON.stringify(process.env.FB_PROJECT_ID),
-      __FB_STORAGE_BUCKET__: JSON.stringify(process.env.FB_STORAGE_BUCKET),
-      __FB_MESSAGING_SENDER_ID__: JSON.stringify(
-        process.env.FB_MESSAGING_SENDER_ID
-      ),
-      __FB_APP_ID__: JSON.stringify(process.env.FB_APP_ID),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "static/mockServiceWorker.js",
+          to: "mockServiceWorker.js",
+        },
+      ],
     }),
   ],
   module: {

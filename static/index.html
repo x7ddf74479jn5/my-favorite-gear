@@ -4,14 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script
+      defer
+      crossorigin
+      src="<%= htmlWebpackPlugin.options['React'] %>"
+    ></script>
+    >
+    <script
+      defer
+      crossorigin
+      src="<%= htmlWebpackPlugin.options['ReactDOM'] %>"
+    ></script>
+    <script
+      defer
+      crossorigin
+      defer
+      src="<%= htmlWebpackPlugin.options['MaterialUI'] %>"
+    ></script>
+    <script
+      defer
+      src="<%= htmlWebpackPlugin.options['firebaseAuth'] %>"
+    ></script>
+    <script src="<%= htmlWebpackPlugin.options['firebase'] %>"></script>
+    <!-- <script defer crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script defer crossorigin defer src="//unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/6.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script> -->
   </body>
 </html>

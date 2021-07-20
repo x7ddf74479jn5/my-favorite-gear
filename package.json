@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack serve --config ./webpack.dev.js --mode development",
     "build": "webpack --progress --config ./webpack.prod.js --mode production",
-    "build:dev": "webpack --progress --config ./webpack.stag.js --mode development",
+    "build:dev": "webpack --progress --config ./webpack.stag.js --mode production",
     "deploy": "firebase deploy --project=prod",
     "deploy:dev": "firebase deploy --project=dev --force",
     "dev-deploy": "run-s build:dev deploy:dev",
@@ -18,7 +18,8 @@
     "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:prettier": "npm run lint:prettier -- --write",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "copy-msw": "cp static/mockServiceWorker.js dist/mockServiceWorker.js"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
@@ -119,6 +120,6 @@
     "webpack-merge": "^5.8.0"
   },
   "msw": {
-    "workerDirectory": "public"
+    "workerDirectory": "dist"
   }
 }

@@ -22,13 +22,5 @@ module.exports = {
   verbose: true,
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   moduleDirectories: ["node_modules", "<rootDir>/src/"],
-  globals: {
-    __FB_API_KEY__: process.env.__FB_API_KEY__,
-    __FB_AUTH_DOMAIN__: process.env.__FB_AUTH_DOMAIN__,
-    __FB_PROJECT_ID__: process.env.__FB_PROJECT_ID__,
-    __FB_STORAGE_BUCKET__: process.env.__FB_STORAGE_BUCKET__,
-    __FB_MESSAGING_SENDER_ID__: process.env.__FB_MESSAGING_SENDER_ID__,
-    __FB_APP_ID__: process.env.__FB_APP_ID__,
-  },
   testEnvironment: "jsdom",
 };
