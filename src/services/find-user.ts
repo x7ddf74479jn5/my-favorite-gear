@@ -1,4 +1,4 @@
-import type firebase from "firebase/app";
+import type firebase from "firebase";
 
 import { collectionName } from "./constants";
 import type { User } from "./models/user";

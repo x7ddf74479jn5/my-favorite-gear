@@ -1,4 +1,4 @@
-import firebase from "firebase/app";
+import firebase from "firebase";
 import isEmpty from "lodash/isEmpty";
 import { sprintf } from "sprintf-js";
 

@@ -1,8 +1,9 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
 const path = require("path");
-const webpack = require("webpack");
-require("dotenv").config({ path: __dirname + "/.env.dev" });
+const Dotenv = require("dotenv-webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 // eslint-disable-next-line no-console
 console.log(
@@ -28,17 +29,25 @@ module.exports = merge(common, {
     },
   },
   plugins: [
-    new webpack.DefinePlugin({
-      "process.env.FB_API_KEY": JSON.stringify(process.env.FB_API_KEY),
-      "process.env.FB_AUTH_DOMAIN": JSON.stringify(process.env.FB_AUTH_DOMAIN),
-      "process.env.FB_PROJECT_ID": JSON.stringify(process.env.FB_PROJECT_ID),
-      "process.env.FB_STORAGE_BUCKET": JSON.stringify(
-        process.env.FB_STORAGE_BUCKET
-      ),
-      "process.env.FB_MESSAGING_SENDER_ID": JSON.stringify(
-        process.env.FB_MESSAGING_SENDER_ID
-      ),
-      "process.env.FB_APP_ID": JSON.stringify(process.env.FB_APP_ID),
+    new Dotenv({
+      path: path.resolve(__dirname, ".env.dev"),
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "static/index.html"),
+      filename: "index.html",
+      title: "My Favorite Gear",
+      favicon: path.resolve(__dirname, "static/favicon.ico"),
+      meta: {
+        description: "みんなにおすすめしたいプロダクトを紹介しましょう！",
+      },
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "static/mockServiceWorker.js",
+          to: "mockServiceWorker.js",
+        },
+      ],
     }),
   ],
 });

@@ -1,11 +1,10 @@
 const path = require("path");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
-const webpack = require("webpack");
-// const CopyPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const UnusedWebpackPlugin = require("unused-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
-require("dotenv").config({ path: __dirname + "/.env.dev" });
+const Dotenv = require("dotenv-webpack");
 
 // eslint-disable-next-line no-console
 console.log(
@@ -15,45 +14,60 @@ console.log(
 );
 process.env.NODE_ENV = "production";
 
+export const externalForMaterialUi = (context, request, callback) => {
+  if (/@material-ui.+/.test(request)) {
+    const name = request.replace(/^.*[\\/]/, "");
+    return callback(null, "root MaterialUI." + name);
+  }
+  callback();
+};
+
 module.exports = merge(common, {
   mode: "production",
-  externals: {
-    react: "React",
-    "react-dom": "ReactDOM",
-    firebase: "firebase",
-    "@material-ui/core": "MaterialUI",
-  },
+  externals: [
+    {
+      react: "React",
+      "react-dom": "ReactDOM",
+      firebase: "firebase",
+      firebaseui: "firebaseui",
+    },
+    externalForMaterialUi,
+  ],
   plugins: [
     new UnusedWebpackPlugin({
-      directories: [path.join(__dirname, "src")],
+      directories: [path.resolve(__dirname, "src")],
       exclude: ["*.test.ts"],
       root: __dirname,
     }),
     new BundleAnalyzerPlugin({
       analyzerMode: "static",
-      reportFilename: "../../docs/bundle-analyzer.html",
+      reportFilename: path.resolve(__dirname, "docs/bundle-analyzer.html"),
       openAnalyzer: true,
       defaultSizes: "stat",
     }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: "static/mockServiceWorker.js",
-    //       to: "mockServiceWorker.js",
-    //     },
-    //   ],
-    // }),
-    new webpack.DefinePlugin({
-      "process.env.FB_API_KEY": JSON.stringify(process.env.FB_API_KEY),
-      "process.env.FB_AUTH_DOMAIN": JSON.stringify(process.env.FB_AUTH_DOMAIN),
-      "process.env.FB_PROJECT_ID": JSON.stringify(process.env.FB_PROJECT_ID),
-      "process.env.FB_STORAGE_BUCKET": JSON.stringify(
-        process.env.FB_STORAGE_BUCKET
-      ),
-      "process.env.FB_MESSAGING_SENDER_ID": JSON.stringify(
-        process.env.FB_MESSAGING_SENDER_ID
-      ),
-      "process.env.FB_APP_ID": JSON.stringify(process.env.FB_APP_ID),
+    new Dotenv({
+      path: path.resolve(__dirname, ".env.dev"),
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "static/index.html"),
+      filename: "index.html",
+      title: "My Favorite Gear",
+      favicon: path.resolve(__dirname, "static/favicon.ico"),
+      meta: {
+        description: "みんなにおすすめしたいプロダクトを紹介しましょう！",
+      },
+      React: "https://unpkg.com/react/umd/react.production.min.js",
+      ReactDOM: "https://unpkg.com/react-dom/umd/react.production.min.js",
+      firebase: "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js",
+      firebaseAuth: "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js",
+      firebaseFirestore:
+        "https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js",
+      firebaseUIAuth:
+        "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth__ja.js",
+      firebaseUIAuthCSS:
+        "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css",
+      MaterialUI:
+        "https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js",
     }),
   ],
 });

@@ -1,8 +1,5 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV === "production";
 const essentialLibs =
   /(mobx|mobx-react|react-router|react-router-dom|history|web-vital)/;
 
@@ -53,38 +50,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "static/index.html"),
-      filename: "index.html",
-      title: "My Favorite Gear",
-      favicon: path.resolve(__dirname, "static/favicon.ico"),
-      meta: { description: "test" },
-      React: isProduction
-        ? "https://unpkg.com/react/umd/react.production.min.js"
-        : "",
-      ReactDOM: isProduction
-        ? "https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-        : "",
-      MaterialUI: isProduction
-        ? "https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js"
-        : "",
-      firebase: isProduction
-        ? "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"
-        : "",
-      firebaseAuth: isProduction
-        ? "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"
-        : "",
-    }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "static/mockServiceWorker.js",
-          to: "mockServiceWorker.js",
-        },
-      ],
-    }),
-  ],
+  plugins: [],
   module: {
     rules: [
       {

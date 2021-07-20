@@ -2,7 +2,7 @@ import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import { FirebaseContext, UserContext } from "contexts";
-import firebase from "firebase/app";
+import firebase from "firebase";
 import paths from "paths";
 import type { FC } from "react";
 import React, { useContext } from "react";

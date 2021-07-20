@@ -1,4 +1,4 @@
-import type firebase from "firebase/app";
+import type firebase from "firebase";
 import type { Song } from "services/models/song";
 
 export type Playlist = {

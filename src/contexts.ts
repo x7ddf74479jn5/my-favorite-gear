@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type firebase from "firebase/app";
+import type firebase from "firebase";
 import { createContext } from "react";
 import type { User } from "services/models/user";
 

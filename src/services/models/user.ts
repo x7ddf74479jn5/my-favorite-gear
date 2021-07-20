@@ -1,4 +1,4 @@
-import type firebase from "firebase/app";
+import type firebase from "firebase";
 
 export type User = {
   id?: string;
