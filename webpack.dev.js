@@ -40,6 +40,16 @@ module.exports = merge(common, {
       meta: {
         description: "みんなにおすすめしたいプロダクトを紹介しましょう！",
       },
+      React: "https://unpkg.com/react/umd/react.production.min.js",
+      ReactDOM: "https://unpkg.com/react-dom/umd/react-dom.production.min.js",
+      firebase: "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js",
+      firebaseAuth: "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js",
+      firebaseFirestore:
+        "https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js",
+      firebaseUIAuth:
+        "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth__ja.js",
+      firebaseUIAuthCSS:
+        "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css",
     }),
     new CopyPlugin({
       patterns: [
@@ -50,4 +60,10 @@ module.exports = merge(common, {
       ],
     }),
   ],
+  externals: {
+    react: "React",
+    "react-dom": "ReactDOM",
+    firebase: "firebase",
+    firebaseui: "firebaseui",
+  },
 });

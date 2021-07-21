@@ -7,7 +7,7 @@
     "build": "webpack --progress --config ./webpack.prod.js --mode production",
     "build:dev": "webpack --progress --config ./webpack.stag.js --mode production",
     "deploy": "firebase deploy --project=prod",
-    "deploy:dev": "firebase deploy --project=dev --force",
+    "deploy:dev": "firebase deploy --project=dev",
     "dev-deploy": "run-s build:dev deploy:dev",
     "test": "jest",
     "stopall": "lsof -t -i:4000 -i:4001 -i:4400 -i:4500 -i:5000 -i:8080 -i:9099 | xargs kill -9",

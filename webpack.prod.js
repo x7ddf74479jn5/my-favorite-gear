@@ -5,7 +5,6 @@ const Dotenv = require("dotenv-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const UnusedWebpackPlugin = require("unused-webpack-plugin");
-const { externalForMaterialUi } = require("./webpack.stag");
 
 // eslint-disable-next-line no-console
 console.log(
@@ -13,18 +12,17 @@ console.log(
     "webpack.prod.js is loaded.\n" +
     "///////////////////////////\n"
 );
+
 process.env.NODE_ENV = "production";
+
 module.exports = merge(common, {
   mode: "production",
-  externals: [
-    {
-      react: "React",
-      "react-dom": "ReactDOM",
-      firebase: "firebase",
-      firebaseui: "firebaseui",
-    },
-    externalForMaterialUi,
-  ],
+  externals: {
+    react: "React",
+    "react-dom": "ReactDOM",
+    firebase: "firebase",
+    firebaseui: "firebaseui",
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "static/index.html"),
@@ -35,7 +33,7 @@ module.exports = merge(common, {
         description: "みんなにおすすめしたいプロダクトを紹介しましょう！",
       },
       React: "https://unpkg.com/react/umd/react.production.min.js",
-      ReactDOM: "https://unpkg.com/react-dom/umd/react.production.min.js",
+      ReactDOM: "https://unpkg.com/react-dom/umd/react-dom.production.min.js",
       firebase: "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js",
       firebaseAuth: "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js",
       firebaseFirestore:
@@ -44,8 +42,6 @@ module.exports = merge(common, {
         "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth__ja.js",
       firebaseUIAuthCSS:
         "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css",
-      MaterialUI:
-        "https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js",
     }),
     new Dotenv({
       path: path.resolve(__dirname, ".env"),
@@ -57,7 +53,7 @@ module.exports = merge(common, {
     }),
     new BundleAnalyzerPlugin({
       analyzerMode: "static",
-      reportFilename: path.resolve(__dirname, "docs/bundle-analyzer.html"),
+      reportFilename: path.resolve(__dirname, "docs/prod-bundle-analyzer.html"),
       openAnalyzer: true,
       defaultSizes: "stat",
     }),

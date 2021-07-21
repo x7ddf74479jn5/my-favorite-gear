@@ -10,21 +10,17 @@
       rel="stylesheet"
       href="<%= htmlWebpackPlugin.options['firebaseUIAuthCSS'] %>"
     />
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
     <script
-      defer
       crossorigin
+      defer
       src="<%= htmlWebpackPlugin.options['React'] %>"
     ></script>
     <script
-      defer
       crossorigin
+      defer
       src="<%= htmlWebpackPlugin.options['ReactDOM'] %>"
     ></script>
-    <script src="<%= htmlWebpackPlugin.options['firebase'] %>"></script>
+    <script defer src="<%= htmlWebpackPlugin.options['firebase'] %>"></script>
     <script
       defer
       src="<%= htmlWebpackPlugin.options['firebaseAuth'] %>"
@@ -37,10 +33,9 @@
       defer
       src="<%= htmlWebpackPlugin.options['firebaseUIAuth'] %>"
     ></script>
-    <script
-      defer
-      crossorigin
-      src="<%= htmlWebpackPlugin.options['MaterialUI'] %>"
-    ></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
   </body>
 </html>
