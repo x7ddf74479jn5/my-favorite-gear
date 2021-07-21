@@ -92,7 +92,7 @@ const seedSongsToPlaylist = () => {
   const songs = [];
   for (let index = 0; index < SONG_COUNT; index++) {
     songs.push({
-      trackId: "",
+      trackId: `trackId ${index + 1}`,
       trackName: `alt ${index + 1}`,
       artistName: "",
       collectionName: "",

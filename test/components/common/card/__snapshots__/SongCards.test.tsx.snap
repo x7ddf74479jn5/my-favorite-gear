@@ -1,0 +1,2183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SongCards matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-root-1"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 1"
+              class="MuiAvatar-img"
+              src="src 1"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 1
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 2"
+              class="MuiAvatar-img"
+              src="src 2"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 2
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 3"
+              class="MuiAvatar-img"
+              src="src 3"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 3
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 4"
+              class="MuiAvatar-img"
+              src="src 4"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 4
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 5"
+              class="MuiAvatar-img"
+              src="src 5"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 5
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 6"
+              class="MuiAvatar-img"
+              src="src 6"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 6
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 7"
+              class="MuiAvatar-img"
+              src="src 7"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 7
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 8"
+              class="MuiAvatar-img"
+              src="src 8"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 8
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SongCards matches snapshot 2`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-root-1"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 1"
+              class="MuiAvatar-img"
+              src="src 1"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 1
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 2"
+              class="MuiAvatar-img"
+              src="src 2"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 2
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 3"
+              class="MuiAvatar-img"
+              src="src 3"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 3
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 4"
+              class="MuiAvatar-img"
+              src="src 4"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 4
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 5"
+              class="MuiAvatar-img"
+              src="src 5"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 5
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 6"
+              class="MuiAvatar-img"
+              src="src 6"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 6
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 7"
+              class="MuiAvatar-img"
+              src="src 7"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 7
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardHeader-root"
+      >
+        <div
+          class="MuiCardHeader-avatar"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
+          >
+            <img
+              alt="alt 8"
+              class="MuiAvatar-img"
+              src="src 8"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            alt 8
+          </span>
+          <span
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+             - 
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiCardContent-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
+                />
+              </svg>
+            </span>
+            オタクソング8選に登録
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            オタクソング8選から削除
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

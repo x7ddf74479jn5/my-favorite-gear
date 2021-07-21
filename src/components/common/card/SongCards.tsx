@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => {
       flexDirection: "column",
       margin: theme.spacing(2, 0),
     },
-    buttom: {
+    bottom: {
       margin: theme.spacing(4),
     },
   };
@@ -54,7 +54,7 @@ const SongCards: FC<SongCardsProps> = ({
           );
         })
       ) : (
-        <div className={classes.buttom}>
+        <div className={classes.bottom}>
           <Typography>表示できる曲がありません。</Typography>
         </div>
       )}
