@@ -97,8 +97,6 @@ describe("MakePlaylist", () => {
     ).toHaveTextContent("商品検索");
     expect(renderResult.getByRole("textbox")).toBeInTheDocument();
     expect(renderResult.getAllByRole("listitem")).toHaveLength(9);
-
-    renderResult.debug();
   });
 
   it("renders loading state (#4)", () => {

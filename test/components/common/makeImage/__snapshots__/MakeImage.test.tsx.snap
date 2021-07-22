@@ -148,7 +148,7 @@ exports[`MakeImage matches snapshot 2`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt"
+            alt="trackName"
             src="src"
           />
         </div>

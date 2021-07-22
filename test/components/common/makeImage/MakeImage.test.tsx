@@ -49,7 +49,7 @@ describe("MakeImage", () => {
     expect(renderResult.getAllByRole("img")).toHaveLength(1);
     const imageElement = renderResult.getByRole("img");
     expect(imageElement).toHaveAttribute("src", "src");
-    expect(imageElement).toHaveAttribute("alt", "alt");
+    expect(imageElement).toHaveAttribute("alt", testSong.trackName);
   });
 
   it("renders none when provided neither playlist nor song", () => {
