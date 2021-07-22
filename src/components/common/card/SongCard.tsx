@@ -100,7 +100,7 @@ const SongCard: FC<SongCardProps> = ({
               disableElevation
               disabled
             >
-              オタクソング8選に登録済み
+              My Favorite Gearに登録済み
             </Button>
           ) : (
             <Button
@@ -111,7 +111,7 @@ const SongCard: FC<SongCardProps> = ({
                 return addButton(song);
               }}
             >
-              オタクソング8選に登録
+              My Favorite Gearに登録
             </Button>
           )
         ) : (
@@ -126,7 +126,7 @@ const SongCard: FC<SongCardProps> = ({
               return removeButton(song);
             }}
           >
-            オタクソング8選から削除
+            My Favorite Gearから削除
           </Button>
         ) : (
           <></>
@@ -140,7 +140,7 @@ const SongCard: FC<SongCardProps> = ({
             target="_blank"
             rel="noopener"
           >
-            iTunes
+            楽天
           </Button>
         )}
       </CardContent>
