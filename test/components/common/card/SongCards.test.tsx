@@ -65,7 +65,6 @@ describe("SongCards", () => {
         downButton={mockDownButton}
       />
     );
-    renderResult.debug();
 
     const rootElement = renderResult.container.firstElementChild;
 
