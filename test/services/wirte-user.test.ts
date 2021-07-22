@@ -1,7 +1,3 @@
-/**
- * @jest-environment node
- */
-
 jest.setTimeout(10000);
 
 import { collectionName } from "services/constants";

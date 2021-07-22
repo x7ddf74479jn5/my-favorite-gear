@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import App from "App";
-import type { FirebaseContextValue, UserContextValue } from "contexts";
+import type { UserContextValue } from "contexts";
 import React from "react";
 import { MemoryRouter } from "react-router";
 import { blankUser } from "services/models/user";
@@ -28,19 +28,12 @@ jest.mock("components/Playlists", () => {
   return Playlists;
 });
 
-jest.mock("firebase");
-
 jest.mock("components/MakePlaylist", () => {
   const MakePlaylist = () => {
     return <div>MakePlaylists</div>;
   };
   return MakePlaylist;
 });
-
-const mockFirebaseContextValue: FirebaseContextValue = {
-  auth: null,
-  db: null,
-};
 
 const mockUserContextValue: UserContextValue = {
   user: null,
@@ -66,7 +59,7 @@ describe("App", () => {
         <MemoryRouter initialEntries={["/"]}>
           <App />
         </MemoryRouter>,
-        mockFirebaseContextValue,
+        undefined,
         mockUserContextValue
       )
     );
@@ -80,7 +73,8 @@ describe("App", () => {
         <MemoryRouter initialEntries={["/"]}>
           <App />
         </MemoryRouter>,
-        mockFirebaseContextValue,
+        undefined,
+
         mockUserContextValue
       )
     );
@@ -94,7 +88,7 @@ describe("App", () => {
         <MemoryRouter initialEntries={["/playlists"]}>
           <App />
         </MemoryRouter>,
-        mockFirebaseContextValue,
+        undefined,
         mockUserContextValue
       )
     );
@@ -108,7 +102,7 @@ describe("App", () => {
         <MemoryRouter initialEntries={["/playlist/1"]}>
           <App />
         </MemoryRouter>,
-        mockFirebaseContextValue,
+        undefined,
         mockUserContextValue
       )
     );
@@ -122,7 +116,7 @@ describe("App", () => {
         <MemoryRouter initialEntries={[""]}>
           <App />
         </MemoryRouter>,
-        mockFirebaseContextValue,
+        undefined,
         mockUserContextValue
       )
     );
