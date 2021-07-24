@@ -51,7 +51,7 @@ const usePlaylist = (options: playlistOptions) => {
     load();
   }, []);
 
-  const addSong = (song: Song) => {
+  const addSong = async (song: Song) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
@@ -59,34 +59,31 @@ const usePlaylist = (options: playlistOptions) => {
       .collection(collectionName.playlists)
       .doc(optionsRef.current.id);
 
-    const add = async (song: Song) => {
-      if (playlist.songs.length >= 8) {
-        alert("9曲以上はお気に入りに登録できません。");
-        return;
-      }
-      setLoading(true);
-      try {
-        const newPlaylist = {
-          ...playlist,
-          songs: [...playlist.songs, song],
-        };
-        await query.set({
-          songs: newPlaylist.songs,
-          songsCount: newPlaylist.songs.length,
-          image: optionsRef.current.image,
-          twitterId: optionsRef.current.twitterId,
-          updatedAt: firebase.firestore.Timestamp.now(),
-        });
-        setPlaylist(newPlaylist);
-      } catch (err) {
-        setError(err);
-      }
-      setLoading(false);
-    };
-    add(song);
+    if (playlist.songs.length >= 8) {
+      alert("9曲以上はお気に入りに登録できません。");
+      return;
+    }
+    setLoading(true);
+    try {
+      const newPlaylist = {
+        ...playlist,
+        songs: [...playlist.songs, song],
+      };
+      await query.set({
+        songs: newPlaylist.songs,
+        songsCount: newPlaylist.songs.length,
+        image: optionsRef.current.image,
+        twitterId: optionsRef.current.twitterId,
+        updatedAt: firebase.firestore.Timestamp.now(),
+      });
+      setPlaylist(newPlaylist);
+    } catch (err) {
+      setError(err);
+    }
+    setLoading(false);
   };
 
-  const removeSong = (song: Song) => {
+  const removeSong = async (song: Song) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
@@ -94,104 +91,96 @@ const usePlaylist = (options: playlistOptions) => {
       .collection(collectionName.playlists)
       .doc(optionsRef.current.id);
 
-    const remove = async (song: Song) => {
-      setLoading(true);
-      try {
-        const newPlaylist = {
-          ...playlist,
-          songs: playlist.songs.filter((playlistSong) => {
-            return playlistSong !== song;
-          }),
-        };
-        await query.set({
-          songs: newPlaylist.songs,
-          songsCount: newPlaylist.songs.length,
-          image: optionsRef.current.image,
-          twitterId: optionsRef.current.twitterId,
-          updatedAt: firebase.firestore.Timestamp.now(),
-        });
-        setPlaylist(newPlaylist);
-      } catch (err) {
-        setError(err);
-      }
-      setLoading(false);
-    };
-    remove(song);
+    setLoading(true);
+    try {
+      const newPlaylist = {
+        ...playlist,
+        songs: playlist.songs.filter((playlistSong) => {
+          return playlistSong !== song;
+        }),
+      };
+      await query.set({
+        songs: newPlaylist.songs,
+        songsCount: newPlaylist.songs.length,
+        image: optionsRef.current.image,
+        twitterId: optionsRef.current.twitterId,
+        updatedAt: firebase.firestore.Timestamp.now(),
+      });
+      setPlaylist(newPlaylist);
+    } catch (err) {
+      setError(err);
+    }
+    setLoading(false);
   };
 
-  const upSong = (song: Song) => {
+  const upSong = async (song: Song) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
     const query = db
       .collection(collectionName.playlists)
       .doc(optionsRef.current.id);
-    const up = async (song: Song) => {
-      setLoading(true);
-      try {
-        const index = playlist.songs.indexOf(song);
-        const spliced = playlist.songs.slice();
-        spliced.splice(
-          index - 1,
-          2,
-          playlist.songs[index],
-          playlist.songs[index - 1]
-        );
-        const newPlaylist = {
-          ...playlist,
-          songs: spliced,
-        };
-        await query.set({
-          songs: newPlaylist.songs,
-          songsCount: newPlaylist.songs.length,
-          image: optionsRef.current.image,
-          twitterId: optionsRef.current.twitterId,
-          updatedAt: firebase.firestore.Timestamp.now(),
-        });
-        setPlaylist(newPlaylist);
-      } catch (err) {
-        setError(err);
-      }
-      setLoading(false);
-    };
-    up(song);
+    setLoading(true);
+    try {
+      const index = playlist.songs.indexOf(song);
+      const spliced = playlist.songs.slice();
+      spliced.splice(
+        index - 1,
+        2,
+        playlist.songs[index],
+        playlist.songs[index - 1]
+      );
+
+      const newPlaylist = {
+        ...playlist,
+        songs: spliced,
+      };
+      await query.set({
+        songs: newPlaylist.songs,
+        songsCount: newPlaylist.songs.length,
+        image: optionsRef.current.image,
+        twitterId: optionsRef.current.twitterId,
+        updatedAt: firebase.firestore.Timestamp.now(),
+      });
+      setPlaylist(newPlaylist);
+    } catch (err) {
+      setError(err);
+    }
+    setLoading(false);
   };
-  const downSong = (song: Song) => {
+  const downSong = async (song: Song) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
     const query = db
       .collection(collectionName.playlists)
       .doc(optionsRef.current.id);
-    const down = async (song: Song) => {
-      setLoading(true);
-      try {
-        const index = playlist.songs.indexOf(song);
-        const spliced = playlist.songs.slice();
-        spliced.splice(
-          index,
-          2,
-          playlist.songs[index + 1],
-          playlist.songs[index]
-        );
-        const newPlaylist = {
-          ...playlist,
-          songs: spliced,
-        };
-        await query.set({
-          songs: newPlaylist.songs,
-          songsCount: newPlaylist.songs.length,
-          image: optionsRef.current.image,
-          twitterId: optionsRef.current.twitterId,
-          updatedAt: firebase.firestore.Timestamp.now(),
-        });
-        setPlaylist(newPlaylist);
-      } catch (err) {
-        setError(err);
-      }
-      setLoading(false);
-    };
-    down(song);
+    setLoading(true);
+    try {
+      const index = playlist.songs.indexOf(song);
+      const spliced = playlist.songs.slice();
+      spliced.splice(
+        index,
+        2,
+        playlist.songs[index + 1],
+        playlist.songs[index]
+      );
+      const newPlaylist = {
+        ...playlist,
+        songs: spliced,
+      };
+      await query.set({
+        songs: newPlaylist.songs,
+        songsCount: newPlaylist.songs.length,
+        image: optionsRef.current.image,
+        twitterId: optionsRef.current.twitterId,
+        updatedAt: firebase.firestore.Timestamp.now(),
+      });
+      setPlaylist(newPlaylist);
+    } catch (err) {
+      setError(err);
+    }
+    setLoading(false);
   };
 
   return { playlist, loading, error, addSong, removeSong, upSong, downSong };
