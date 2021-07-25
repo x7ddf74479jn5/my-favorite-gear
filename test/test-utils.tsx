@@ -105,15 +105,6 @@ const seedSongsToPlaylist = () => {
   return songs;
 };
 
-export const testPlaylist = {
-  id: "id",
-  twitterId: "twitterId",
-  image: "image_normal",
-  songs: seedSongsToPlaylist(),
-  songsCount: 8,
-  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
-};
-
 export const testSong = {
   trackId: "trackId",
   trackName: "trackName",
@@ -124,3 +115,14 @@ export const testSong = {
   trackViewUrl: "https://www.trackView.com",
   previewUrl: "https://www.preview.com",
 };
+
+export const testPlaylist = {
+  id: "id",
+  twitterId: "twitterId",
+  image: "image_normal",
+  songs: seedSongsToPlaylist(),
+  songsCount: 8,
+  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+};
+
+export const testPlaylists = [];
