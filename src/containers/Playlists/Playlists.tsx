@@ -25,18 +25,18 @@ const PlaylistContainer: FC = () => {
   return (
     <>
       <Typography variant="h5" gutterBottom align="center">
-        みんなのオタクソング8選
+        みんなのMy Favorite gear
       </Typography>
       {playlists.playlists.length === 0 ? (
         <Typography paragraph align="center" color="textSecondary">
-          8選がありません。
+          My Favorite gearがありません。
         </Typography>
       ) : (
         playlists.playlists.map((playlist) => {
           return (
             <div key={playlist.id}>
               <Typography variant="h6" gutterBottom align="center">
-                {playlist.twitterId}のオタクソング8選
+                {playlist.twitterId}のMy Favorite gear
               </Typography>
               <MakeImage playlist={playlist} />
               <SongCard song={playlist.songs[0]} />
