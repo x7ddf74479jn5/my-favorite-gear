@@ -46,10 +46,10 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
     return (
       <>
         <Typography variant="h6" gutterBottom align="center">
-          {playlist.playlist.twitterId}のオタクソング8選
+          {playlist.playlist.twitterId}のMy Favorite gear
         </Typography>
         <Typography paragraph align="center" color="textSecondary">
-          8曲選ばれていません。
+          8品選ばれていません。
         </Typography>
         <Button
           variant="contained"
@@ -68,7 +68,7 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
   return (
     <>
       <Typography variant="h6" gutterBottom align="center">
-        {playlist.playlist.twitterId}のオタクソング8選
+        {playlist.playlist.twitterId}のMy Favorite gear
       </Typography>
       {playMusicsSong.artworkUrl600 ? (
         <MakeImage song={playMusicsSong} />
@@ -103,7 +103,7 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
       >
         {user && user.id === playlist.playlist.id
           ? "編集"
-          : "俺もオタクソング8選を作る"}
+          : "自分もMy Favorite gearを作る"}
       </Button>
     </>
   );

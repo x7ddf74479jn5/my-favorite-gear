@@ -14,6 +14,7 @@ import { initializeFirebase } from "../firebase";
 initializeFirebase();
 
 export const correctUserData: User = {
+  id: "id",
   screenName: "screenName",
   displayName: "displayName",
   description: "description",
@@ -94,12 +95,12 @@ const seedSongsToPlaylist = () => {
     songs.push({
       trackId: `trackId ${index + 1}`,
       trackName: `alt ${index + 1}`,
-      artistName: "",
-      collectionName: "",
-      artworkUrl100: null,
+      artistName: "artistName",
+      collectionName: "collectionName",
+      artworkUrl100: `src ${index + 1}`,
       artworkUrl600: `src ${index + 1}`,
-      trackViewUrl: "",
-      previewUrl: null,
+      trackViewUrl: "https://www.trackView.com",
+      previewUrl: "https://www.preview.com",
     });
   }
   return songs;
