@@ -54,5 +54,12 @@ service cloud.firestore {
       allow update: if isAuthenticated()
       && isValidCounterSchema(request.resource.data);
     }
+
+    match /playlists/{playlistId} {
+      allow get: if isUserAuthenticated(playlistId);
+      allow list: if isAuthenticated();
+      allow create: if isUserAuthenticated(playlistId);
+      allow update: if isUserAuthenticated(playlistId);
+    }
   }
 }
