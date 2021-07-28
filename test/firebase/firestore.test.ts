@@ -10,7 +10,7 @@ import { collectionName } from "services/constants";
 import type { User } from "services/models/user";
 
 const PROJECT_ID = "dev-my-favorite-gear";
-const RULES_PATH = path.resolve("firestore.rules");
+const RULES_PATH = path.resolve(__dirname, "origin-firestore.rules");
 
 const createAuthApp = (auth?: { uid: string }) => {
   return firebase

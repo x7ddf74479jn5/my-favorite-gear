@@ -1,16 +1,17 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 require("dotenv").config({ path: "./.env.test" });
 
 module.exports = {
   roots: ["<rootDir>"],
   moduleFileExtensions: ["js", "ts", "tsx", "json"],
-  testPathIgnorePatterns: ["<rootDir>[/\\\\](node_modules)[/\\\\]"],
+  testPathIgnorePatterns: [
+    "<rootDir>[/\\\\](node_modules)[/\\\\]",
+    "<rootDir>[/\\\\](test/hooks)[/\\\\]",
+  ],
   watchPlugins: [
     "jest-watch-typeahead/filename",
     "jest-watch-typeahead/testname",
   ],
   transform: { "^.+\\.(js|ts|tsx)$": "babel-jest" },
-
   transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$"],
   moduleNameMapper: {
     "\\.(css|scss)$": "<rootDir>/test/__mocks__/styleMock.js",
