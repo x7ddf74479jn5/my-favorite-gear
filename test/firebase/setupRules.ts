@@ -14,16 +14,12 @@ const main = () => {
     }
   };
 
-  if (process.env.NODE_ENV === "test") {
-    const filePath = path.resolve(__dirname, "./test-firestore.rules");
-    copyRules(filePath);
-  }
-  if (process.env.NODE_ENV === "production") {
-    const filePath = path.resolve(__dirname, "./origin-firestore.rules");
-    copyRules(filePath);
-  }
-
-  return;
+  const rules =
+    process.env.NODE_ENV === "test"
+      ? "test-firestore.rules"
+      : "origin-firestore.rules";
+  const filePath = path.resolve(__dirname, rules);
+  copyRules(filePath);
 };
 
 main();
