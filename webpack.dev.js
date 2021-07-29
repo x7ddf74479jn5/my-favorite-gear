@@ -33,37 +33,21 @@ module.exports = merge(common, {
       path: path.resolve(__dirname, ".env.dev"),
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "static/index.html"),
+      template: path.resolve(__dirname, "src/index.html"),
       filename: "index.html",
       title: "My Favorite Gear",
       favicon: path.resolve(__dirname, "static/favicon.ico"),
       meta: {
         description: "みんなにおすすめしたいプロダクトを紹介しましょう！",
       },
-      React: "https://unpkg.com/react/umd/react.production.min.js",
-      ReactDOM: "https://unpkg.com/react-dom/umd/react-dom.production.min.js",
-      firebase: "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js",
-      firebaseAuth: "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js",
-      firebaseFirestore:
-        "https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js",
-      firebaseUIAuth:
-        "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth__ja.js",
-      firebaseUIAuthCSS:
-        "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css",
     }),
     new CopyPlugin({
       patterns: [
         {
-          from: "static/mockServiceWorker.js",
+          from: "src/mockServiceWorker.js",
           to: "mockServiceWorker.js",
         },
       ],
     }),
   ],
-  externals: {
-    react: "React",
-    "react-dom": "ReactDOM",
-    firebase: "firebase",
-    firebaseui: "firebaseui",
-  },
 });

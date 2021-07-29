@@ -5,6 +5,7 @@ const Dotenv = require("dotenv-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const UnusedWebpackPlugin = require("unused-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 // eslint-disable-next-line no-console
 console.log(
@@ -25,12 +26,12 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "static/index.html"),
+      template: path.resolve(__dirname, "src/index.html"),
       filename: "index.html",
       title: "My Favorite Gear",
       favicon: path.resolve(__dirname, "static/favicon.ico"),
       meta: {
-        description: "みんなにおすすめしたいプロダクトを紹介しましょう！",
+        description: "みんなにおすすめしたいアイテムを紹介しましょう！",
       },
       React: "https://unpkg.com/react/umd/react.production.min.js",
       ReactDOM: "https://unpkg.com/react-dom/umd/react-dom.production.min.js",
@@ -56,6 +57,9 @@ module.exports = merge(common, {
       reportFilename: path.resolve(__dirname, "docs/prod-bundle-analyzer.html"),
       openAnalyzer: true,
       defaultSizes: "stat",
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "static/*", to: "[name].[ext]" }],
     }),
   ],
 });
