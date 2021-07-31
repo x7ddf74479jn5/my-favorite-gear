@@ -8,10 +8,10 @@
     "build:dev": "webpack --progress --config ./webpack.stag.js --mode production",
     "deploy": "firebase deploy --project=prod",
     "deploy:dev": "firebase deploy --project=dev",
-    "dev-deploy": "run-s setup-prodRules build:dev deploy:dev",
-    "prod-deploy": "run-s setup-prodRules build deploy",
+    "dev-deploy": "run-s setup:dev:* build:dev deploy:dev",
+    "prod-deploy": "run-s setup:prod:* build deploy",
     "test": "jest",
-    "test:fs": "run-s setup-testRules \"test --config jest.config.firestore.js\"",
+    "test:fs": "run-s setup:test:rules \"test --config jest.config.firestore.js\"",
     "stopall": "lsof -t -i:4000 -i:4001 -i:4400 -i:4500 -i:5000 -i:8080 -i:9099 | xargs kill -9",
     "lint": "run-p -l -c --aggregate-output lint:*",
     "lint:eslint": "eslint .",
@@ -21,8 +21,10 @@
     "fix:prettier": "npm run lint:prettier -- --write",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "setup-testRules": "NODE_ENV=test ts-node --skip-project test/firebase/setupRules.ts",
-    "setup-prodRules": "NODE_ENV=production ts-node --skip-project test/firebase/setupRules.ts"
+    "setup:test:rules": "NODE_ENV=test ts-node --skip-project configs/setup-rules.ts",
+    "setup:prod:rules": "NODE_ENV=production ts-node --skip-project configs/setup-rules.ts",
+    "setup:dev:firebase": "NODE_ENV=development ts-node --skip-project configs/setup-firebase.ts",
+    "setup:prod:firebase": "NODE_ENV=production ts-node --skip-project configs/setup-firebase.ts"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
@@ -92,7 +94,6 @@
     "@typescript-eslint/parser": "^4.28.1",
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
-    "basic-auth-connect": "^1.0.0",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^5.2.6",
     "dotenv-webpack": "^7.0.3",
@@ -103,7 +104,6 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "express": "^4.17.1",
     "firebase-admin": "^9.10.0",
     "html-webpack-plugin": "^5.3.2",
     "husky": "^6.0.0",

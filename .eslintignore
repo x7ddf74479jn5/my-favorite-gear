@@ -4,3 +4,4 @@
 **/dist/*
 babel.config.js
 coverage/*
+functions/*

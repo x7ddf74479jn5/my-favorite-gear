@@ -17,6 +17,6 @@
     "baseUrl": "src",
     "outDir": "./dist/"
   },
-  "exclude": ["node_modules", "build", "dist", "refs"],
+  "exclude": ["node_modules", "build", "dist", "refs", "functions"],
   "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
 }

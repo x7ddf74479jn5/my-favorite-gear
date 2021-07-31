@@ -1,9 +1,20 @@
-// import * as functions from "firebase-functions";
+const functions = require("firebase-functions");
+const express = require("express");
 
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-// export const helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+const basicAuth = require("basic-auth-connect");
+
+const USERNAME = functions.config().basic_auth.username;
+const PASSWORD = functions.config().basic_auth.password;
+
+const app = express();
+
+// Basic Auth
+app.all(
+  "/*",
+  basicAuth((user: unknown, password: unknown) => {
+    return user === USERNAME && password === PASSWORD;
+  })
+);
+
+app.use(express.static(process.cwd() + "/public/"));
+exports.firebaseAuth = functions.https.onRequest(app);

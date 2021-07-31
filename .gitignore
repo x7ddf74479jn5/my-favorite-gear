@@ -29,9 +29,11 @@ ui-debug.log
 
 .eslintcache
 
-# projects
+# project
 /refs
 /docs
-/firebase
+.firebase
 firebase.json
+firestore.rules
+/functions/public
 
