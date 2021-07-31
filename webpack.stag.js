@@ -28,9 +28,8 @@ module.exports = merge(common, {
       template: path.resolve(__dirname, "src/index.html"),
       filename: "index.html",
       title: "My Favorite Gear",
-      favicon: path.resolve(__dirname, "static/favicon.ico"),
       meta: {
-        description: "みんなにおすすめしたいプロダクトを紹介しましょう！",
+        description: "みんなにおすすめしたいアイテムを紹介しましょう！",
       },
       React: "https://unpkg.com/react/umd/react.production.min.js",
       ReactDOM: "https://unpkg.com/react-dom/umd/react-dom.production.min.js",

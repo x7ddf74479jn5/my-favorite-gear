@@ -29,7 +29,6 @@ module.exports = merge(common, {
       template: path.resolve(__dirname, "src/index.html"),
       filename: "index.html",
       title: "My Favorite Gear",
-      favicon: path.resolve(__dirname, "static/favicon.ico"),
       meta: {
         description: "みんなにおすすめしたいアイテムを紹介しましょう！",
       },
