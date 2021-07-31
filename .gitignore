@@ -23,11 +23,17 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-/refs
-.eslintcache
+firebase-debug.log
 firestore-debug.log
 ui-debug.log
-firebase-debug.log
+
+.eslintcache
+
+# project
+/refs
+/docs
 .firebase
-docs
+firebase.json
+firestore.rules
+/functions/public
+
