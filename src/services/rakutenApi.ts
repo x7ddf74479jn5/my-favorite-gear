@@ -1,5 +1,6 @@
 import axios from "axios";
 
+import { api } from "./constants";
 import type { Gear } from "./models/gear";
 
 interface ApiConfig {
@@ -8,13 +9,12 @@ interface ApiConfig {
   keyword?: string;
   elements?: string;
   affiliateId?: string;
-  entity?: string;
   hits?: number;
-  formValidation?: 1 | 2;
+  formatVersion?: 1 | 2;
 }
 
 const DEFAULT_API_CONFIG: ApiConfig = {
-  baseURL: "https://app.rakuten.co.jp/services/api/Product/Search/20170426",
+  baseURL: api.rakuten.baseURL,
   timeout: 7000,
   elements: [
     "affiliateUrl",
@@ -24,9 +24,9 @@ const DEFAULT_API_CONFIG: ApiConfig = {
     "productName",
   ].join(),
   keyword: "",
-  affiliateId: "1ea10fb2.e46bf703.1ea10fb3.49311a3d",
+  affiliateId: api.rakuten.affiliateId,
   hits: 20,
-  formValidation: 2,
+  formatVersion: 2,
 };
 
 export const getGearsFactory = (optionConfig?: ApiConfig) => {
@@ -41,18 +41,18 @@ export const getGearsFactory = (optionConfig?: ApiConfig) => {
 
   const getGears = async () => {
     const response = await instance.get(
-      `/?keyword=${encodeURI(config.keyword ? config.keyword : "")}&elements=${
+      `?keyword=${encodeURI(config.keyword ? config.keyword : "")}&elements=${
         config.elements
-      }&affiliateId=${config.affiliateId}&hits=${config.hits}&entity=${
-        config.entity
-      }&formValidation=${config.formValidation}`
+      }&affiliateId=${config.affiliateId}&hits=${config.hits}&formatVersion=${
+        config.formatVersion
+      }`
     );
 
     if (response.status !== 200) {
       const gears: Gear[] = [];
       return gears;
     }
-    const gears: Gear[] = response.data.results;
+    const gears: Gear[] = response.data.Products;
     return gears;
   };
 
