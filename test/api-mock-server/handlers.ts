@@ -6,8 +6,13 @@ import { api } from "../../src/services/constants";
 export const handlers = [
   rest.get(api.rakuten.baseURL, (req, res, ctx) => {
     const keyword = req.url.searchParams.get("keyword");
+    const elements = req.url.searchParams.get("elements");
     const affiliateId = req.url.searchParams.get("affiliateId");
     const hits = req.url.searchParams.get("hits") || 20;
+
+    if (!elements || !affiliateId) {
+      return res(ctx.status(400));
+    }
 
     const createResponseData = () => {
       const products: Gear[] = [];
@@ -23,6 +28,7 @@ export const handlers = [
       }
       return products;
     };
+
     return res(
       ctx.status(200),
       ctx.json({

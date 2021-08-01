@@ -1,3 +1,4 @@
+import { cleanup } from "@testing-library/react";
 import { api } from "services/constants";
 
 import { getGearsFactory } from "../../src/services/rakutenApi";
@@ -8,6 +9,7 @@ describe("getGearsFactory", () => {
     server.listen();
   });
   afterEach(() => {
+    cleanup();
     server.resetHandlers();
   });
   afterAll(() => {
@@ -38,5 +40,10 @@ describe("getGearsFactory", () => {
       affiliateUrl: api.rakuten.affiliateId,
       productName: "keyword 1",
     });
+  });
+
+  test("fails status 400 when invalid request ", async () => {
+    const getGears = getGearsFactory({ elements: "" });
+    await expect(getGears()).rejects.toThrow();
   });
 });
