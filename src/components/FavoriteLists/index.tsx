@@ -1,6 +1,6 @@
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
-import PlaylistsContainer from "containers/Playlists/Playlists";
+import FavoriteListsContainer from "containers/FavoriteLists/FavoriteLists";
 import type { FC } from "react";
 import React from "react";
 
@@ -14,14 +14,14 @@ const useStyles = makeStyles((theme) => {
     },
   };
 });
-const Playlists: FC = () => {
+const FavoriteLists: FC = () => {
   const classes = useStyles();
 
   return (
     <Container maxWidth="xs" className={classes.root}>
-      <PlaylistsContainer />
+      <FavoriteListsContainer />
     </Container>
   );
 };
 
-export default Playlists;
+export default FavoriteLists;

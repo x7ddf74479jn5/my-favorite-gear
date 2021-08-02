@@ -49,7 +49,7 @@ const FavoriteListContainer: FC<{ user: User | null }> = ({ user }) => {
           {favoriteList.favoriteList.twitterId}のMy Favorite gear
         </Typography>
         <Typography paragraph align="center" color="textSecondary">
-          8品選ばれていません。
+          8アイテム選ばれていません。
         </Typography>
         <Button
           variant="contained"

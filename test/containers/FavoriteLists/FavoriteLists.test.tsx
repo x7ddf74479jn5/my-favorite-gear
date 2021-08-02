@@ -1,7 +1,8 @@
-import PlaylistContainer from "containers/Playlists/Playlists";
+import FavoriteListContainer from "containers/FavoriteLists/FavoriteLists";
 import paths from "paths";
 import React from "react";
 import { MemoryRouter } from "react-router";
+import type { Gear } from "services/models/gear";
 
 import { render } from "../../test-utils";
 
@@ -9,34 +10,31 @@ import { render } from "../../test-utils";
  * should run all the tests, don't change the test case orders
  */
 
-jest.mock("hooks/use-playlists", () => {
-  const seedSongsToPlaylist = () => {
-    const SONG_COUNT = 8;
-    const songs = [];
-    for (let index = 0; index < SONG_COUNT; index++) {
-      songs.push({
-        trackId: `trackId ${index + 1}`,
-        trackName: `alt ${index + 1}`,
-        artistName: "artistName",
-        collectionName: "collectionName",
-        artworkUrl100: `src ${index + 1}`,
-        artworkUrl600: `src ${index + 1}`,
-        trackViewUrl: "https://www.trackView.com",
-        previewUrl: "https://www.preview.com",
+jest.mock("hooks/use-favoriteLists", () => {
+  const seedGearsToFavoriteList = () => {
+    const GEAR_COUNT = 8;
+    const gears: Gear[] = [];
+    for (let index = 0; index < GEAR_COUNT; index++) {
+      gears.push({
+        productId: `productId${index + 1}`,
+        productName: `productName${index + 1}`,
+        makerName: `makerName${index + 1}`,
+        mediumImageUrl: `src${index + 1}`,
+        affiliateUrl: `https://www.affiliate.com/${index + 1}`,
       });
     }
-    return songs;
+    return gears;
   };
-  const testPlaylist = {
+  const testFavoriteList = {
     id: "id",
     twitterId: "twitterId",
     image: "image_normal",
-    songs: seedSongsToPlaylist(),
-    songsCount: 8,
+    gears: seedGearsToFavoriteList(),
+    gearsCount: 8,
     updatedAt: "updatedAt",
   };
-  // @return {Playlists} each test case
-  const usePlaylists = jest
+  // @return {FavoriteLists} each test case
+  const useFavoriteLists = jest
     .fn()
     .mockReturnValueOnce({
       // #1
@@ -44,24 +42,24 @@ jest.mock("hooks/use-playlists", () => {
     })
     .mockReturnValueOnce({
       // #2
-      playlists: [],
+      favoriteLists: [],
     })
     .mockReturnValueOnce({
       // #3
-      playlists: [testPlaylist],
+      favoriteLists: [testFavoriteList],
     });
-  return usePlaylists;
+  return useFavoriteLists;
 });
 
-describe("Playlists", () => {
+describe("FavoriteLists", () => {
   it("renders loading state (#1)", () => {
-    const renderResult = render(<PlaylistContainer />);
+    const renderResult = render(<FavoriteListContainer />);
 
     expect(renderResult.getByText("読み込み中")).toBeInTheDocument();
   });
 
-  it("renders correctly when no playlists (#2)", () => {
-    const renderResult = render(<PlaylistContainer />);
+  it("renders correctly when no favoriteLists (#2)", () => {
+    const renderResult = render(<FavoriteListContainer />);
 
     expect(renderResult.getByRole("heading", { level: 5 })).toHaveTextContent(
       "みんなのMy Favorite gear"
@@ -71,10 +69,10 @@ describe("Playlists", () => {
     );
   });
 
-  it("renders correctly when playlists (#3)", () => {
+  it("renders correctly when favoriteLists (#3)", () => {
     const renderResult = render(
-      <MemoryRouter initialEntries={[paths.playlists]}>
-        <PlaylistContainer />
+      <MemoryRouter initialEntries={[paths.favoriteLists]}>
+        <FavoriteListContainer />
       </MemoryRouter>
     );
 
@@ -90,6 +88,6 @@ describe("Playlists", () => {
     expect(renderResult.getAllByRole("button")).toHaveLength(2);
     const linkButton = renderResult.getAllByRole("button")[1];
     expect(linkButton).toHaveTextContent("くわしくみる");
-    expect(linkButton).toHaveAttribute("href", `${paths.playlistRoot}id`);
+    expect(linkButton).toHaveAttribute("href", `${paths.favoriteListRoot}id`);
   });
 });

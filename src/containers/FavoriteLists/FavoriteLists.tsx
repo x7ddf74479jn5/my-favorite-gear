@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import GearCard from "components/common/card/GearCard";
 import MakeImage from "components/common/makeImage/MakeImage";
 import Progress from "components/common/progress/Progress";
-import usePlaylists from "hooks/use-favoriteLists";
+import useFavoriteLists from "hooks/use-favoriteLists";
 import paths from "paths";
 import type { FC } from "react";
 import React from "react";
@@ -18,9 +18,9 @@ const useStyles = makeStyles((theme) => {
     },
   };
 });
-const PlaylistContainer: FC = () => {
+const FavoriteListContainer: FC = () => {
   const classes = useStyles();
-  const favoriteLists = usePlaylists();
+  const favoriteLists = useFavoriteLists();
   if (favoriteLists.loading) return <Progress />;
   return (
     <>
@@ -58,4 +58,4 @@ const PlaylistContainer: FC = () => {
   );
 };
 
-export default PlaylistContainer;
+export default FavoriteListContainer;
