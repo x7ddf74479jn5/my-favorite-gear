@@ -3,8 +3,8 @@ import GridListTile from "@material-ui/core/GridListTile";
 import { makeStyles } from "@material-ui/core/styles";
 import type { FC } from "react";
 import React from "react";
-import type { Playlist } from "services/models/playlist";
-import type { Song } from "services/models/song";
+import type { FavoriteList } from "services/models/favoriteList";
+import type { Gear } from "services/models/gear";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -27,21 +27,21 @@ interface Tile {
   src: string;
   alt: string;
 }
-const GridImage: FC<{ playlist?: Playlist; song?: Song }> = ({
-  playlist,
-  song,
+const GridImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
+  favoriteList,
+  gear,
 }) => {
   const classes = useStyles();
-  if (playlist) {
-    const tile: Tile[] = playlist.songs.map((v) => {
+  if (favoriteList) {
+    const tile: Tile[] = favoriteList.gears.map((v) => {
       return {
-        src: v.artworkUrl600 || "",
-        alt: v.trackName,
+        src: v.mediumImageUrl || "",
+        alt: v.productName,
       };
     });
     tile.splice(4, 0, {
-      src: playlist.image?.replace("_normal", "") || "",
-      alt: playlist.twitterId,
+      src: favoriteList.image?.replace("_normal", "") || "",
+      alt: favoriteList.twitterId,
     });
 
     return (
@@ -72,21 +72,21 @@ const GridImage: FC<{ playlist?: Playlist; song?: Song }> = ({
         cellHeight={120}
       >
         <GridListTile cols={3} rows={3}>
-          <img src={song?.artworkUrl600 || ""} alt={song?.trackName || ""} />
+          <img src={gear?.mediumImageUrl || ""} alt={gear?.productName || ""} />
         </GridListTile>
       </GridList>
     </>
   );
 };
-const MakeImage: FC<{ playlist?: Playlist; song?: Song }> = ({
-  playlist,
-  song,
+const MakeImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
+  favoriteList,
+  gear,
 }) => {
   const classes = useStyles();
   return (
     <>
       <div className={classes.root}>
-        <GridImage playlist={playlist} song={song} />
+        <GridImage favoriteList={favoriteList} gear={gear} />
       </div>
     </>
   );

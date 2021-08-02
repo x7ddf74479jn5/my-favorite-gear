@@ -7,6 +7,8 @@ import type { FirebaseContextValue, UserContextValue } from "contexts";
 import { FirebaseContext, UserContext } from "contexts";
 import firebase from "firebase/app";
 import React from "react";
+import type { FavoriteList } from "services/models/favoriteList";
+import type { Gear } from "services/models/gear";
 import type { User } from "services/models/user";
 
 import { initializeFirebase } from "../firebase";
@@ -126,4 +128,34 @@ export const testPlaylist = {
   updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
 };
 
-export const testPlaylists = [];
+const seedGearToFavoriteList = () => {
+  const GEAR_COUNT = 8;
+  const gears: Gear[] = [];
+  for (let index = 0; index < GEAR_COUNT; index++) {
+    gears.push({
+      productId: `trackId ${index + 1}`,
+      productName: `trackName ${index + 1}`,
+      makerName: `artistName ${index + 1}`,
+      mediumImageUrl: `src ${index + 1}`,
+      affiliateUrl: `https://www.affiliate.com/${index + 1}`,
+    });
+  }
+  return gears;
+};
+
+export const testGear: Gear = {
+  productId: "trackId",
+  productName: "trackName",
+  makerName: "artistName",
+  mediumImageUrl: "src",
+  affiliateUrl: "https://www.affiliate.com",
+};
+
+export const testFavoriteList: FavoriteList = {
+  id: "id",
+  twitterId: "twitterId",
+  image: "image_normal",
+  gears: seedGearToFavoriteList(),
+  gearsCount: 8,
+  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+};

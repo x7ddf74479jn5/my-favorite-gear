@@ -1,9 +1,9 @@
 const paths = {
   urlDomain: "https://my-otaku-song.web.app",
   home: "/",
-  playlist: "/playlist/:id",
-  playlists: "/playlists",
-  playlistRoot: "/playlist/",
+  favoriteList: "/favoriteList/:id",
+  favoriteLists: "/favoriteLists",
+  favoriteListRoot: "/favoriteList/",
 };
 
 export default paths;

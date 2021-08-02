@@ -1,21 +1,21 @@
 import userEvent from "@testing-library/user-event";
-import SongCard from "components/common/card/SongCard";
+import GearCard from "components/common/card/GearCard";
 import React from "react";
 
-import { render, testPlaylist, testSong } from "../../../test-utils";
+import { render, testFavoriteList, testGear } from "../../../test-utils";
 
 const mockAddButton = jest.fn();
 const mockRemoveButton = jest.fn();
 const mockUpButton = jest.fn();
 const mockDownButton = jest.fn();
 
-describe("SongCard", () => {
+describe("GearCard", () => {
   it("matches snapshot", () => {
     let renderResult;
 
     renderResult = render(
-      <SongCard
-        song={testSong}
+      <GearCard
+        gear={testGear}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}
@@ -26,9 +26,9 @@ describe("SongCard", () => {
     expect(renderResult.asFragment()).toMatchSnapshot();
 
     renderResult = render(
-      <SongCard
-        song={testPlaylist.songs[0]}
-        playlist={testPlaylist.songs}
+      <GearCard
+        gear={testFavoriteList.gears[0]}
+        favoriteList={testFavoriteList.gears}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}
@@ -39,10 +39,10 @@ describe("SongCard", () => {
     expect(renderResult.asFragment()).toMatchSnapshot();
   });
 
-  it("renders correctly when a user has not registered any song to a playlist yet", () => {
+  it("renders correctly when a user has not registered any gear to a favoriteList yet", () => {
     const renderResult = render(
-      <SongCard
-        song={testSong}
+      <GearCard
+        gear={testGear}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}
@@ -68,25 +68,21 @@ describe("SongCard", () => {
     ).toBeTruthy();
 
     expect(renderResult.getByText("trackName")).toBeInTheDocument();
-    expect(
-      renderResult.getByText(
-        `${testSong.artistName} - ${testSong.collectionName}`
-      )
-    ).toBeInTheDocument();
+    expect(renderResult.getByText(`${testGear.makerName}`)).toBeInTheDocument();
 
     const buttonElements = renderResult.getAllByRole("button");
     expect(buttonElements).toHaveLength(5);
     expect(buttonElements[4]).toHaveAttribute(
       "href",
-      expect.stringMatching(testSong.trackViewUrl)
+      expect.stringMatching(testGear.affiliateUrl)
     );
   });
 
-  it("renders correctly when user's playlist contains same song", () => {
+  it("renders correctly when user's favoriteList contains same gear", () => {
     const renderResult = render(
-      <SongCard
-        song={testPlaylist.songs[0]}
-        playlist={testPlaylist.songs}
+      <GearCard
+        gear={testFavoriteList.gears[0]}
+        favoriteList={testFavoriteList.gears}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}
@@ -101,8 +97,8 @@ describe("SongCard", () => {
 
   it("triggers user events", async () => {
     const renderResult = render(
-      <SongCard
-        song={testSong}
+      <GearCard
+        gear={testGear}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}

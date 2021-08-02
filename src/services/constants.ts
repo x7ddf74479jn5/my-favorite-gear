@@ -1,7 +1,7 @@
 export const collectionName = {
   users: "users",
   docCounters: "docCounters",
-  playlists: "playlists",
+  favoriteLists: "favoriteLists",
 } as const;
 
 export const api = {

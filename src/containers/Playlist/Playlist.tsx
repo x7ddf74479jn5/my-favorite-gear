@@ -1,25 +1,25 @@
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import SongCards from "components/common/card/SongCards";
+import GearCards from "components/common/card/GearCards";
 import MakeImage from "components/common/makeImage/MakeImage";
 import Progress from "components/common/progress/Progress";
 import TweetButton from "components/common/tweet/TweetButton";
-import usePlaylist from "hooks/use-playlist";
+import useFavoriteList from "hooks/use-favoriteList";
 import paths from "paths";
 import type { FC } from "react";
 import React, { useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-import type { Song } from "services/models/song";
-import { blankSong } from "services/models/song";
+import type { Gear } from "services/models/gear";
+import { blankGear } from "services/models/gear";
 import type { User } from "services/models/user";
 
-const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
+const FavoriteListContainer: FC<{ user: User | null }> = ({ user }) => {
   const { id } = useParams<{ id?: string }>();
-  const playlist = usePlaylist({
+  const favoriteList = useFavoriteList({
     id: id,
   });
-  const [playMusicsSong, setPlayMusicsSong] = useState<Song>(blankSong);
+  const [playMusicsGear, setPlayMusicsGear] = useState<Gear>(blankGear);
   const playMusics = () => {
     const musics: HTMLAudioElement[] = Array.prototype.slice.call(
       document.getElementsByTagName("audio")
@@ -28,7 +28,7 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
       music.pause();
     });
     const playMusic = (n: number) => {
-      setPlayMusicsSong(playlist.playlist.songs[n]);
+      setPlayMusicsGear(favoriteList.favoriteList.gears[n]);
       musics[n].currentTime = 0;
       musics[n].play();
       const next = () => {
@@ -41,12 +41,12 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
     };
     playMusic(0);
   };
-  if (playlist.loading) return <Progress />;
-  if (playlist.playlist.songs.length < 8)
+  if (favoriteList.loading) return <Progress />;
+  if (favoriteList.favoriteList.gears.length < 8)
     return (
       <>
         <Typography variant="h6" gutterBottom align="center">
-          {playlist.playlist.twitterId}のMy Favorite gear
+          {favoriteList.favoriteList.twitterId}のMy Favorite gear
         </Typography>
         <Typography paragraph align="center" color="textSecondary">
           8品選ばれていません。
@@ -58,7 +58,7 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
           component={Link}
           to={paths.home}
         >
-          {user && user.id === playlist.playlist.id
+          {user && user.id === favoriteList.favoriteList.id
             ? "編集"
             : "お気に入りリストを作る"}
         </Button>
@@ -68,17 +68,17 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
   return (
     <>
       <Typography variant="h6" gutterBottom align="center">
-        {playlist.playlist.twitterId}のMy Favorite gear
+        {favoriteList.favoriteList.twitterId}のMy Favorite gear
       </Typography>
-      {playMusicsSong.artworkUrl600 ? (
-        <MakeImage song={playMusicsSong} />
+      {playMusicsGear.mediumImageUrl ? (
+        <MakeImage gear={playMusicsGear} />
       ) : (
-        <MakeImage playlist={playlist.playlist} />
+        <MakeImage favoriteList={favoriteList.favoriteList} />
       )}
-      <Typography align="center">{playMusicsSong.trackName}</Typography>
-      <Typography align="center">{playMusicsSong.artistName}</Typography>
+      <Typography align="center">{playMusicsGear.productName}</Typography>
+      <Typography align="center">{playMusicsGear.makerName}</Typography>
 
-      {playMusicsSong.trackName === "" && (
+      {playMusicsGear.productName === "" && (
         <Button
           variant="contained"
           color="secondary"
@@ -91,9 +91,9 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
         </Button>
       )}
 
-      <TweetButton playlist={playlist.playlist} />
+      <TweetButton favoriteList={favoriteList.favoriteList} />
 
-      <SongCards songs={playlist.playlist.songs} />
+      <GearCards gears={favoriteList.favoriteList.gears} />
       <Button
         variant="contained"
         color="secondary"
@@ -101,7 +101,7 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
         component={Link}
         to={paths.home}
       >
-        {user && user.id === playlist.playlist.id
+        {user && user.id === favoriteList.favoriteList.id
           ? "編集"
           : "自分もMy Favorite gearを作る"}
       </Button>
@@ -109,4 +109,4 @@ const PlaylistContainer: FC<{ user: User | null }> = ({ user }) => {
   );
 };
 
-export default PlaylistContainer;
+export default FavoriteListContainer;

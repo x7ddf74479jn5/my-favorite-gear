@@ -1,10 +1,10 @@
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import SongCard from "components/common/card/SongCard";
+import GearCard from "components/common/card/GearCard";
 import MakeImage from "components/common/makeImage/MakeImage";
 import Progress from "components/common/progress/Progress";
-import usePlaylists from "hooks/use-playlists";
+import usePlaylists from "hooks/use-favoriteLists";
 import paths from "paths";
 import type { FC } from "react";
 import React from "react";
@@ -20,32 +20,32 @@ const useStyles = makeStyles((theme) => {
 });
 const PlaylistContainer: FC = () => {
   const classes = useStyles();
-  const playlists = usePlaylists();
-  if (playlists.loading) return <Progress />;
+  const favoriteLists = usePlaylists();
+  if (favoriteLists.loading) return <Progress />;
   return (
     <>
       <Typography variant="h5" gutterBottom align="center">
         みんなのMy Favorite gear
       </Typography>
-      {playlists.playlists.length === 0 ? (
+      {favoriteLists.favoriteLists.length === 0 ? (
         <Typography paragraph align="center" color="textSecondary">
           My Favorite gearがありません。
         </Typography>
       ) : (
-        playlists.playlists.map((playlist) => {
+        favoriteLists.favoriteLists.map((favoriteList) => {
           return (
-            <div key={playlist.id}>
+            <div key={favoriteList.id}>
               <Typography variant="h6" gutterBottom align="center">
-                {playlist.twitterId}のMy Favorite gear
+                {favoriteList.twitterId}のMy Favorite gear
               </Typography>
-              <MakeImage playlist={playlist} />
-              <SongCard song={playlist.songs[0]} />
+              <MakeImage favoriteList={favoriteList} />
+              <GearCard gear={favoriteList.gears[0]} />
               <Button
                 variant="contained"
                 color="secondary"
                 fullWidth
                 component={Link}
-                to={`${paths.playlistRoot}${playlist.id}`}
+                to={`${paths.favoriteListRoot}${favoriteList.id}`}
                 className={classes.button}
               >
                 くわしくみる

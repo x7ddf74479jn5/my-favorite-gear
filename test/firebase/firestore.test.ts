@@ -323,7 +323,7 @@ describe("/docCounters/users", () => {
   });
 });
 
-describe("/playlists/{playlistId}", () => {
+describe("/favoriteLists/{favoriteListId}", () => {
   const correctPlaylistData = {
     id: "uid",
     twitterId: "twitterId",
@@ -343,31 +343,33 @@ describe("/playlists/{playlistId}", () => {
   describe("ユーザー認証情報の検証", () => {
     test("自分のuidと同様のドキュメントIDのユーザー情報だけを閲覧、作成、編集可能", async () => {
       const db = createAuthApp({ uid: "uid" });
-      const playlistDocumentRef = db
-        .collection(collectionName.playlists)
+      const favoriteListDocumentRef = db
+        .collection(collectionName.favoriteLists)
         .doc("uid");
       await firebase.assertSucceeds(
-        playlistDocumentRef.set(correctPlaylistData)
+        favoriteListDocumentRef.set(correctPlaylistData)
       );
-      await firebase.assertSucceeds(playlistDocumentRef.get());
+      await firebase.assertSucceeds(favoriteListDocumentRef.get());
       await firebase.assertSucceeds(
-        playlistDocumentRef.update({ image: "newImage" })
+        favoriteListDocumentRef.update({ image: "newImage" })
       );
     });
 
     test("自分のuidと異なるドキュメントは閲覧、作成、編集が出来ない", async () => {
       createAdminApp()
-        .collection(collectionName.playlists)
+        .collection(collectionName.favoriteLists)
         .doc("uid_1")
         .set(adminPlaylistData);
       const db = createAuthApp({ uid: "uid_2" });
-      const playlistDocumentRef = db
+      const favoriteListDocumentRef = db
         .collection(collectionName.users)
         .doc("uid_1");
-      await firebase.assertFails(playlistDocumentRef.set(correctPlaylistData));
-      await firebase.assertFails(playlistDocumentRef.get());
       await firebase.assertFails(
-        playlistDocumentRef.update({ image: "newImage" })
+        favoriteListDocumentRef.set(correctPlaylistData)
+      );
+      await firebase.assertFails(favoriteListDocumentRef.get());
+      await firebase.assertFails(
+        favoriteListDocumentRef.update({ image: "newImage" })
       );
     });
   });

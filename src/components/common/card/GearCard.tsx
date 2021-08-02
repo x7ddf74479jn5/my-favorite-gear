@@ -13,15 +13,15 @@ import LinkIcon from "@material-ui/icons/Link";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import type { FC } from "react";
 import React from "react";
-import type { Song } from "services/models/song";
+import type { Gear } from "services/models/gear";
 
-interface SongCardProps {
-  song: Song;
-  addButton?: (song: Song) => void;
-  playlist?: Song[];
-  removeButton?: (song: Song) => void;
-  upButton?: (song: Song) => void;
-  downButton?: (song: Song) => void;
+interface GearCardProps {
+  gear: Gear;
+  addButton?: (gear: Gear) => void;
+  favoriteList?: Gear[];
+  removeButton?: (gear: Gear) => void;
+  upButton?: (gear: Gear) => void;
+  downButton?: (gear: Gear) => void;
 }
 
 const useStyles = makeStyles((theme) => {
@@ -38,10 +38,10 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-const SongCard: FC<SongCardProps> = ({
-  song,
+const GearCard: FC<GearCardProps> = ({
+  gear,
   addButton,
-  playlist,
+  favoriteList,
   removeButton,
   upButton,
   downButton,
@@ -51,28 +51,28 @@ const SongCard: FC<SongCardProps> = ({
     <Card className={classes.cardRoot}>
       <CardHeader
         avatar={
-          song.artworkUrl600 ? (
+          gear.mediumImageUrl ? (
             <Avatar
-              src={song.artworkUrl600}
-              alt={song.trackName}
+              src={gear.mediumImageUrl}
+              alt={gear.productName}
               className={classes.avatar}
             />
           ) : (
-            <Avatar className={classes.avatar}>{song.trackName}</Avatar>
+            <Avatar className={classes.avatar}>{gear.productName}</Avatar>
           )
         }
-        title={song.trackName}
-        subheader={`${song.artistName} - ${song.collectionName}`}
+        title={gear.productName}
+        subheader={`${gear.makerName}`}
       />
       <CardContent>
-        {song.previewUrl && (
+        {/* {gear.previewUrl && (
           // eslint-disable-next-line jsx-a11y/media-has-caption
-          <audio src={song.previewUrl} controls className={classes.audio} />
-        )}
+          <audio src={gear.previewUrl} controls className={classes.audio} />
+        )} */}
         {upButton && (
           <IconButton
             onClick={() => {
-              return upButton(song);
+              return upButton(gear);
             }}
             size="small"
           >
@@ -82,7 +82,7 @@ const SongCard: FC<SongCardProps> = ({
         {downButton && (
           <IconButton
             onClick={() => {
-              return downButton(song);
+              return downButton(gear);
             }}
             size="small"
           >
@@ -90,9 +90,9 @@ const SongCard: FC<SongCardProps> = ({
           </IconButton>
         )}
         {addButton ? (
-          playlist &&
-          playlist.filter((playlistSong) => {
-            return playlistSong.trackId === song.trackId;
+          favoriteList &&
+          favoriteList.filter((favoriteListGear) => {
+            return favoriteListGear.productId === gear.productId;
           }).length > 0 ? (
             <Button
               color="secondary"
@@ -108,7 +108,7 @@ const SongCard: FC<SongCardProps> = ({
               startIcon={<ThumbUpIcon />}
               disableElevation
               onClick={() => {
-                return addButton(song);
+                return addButton(gear);
               }}
             >
               My Favorite Gearに登録
@@ -123,7 +123,7 @@ const SongCard: FC<SongCardProps> = ({
             startIcon={<DeleteIcon />}
             disableElevation
             onClick={() => {
-              return removeButton(song);
+              return removeButton(gear);
             }}
           >
             My Favorite Gearから削除
@@ -131,10 +131,10 @@ const SongCard: FC<SongCardProps> = ({
         ) : (
           <></>
         )}
-        {song.trackViewUrl && (
+        {gear.affiliateUrl && (
           <Button
             component={Link}
-            href={song.trackViewUrl}
+            href={gear.affiliateUrl}
             startIcon={<LinkIcon />}
             disableElevation
             target="_blank"
@@ -148,4 +148,4 @@ const SongCard: FC<SongCardProps> = ({
   );
 };
 
-export default SongCard;
+export default GearCard;

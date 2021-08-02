@@ -2,17 +2,17 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import type { FC } from "react";
 import React from "react";
-import type { Song } from "services/models/song";
+import type { Gear } from "services/models/gear";
 
-import SongCard from "./SongCard";
+import GearCard from "./GearCard";
 
-interface SongCardsProps {
-  songs: Song[];
-  addButton?: (song: Song) => void;
-  playlist?: Song[];
-  removeButton?: (song: Song) => void;
-  upButton?: (song: Song) => void;
-  downButton?: (song: Song) => void;
+interface GearCardsProps {
+  gears: Gear[];
+  addButton?: (gear: Gear) => void;
+  favoriteList?: Gear[];
+  removeButton?: (gear: Gear) => void;
+  upButton?: (gear: Gear) => void;
+  downButton?: (gear: Gear) => void;
 }
 
 const useStyles = makeStyles((theme) => {
@@ -28,10 +28,10 @@ const useStyles = makeStyles((theme) => {
     },
   };
 });
-const SongCards: FC<SongCardsProps> = ({
-  songs,
+const GearCards: FC<GearCardsProps> = ({
+  gears,
   addButton,
-  playlist,
+  favoriteList,
   removeButton,
   upButton,
   downButton,
@@ -39,17 +39,17 @@ const SongCards: FC<SongCardsProps> = ({
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      {songs.length > 0 ? (
-        songs.map((song, index, self) => {
+      {gears.length > 0 ? (
+        gears.map((gear, index, self) => {
           return (
-            <SongCard
-              song={song}
+            <GearCard
+              gear={gear}
               addButton={addButton}
               removeButton={removeButton}
-              playlist={playlist}
+              favoriteList={favoriteList}
               upButton={index === 0 ? undefined : upButton}
               downButton={index + 1 === self.length ? undefined : downButton}
-              key={song.trackId}
+              key={gear.productId}
             />
           );
         })
@@ -62,4 +62,4 @@ const SongCards: FC<SongCardsProps> = ({
   );
 };
 
-export default SongCards;
+export default GearCards;

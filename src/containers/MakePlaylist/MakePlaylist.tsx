@@ -1,18 +1,18 @@
 import Typography from "@material-ui/core/Typography";
-import SongCards from "components/common/card/SongCards";
+import GearCards from "components/common/card/GearCards";
 import MakeImage from "components/common/makeImage/MakeImage";
 import Progress from "components/common/progress/Progress";
 import TweetButton from "components/common/tweet/TweetButton";
-import SearchBox from "components/MakePlaylist/SearchBox";
-import useITunes from "hooks/use-iTunes";
-import usePlaylist from "hooks/use-playlist";
+import SearchBox from "components/MakeFavoriteList/SearchBox";
+import useFavoriteList from "hooks/use-favoriteList";
+import useITunes from "hooks/use-rakutenSearch";
 import type { FC } from "react";
 import React from "react";
 import type { User } from "services/models/user";
 
-const MakePlaylistContainer: FC<{ user: User }> = ({ user }) => {
-  const iTunes = useITunes();
-  const playlist = usePlaylist({
+const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
+  const rakutenSearch = useITunes();
+  const favoriteList = useFavoriteList({
     id: user.id,
     image: user.photoUrl,
     twitterId: user.screenName,
@@ -22,38 +22,38 @@ const MakePlaylistContainer: FC<{ user: User }> = ({ user }) => {
       <Typography variant="h6" gutterBottom align="center">
         商品検索
       </Typography>
-      <SearchBox handler={iTunes.searchSongs} />
-      {iTunes.loading ? (
+      <SearchBox handler={rakutenSearch.searchGears} />
+      {rakutenSearch.loading ? (
         <Progress />
       ) : (
-        <SongCards
-          songs={iTunes.iTunesSongs}
-          addButton={playlist.addSong}
-          playlist={playlist.playlist.songs}
+        <GearCards
+          gears={rakutenSearch.gears}
+          addButton={favoriteList.addGear}
+          favoriteList={favoriteList.favoriteList.gears}
         />
       )}
-      {playlist.playlist.songs.length > 0 ? (
+      {favoriteList.favoriteList.gears.length > 0 ? (
         <>
           <Typography variant="h6" gutterBottom align="center">
             {user.screenName}のMy Favorite Gear (
-            {playlist.playlist.songs.length}
+            {favoriteList.favoriteList.gears.length}
             商品)
           </Typography>
-          {playlist.playlist.songs.length === 8 ? (
+          {favoriteList.favoriteList.gears.length === 8 ? (
             <>
-              <MakeImage playlist={playlist.playlist} />
-              <TweetButton playlist={playlist.playlist} />
+              <MakeImage favoriteList={favoriteList.favoriteList} />
+              <TweetButton favoriteList={favoriteList.favoriteList} />
             </>
           ) : (
             <Typography paragraph align="center" color="textSecondary">
               My Favorite Gearを「8商品」登録してください。
             </Typography>
           )}
-          <SongCards
-            songs={playlist.playlist.songs}
-            removeButton={playlist.removeSong}
-            upButton={playlist.upSong}
-            downButton={playlist.downSong}
+          <GearCards
+            gears={favoriteList.favoriteList.gears}
+            removeButton={favoriteList.removeGear}
+            upButton={favoriteList.upGear}
+            downButton={favoriteList.downGear}
           />
         </>
       ) : (
@@ -63,4 +63,4 @@ const MakePlaylistContainer: FC<{ user: User }> = ({ user }) => {
   );
 };
 
-export default MakePlaylistContainer;
+export default MakeFavoriteListContainer;

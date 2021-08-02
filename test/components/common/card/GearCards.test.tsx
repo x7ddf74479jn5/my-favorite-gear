@@ -1,20 +1,20 @@
-import SongCards from "components/common/card/SongCards";
+import GearCards from "components/common/card/GearCards";
 import React from "react";
 
-import { render, testPlaylist } from "../../../test-utils";
+import { render, testFavoriteList } from "../../../test-utils";
 
 const mockAddButton = jest.fn();
 const mockRemoveButton = jest.fn();
 const mockUpButton = jest.fn();
 const mockDownButton = jest.fn();
 
-describe("SongCards", () => {
+describe("GearCards", () => {
   it("matches snapshot", () => {
     let renderResult;
 
     renderResult = render(
-      <SongCards
-        songs={testPlaylist.songs}
+      <GearCards
+        gears={testFavoriteList.gears}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}
@@ -25,8 +25,8 @@ describe("SongCards", () => {
     expect(renderResult.asFragment()).toMatchSnapshot();
 
     renderResult = render(
-      <SongCards
-        songs={testPlaylist.songs}
+      <GearCards
+        gears={testFavoriteList.gears}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}
@@ -37,10 +37,10 @@ describe("SongCards", () => {
     expect(renderResult.asFragment()).toMatchSnapshot();
   });
 
-  it("renders correctly when songs have 8 items ", () => {
+  it("renders correctly when gears have 8 items ", () => {
     const renderResult = render(
-      <SongCards
-        songs={testPlaylist.songs}
+      <GearCards
+        gears={testFavoriteList.gears}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}
@@ -55,10 +55,10 @@ describe("SongCards", () => {
     expect(renderResult.getAllByRole("img")).toHaveLength(8);
   });
 
-  it("renders correctly when songs is null", () => {
+  it("renders correctly when gears is null", () => {
     const renderResult = render(
-      <SongCards
-        songs={[]}
+      <GearCards
+        gears={[]}
         addButton={mockAddButton}
         removeButton={mockRemoveButton}
         upButton={mockUpButton}
@@ -77,7 +77,7 @@ describe("SongCards", () => {
       expect.stringContaining("bottom")
     );
     expect(
-      renderResult.getByText("表示できる曲がありません。")
+      renderResult.getByText("表示できるアイテムがありません。")
     ).toBeInTheDocument();
   });
 });

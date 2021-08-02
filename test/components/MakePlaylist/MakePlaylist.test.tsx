@@ -1,25 +1,25 @@
-import MakePlaylist from "components/MakePlaylist";
+import MakeFavoriteList from "components/MakeFavoriteList";
 import React from "react";
 
 import { render } from "../../test-utils";
 
-jest.mock("containers/MakePlaylist/MakePlaylist", () => {
-  const MakePlaylistContainer = () => {
-    return <div data-testid="MakePlaylistContainer"></div>;
+jest.mock("containers/MakeFavoriteList/MakeFavoriteList", () => {
+  const MakeFavoriteListContainer = () => {
+    return <div data-testid="MakeFavoriteListContainer"></div>;
   };
-  return MakePlaylistContainer;
+  return MakeFavoriteListContainer;
 });
 
-describe("MakePlaylist", () => {
+describe("MakeFavoriteList", () => {
   it("renders correctly", () => {
-    const renderResult = render(<MakePlaylist />);
+    const renderResult = render(<MakeFavoriteList />);
 
     expect(renderResult.container.firstElementChild).toHaveAttribute(
       "class",
       expect.stringContaining("root")
     );
     expect(
-      renderResult.getByTestId("MakePlaylistContainer")
+      renderResult.getByTestId("MakeFavoriteListContainer")
     ).toBeInTheDocument();
   });
 });

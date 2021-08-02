@@ -6,9 +6,9 @@ import { Redirect, Route, Switch } from "react-router";
 
 import Footer from "./components/common/footer/Footer";
 import NavigationBar from "./components/common/menubar/NavigationBar";
-import MakePlaylist from "./components/MakePlaylist";
-import Playlist from "./components/Playlist";
-import Playlists from "./components/Playlists";
+import FavoriteList from "./components/FavoriteList";
+import FavoriteLists from "./components/FavoriteLists";
+import MakeFavoriteList from "./components/MakeFavoriteList";
 import Signin from "./components/Signin";
 import { UserContext } from "./contexts";
 import paths from "./paths";
@@ -31,11 +31,11 @@ const App: FC = () => {
       <CssBaseline />
       <NavigationBar />
       <Switch>
-        <Route path={paths.playlist} component={Playlist} exact />
-        <Route path={paths.playlists} component={Playlists} exact />
+        <Route path={paths.favoriteList} component={FavoriteList} exact />
+        <Route path={paths.favoriteLists} component={FavoriteLists} exact />
         <Route
           path={paths.home}
-          component={user ? MakePlaylist : Signin}
+          component={user ? MakeFavoriteList : Signin}
           exact
         />
         <Redirect to={paths.home} />

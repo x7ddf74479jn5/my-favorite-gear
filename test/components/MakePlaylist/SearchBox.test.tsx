@@ -1,5 +1,5 @@
 import userEvent from "@testing-library/user-event";
-import SearchBox from "components/MakePlaylist/SearchBox";
+import SearchBox from "components/MakeFavoriteList/SearchBox";
 import React from "react";
 
 import { render } from "../../test-utils";

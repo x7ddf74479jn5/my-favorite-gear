@@ -1,20 +1,20 @@
 import type firebase from "firebase";
-import type { Song } from "services/models/song";
+import type { Gear } from "services/models/gear";
 
-export type Playlist = {
+export type FavoriteList = {
   id?: string;
   twitterId: string;
   image: string | null;
-  songs: Song[];
-  songsCount: number;
+  gears: Gear[];
+  gearsCount: number;
   updatedAt: firebase.firestore.Timestamp | null;
 };
 
-export const blankPlaylist: Playlist = {
+export const blankFavoriteList: FavoriteList = {
   id: "",
   twitterId: "",
   image: null,
-  songs: [],
-  songsCount: 0,
+  gears: [],
+  gearsCount: 0,
   updatedAt: null,
 };

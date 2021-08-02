@@ -3,10 +3,10 @@
  */
 
 import { renderHook } from "@testing-library/react-hooks";
-import usePlaylists from "hooks/use-playlists";
+import useFavoriteLists from "hooks/use-favoriteLists";
+import { collectionName } from "services/constants";
 
-import { collectionName } from "../../refs/js/services/constants";
-import { Providers, testPlaylist } from "../test-utils";
+import { Providers, testFavoriteList } from "../test-utils";
 import { mockFirebaseContextValue } from "../test-utils";
 
 jest.setTimeout(10000);
@@ -25,13 +25,13 @@ const defaultLimit = 30;
 
 const seed = async () => {
   for (let i = 0; i < defaultLimit; i++) {
-    const ref = db.collection(collectionName.playlists).doc(`${i}`);
-    await ref.set(testPlaylist);
+    const ref = db.collection(collectionName.favoriteLists).doc(`${i}`);
+    await ref.set(testFavoriteList);
   }
 };
 
 const resetDatabase = async () => {
-  const snapshot = await db.collection(collectionName.playlists).get();
+  const snapshot = await db.collection(collectionName.favoriteLists).get();
   const batch = db.batch();
   snapshot.docs.forEach((doc) => {
     batch.delete(doc.ref);
@@ -47,38 +47,38 @@ afterAll(async () => {
   await resetDatabase();
 });
 
-describe("usePlaylists", () => {
-  it("should return playlists with options", async () => {
+describe("useFavoriteLists", () => {
+  it("should return favoriteLists with options", async () => {
     const { result, waitForValueToChange } = await renderHook(
       () => {
-        return usePlaylists(testOptions);
+        return useFavoriteLists(testOptions);
       },
       { wrapper: Providers }
     );
 
     await waitForValueToChange(() => {
-      return result.current.playlists;
+      return result.current.favoriteLists;
     });
 
     expect(result.current.error).toBeNull();
     expect(result.current.loading).toBeFalsy();
-    expect(result.current.playlists).toHaveLength(2);
+    expect(result.current.favoriteLists).toHaveLength(2);
   });
 
-  it("should return playlists with default options", async () => {
+  it("should return favoriteLists with default options", async () => {
     const { result, waitForValueToChange } = await renderHook(
       () => {
-        return usePlaylists();
+        return useFavoriteLists();
       },
       { wrapper: Providers }
     );
 
     await waitForValueToChange(() => {
-      return result.current.playlists;
+      return result.current.favoriteLists;
     });
 
     expect(result.current.error).toBeNull();
     expect(result.current.loading).toBeFalsy();
-    expect(result.current.playlists).toHaveLength(30);
+    expect(result.current.favoriteLists).toHaveLength(30);
   });
 });

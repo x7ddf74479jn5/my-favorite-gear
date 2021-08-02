@@ -5,7 +5,7 @@ import paths from "paths";
 import type { FC } from "react";
 import React from "react";
 import { TwitterShareButton } from "react-share";
-import type { Playlist } from "services/models/playlist";
+import type { FavoriteList } from "services/models/favoriteList";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -20,12 +20,14 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-const TweetButton: FC<{ playlist: Playlist }> = ({ playlist }) => {
+const TweetButton: FC<{ favoriteList: FavoriteList }> = ({ favoriteList }) => {
   const classes = useStyles();
-  const url = `${paths.urlDomain}${paths.playlistRoot}${playlist.id}`;
-  const title = `${playlist.twitterId}のMy Favorite Gear\n${playlist.songs
+  const url = `${paths.urlDomain}${paths.favoriteListRoot}${favoriteList.id}`;
+  const title = `${
+    favoriteList.twitterId
+  }のMy Favorite Gear\n${favoriteList.gears
     .map((v) => {
-      return `『${v.trackName}』`;
+      return `『${v.productName}』`;
     })
     .join("\n")}`;
 
