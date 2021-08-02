@@ -5,7 +5,7 @@ import React from "react";
 import { MemoryRouter } from "react-router";
 import { blankUser } from "services/models/user";
 
-import { withUserAuth } from "./test-utils";
+import { withUserAuth } from "../test-utils";
 
 jest.mock("components/Signin", () => {
   const Singnin = () => {
@@ -14,25 +14,25 @@ jest.mock("components/Signin", () => {
   return Singnin;
 });
 
-jest.mock("components/Playlist", () => {
-  const Playlist = () => {
-    return <div>Playlist</div>;
+jest.mock("components/FavoriteList", () => {
+  const FavoriteList = () => {
+    return <div>FavoriteList</div>;
   };
-  return Playlist;
+  return FavoriteList;
 });
 
-jest.mock("components/Playlists", () => {
-  const Playlists = () => {
-    return <div>Playlists</div>;
+jest.mock("components/FavoriteLists", () => {
+  const FavoriteLists = () => {
+    return <div>FavoriteLists</div>;
   };
-  return Playlists;
+  return FavoriteLists;
 });
 
-jest.mock("components/MakePlaylist", () => {
-  const MakePlaylist = () => {
-    return <div>MakePlaylists</div>;
+jest.mock("components/MakeFavoriteList", () => {
+  const MakeFavoriteList = () => {
+    return <div>MakeFavoriteLists</div>;
   };
-  return MakePlaylist;
+  return MakeFavoriteList;
 });
 
 const mockUserContextValue: UserContextValue = {
@@ -64,7 +64,7 @@ describe("App", () => {
       )
     );
 
-    expect(renderResult.container).toHaveTextContent("MakePlaylists");
+    expect(renderResult.container).toHaveTextContent("MakeFavoriteLists");
   });
 
   it("renders root without an auth user", () => {
@@ -82,10 +82,10 @@ describe("App", () => {
     expect(renderResult.container).toHaveTextContent("Signin");
   });
 
-  it("renders playlists", () => {
+  it("renders favoriteLists", () => {
     const renderResult = render(
       withUserAuth(
-        <MemoryRouter initialEntries={["/playlists"]}>
+        <MemoryRouter initialEntries={["/favoriteLists"]}>
           <App />
         </MemoryRouter>,
         undefined,
@@ -93,13 +93,13 @@ describe("App", () => {
       )
     );
 
-    expect(renderResult.container).toHaveTextContent("Playlists");
+    expect(renderResult.container).toHaveTextContent("FavoriteLists");
   });
 
-  it("renders playlist", () => {
+  it("renders favoriteList", () => {
     const renderResult = render(
       withUserAuth(
-        <MemoryRouter initialEntries={["/playlist/1"]}>
+        <MemoryRouter initialEntries={["/favoriteList/1"]}>
           <App />
         </MemoryRouter>,
         undefined,
@@ -107,7 +107,7 @@ describe("App", () => {
       )
     );
 
-    expect(renderResult.container).toHaveTextContent("Playlist");
+    expect(renderResult.container).toHaveTextContent("FavoriteList");
   });
 
   it("redirects to root when router path doesn't match any defined path", () => {
