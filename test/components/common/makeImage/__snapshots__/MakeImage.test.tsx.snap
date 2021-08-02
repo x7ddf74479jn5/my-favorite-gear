@@ -17,8 +17,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt 1"
-            src="src 1"
+            alt="trackName1"
+            src="src1"
           />
         </div>
       </li>
@@ -30,8 +30,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt 2"
-            src="src 2"
+            alt="trackName2"
+            src="src2"
           />
         </div>
       </li>
@@ -43,8 +43,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt 3"
-            src="src 3"
+            alt="trackName3"
+            src="src3"
           />
         </div>
       </li>
@@ -56,8 +56,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt 4"
-            src="src 4"
+            alt="trackName4"
+            src="src4"
           />
         </div>
       </li>
@@ -82,8 +82,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt 5"
-            src="src 5"
+            alt="trackName5"
+            src="src5"
           />
         </div>
       </li>
@@ -95,8 +95,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt 6"
-            src="src 6"
+            alt="trackName6"
+            src="src6"
           />
         </div>
       </li>
@@ -108,8 +108,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt 7"
-            src="src 7"
+            alt="trackName7"
+            src="src7"
           />
         </div>
       </li>
@@ -121,8 +121,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="alt 8"
-            src="src 8"
+            alt="trackName8"
+            src="src8"
           />
         </div>
       </li>

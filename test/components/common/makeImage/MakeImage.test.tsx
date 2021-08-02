@@ -1,22 +1,24 @@
 import MakeImage from "components/common/makeImage/MakeImage";
 import React from "react";
 
-import { render, testPlaylist, testSong } from "../../../test-utils";
+import { render, testFavoriteList, testGear } from "../../../test-utils";
 
 describe("MakeImage", () => {
   it("matches snapshot", () => {
     let renderResult = render(
-      <MakeImage playlist={testPlaylist} song={undefined} />
+      <MakeImage favoriteList={testFavoriteList} gear={undefined} />
     );
     expect(renderResult.asFragment()).toMatchSnapshot();
 
-    renderResult = render(<MakeImage playlist={undefined} song={testSong} />);
+    renderResult = render(
+      <MakeImage favoriteList={undefined} gear={testGear} />
+    );
     expect(renderResult.asFragment()).toMatchSnapshot();
   });
 
-  it("renders 3x3 tiles when provided only playlist", () => {
+  it("renders 3x3 tiles when provided only favoriteList", () => {
     const renderResult = render(
-      <MakeImage playlist={testPlaylist} song={undefined} />
+      <MakeImage favoriteList={testFavoriteList} gear={undefined} />
     );
 
     const listElement = renderResult.getByRole("list");
@@ -34,9 +36,9 @@ describe("MakeImage", () => {
     expect(twitterTileImg).toHaveAttribute("alt", "twitterId");
   });
 
-  it("renders 1 tile when provided only song", () => {
+  it("renders 1 tile when provided only gear", () => {
     const renderResult = render(
-      <MakeImage playlist={undefined} song={testSong} />
+      <MakeImage favoriteList={undefined} gear={testGear} />
     );
 
     const listElement = renderResult.getByRole("list");
@@ -49,12 +51,12 @@ describe("MakeImage", () => {
     expect(renderResult.getAllByRole("img")).toHaveLength(1);
     const imageElement = renderResult.getByRole("img");
     expect(imageElement).toHaveAttribute("src", "src");
-    expect(imageElement).toHaveAttribute("alt", testSong.trackName);
+    expect(imageElement).toHaveAttribute("alt", testGear.productName);
   });
 
-  it("renders none when provided neither playlist nor song", () => {
+  it("renders none when provided neither favoriteList nor gear", () => {
     const renderResult = render(
-      <MakeImage playlist={undefined} song={undefined} />
+      <MakeImage favoriteList={undefined} gear={undefined} />
     );
 
     const rootElement = renderResult.container.firstChild;
