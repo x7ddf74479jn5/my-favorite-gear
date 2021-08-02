@@ -1,26 +1,21 @@
 import TweetButton from "components/common/tweet/TweetButton";
 import React from "react";
 
-import { render } from "../../../test-utils";
-
-const testData = {
-  id: "",
-  twitterId: "",
-  image: null,
-  songs: [],
-  songsCount: 0,
-  updatedAt: null,
-};
+import { render, testFavoriteList } from "../../../test-utils";
 
 describe("TweetButton", () => {
   it("matches snapshot", () => {
-    const renderResult = render(<TweetButton playlist={testData} />);
+    const renderResult = render(
+      <TweetButton favoriteList={testFavoriteList} />
+    );
 
     expect(renderResult.asFragment()).toMatchSnapshot();
   });
 
   it("renders correctly", () => {
-    const renderResult = render(<TweetButton playlist={testData} />);
+    const renderResult = render(
+      <TweetButton favoriteList={testFavoriteList} />
+    );
 
     expect(renderResult.container.firstChild).toHaveAttribute(
       "class",
