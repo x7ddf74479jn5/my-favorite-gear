@@ -5,14 +5,14 @@ import type { Gear } from "services/models/gear";
 import { correctUserData, render } from "../../test-utils";
 
 jest.mock("hooks/use-favoriteList", () => {
-  const seedGearToFavoriteList = () => {
+  const seedGearsToFavoriteList = () => {
     const GEAR_COUNT = 8;
     const gears: Gear[] = [];
     for (let index = 0; index < GEAR_COUNT; index++) {
       gears.push({
-        productId: `trackId${index + 1}`,
-        productName: `trackName${index + 1}`,
-        makerName: `artistName${index + 1}`,
+        productId: `productId${index + 1}`,
+        productName: `productName${index + 1}`,
+        makerName: `makerName${index + 1}`,
         mediumImageUrl: `src${index + 1}`,
         affiliateUrl: `https://www.affiliate.com/${index + 1}`,
       });
@@ -41,7 +41,7 @@ jest.mock("hooks/use-favoriteList", () => {
     })
     .mockReturnValueOnce({
       favoriteList: {
-        gears: seedGearToFavoriteList(),
+        gears: seedGearsToFavoriteList(),
       },
     })
     .mockReturnValueOnce({

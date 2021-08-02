@@ -128,14 +128,14 @@ export const testPlaylist = {
   updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
 };
 
-const seedGearToFavoriteList = () => {
+const seedGearsToFavoriteList = () => {
   const GEAR_COUNT = 8;
   const gears: Gear[] = [];
   for (let index = 0; index < GEAR_COUNT; index++) {
     gears.push({
-      productId: `trackId${index + 1}`,
-      productName: `trackName${index + 1}`,
-      makerName: `artistName${index + 1}`,
+      productId: `productId${index + 1}`,
+      productName: `productName${index + 1}`,
+      makerName: `makerName${index + 1}`,
       mediumImageUrl: `src${index + 1}`,
       affiliateUrl: `https://www.affiliate.com/${index + 1}`,
     });
@@ -144,9 +144,9 @@ const seedGearToFavoriteList = () => {
 };
 
 export const testGear: Gear = {
-  productId: "trackId",
-  productName: "trackName",
-  makerName: "artistName",
+  productId: "productId",
+  productName: "productName",
+  makerName: "makerName",
   mediumImageUrl: "src",
   affiliateUrl: "https://www.affiliate.com",
 };
@@ -155,7 +155,7 @@ export const testFavoriteList: FavoriteList = {
   id: "id",
   twitterId: "twitterId",
   image: "image_normal",
-  gears: seedGearToFavoriteList(),
+  gears: seedGearsToFavoriteList(),
   gearsCount: 8,
   updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
 };
