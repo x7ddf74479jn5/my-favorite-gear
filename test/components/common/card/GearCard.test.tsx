@@ -59,7 +59,7 @@ describe("GearCard", () => {
     expect(imgElement).toHaveAttribute("src", expect.stringMatching("src"));
     expect(imgElement).toHaveAttribute(
       "alt",
-      expect.stringMatching("trackName")
+      expect.stringMatching("productName")
     );
     expect(
       renderResult.container.getElementsByClassName(
@@ -67,7 +67,7 @@ describe("GearCard", () => {
       )
     ).toBeTruthy();
 
-    expect(renderResult.getByText("trackName")).toBeInTheDocument();
+    expect(renderResult.getByText("productName")).toBeInTheDocument();
     expect(renderResult.getByText(`${testGear.makerName}`)).toBeInTheDocument();
 
     const buttonElements = renderResult.getAllByRole("button");
