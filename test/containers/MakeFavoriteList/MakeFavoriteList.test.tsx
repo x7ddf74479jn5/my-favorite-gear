@@ -1,67 +1,88 @@
-import MakePlaylistContainer from "containers/MakePlaylist/MakePlaylist";
+import MakeFavoriteListContainer from "containers/MakeFavoriteList/MakeFavoriteList";
 import React from "react";
+import type { Gear } from "services/models/gear";
 
 import { correctUserData, render } from "../../test-utils";
 
-jest.mock("hooks/use-playlist", () => {
-  const usePlaylist = jest
+jest.mock("hooks/use-favoriteList", () => {
+  const seedGearToFavoriteList = () => {
+    const GEAR_COUNT = 8;
+    const gears: Gear[] = [];
+    for (let index = 0; index < GEAR_COUNT; index++) {
+      gears.push({
+        productId: `trackId${index + 1}`,
+        productName: `trackName${index + 1}`,
+        makerName: `artistName${index + 1}`,
+        mediumImageUrl: `src${index + 1}`,
+        affiliateUrl: `https://www.affiliate.com/${index + 1}`,
+      });
+    }
+    return gears;
+  };
+  const useFavoriteList = jest
     .fn()
     .mockReturnValueOnce({
-      playlist: {
-        songs: [],
+      favoriteList: {
+        gears: [],
       },
     })
     .mockReturnValueOnce({
-      playlist: {
-        songs: ["song"],
+      favoriteList: {
+        gears: [
+          {
+            productId: `trackId`,
+            productName: `trackName`,
+            makerName: `artistName`,
+            mediumImageUrl: `src`,
+            affiliateUrl: `https://www.affiliate.com/`,
+          },
+        ],
       },
     })
     .mockReturnValueOnce({
-      playlist: {
-        songs: ["song", "song", "song", "song", "song", "song", "song", "song"],
+      favoriteList: {
+        gears: seedGearToFavoriteList(),
       },
     })
     .mockReturnValueOnce({
-      playlist: {
-        songs: [],
+      favoriteList: {
+        gears: [],
       },
     });
-  return usePlaylist;
+  return useFavoriteList;
 });
 
-jest.mock("hooks/use-iTunes", () => {
+jest.mock("hooks/use-rakutenSearch", () => {
   // {return} 1st: case #1, 2nd: case #2, ...rest
   const useITunes = jest
     .fn()
     .mockReturnValueOnce({
       loading: false,
-      iTunesSongs: [],
-      searchSongs: jest.fn(),
+      gears: [],
+      searchGears: jest.fn(),
     })
     .mockReturnValueOnce({
       loading: false,
-      iTunesSongs: [],
-      searchSongs: jest.fn(),
+      gears: [],
+      searchGears: jest.fn(),
     })
     .mockReturnValueOnce({
       loading: false,
-      iTunesSongs: [],
-      searchSongs: jest.fn(),
+      gears: [],
+      searchGears: jest.fn(),
     })
     .mockReturnValueOnce({
       loading: true,
-      iTunesSongs: [],
-      searchSongs: jest.fn(),
+      gears: [],
+      searchGears: jest.fn(),
     });
   return useITunes;
 });
 
-// TODO: integration test
-
-describe("MakePlaylist", () => {
+describe("MakeFavoriteList", () => {
   it("renders correctly when a user haven't registered any item (#1)", () => {
     const renderResult = render(
-      <MakePlaylistContainer user={correctUserData} />
+      <MakeFavoriteListContainer user={correctUserData} />
     );
 
     expect(renderResult.getByRole("heading", { level: 6 })).toHaveTextContent(
@@ -72,7 +93,7 @@ describe("MakePlaylist", () => {
 
   it("renders correctly when a user have registered one item (#2)", () => {
     const renderResult = render(
-      <MakePlaylistContainer user={correctUserData} />
+      <MakeFavoriteListContainer user={correctUserData} />
     );
 
     expect(
@@ -81,15 +102,15 @@ describe("MakePlaylist", () => {
     expect(renderResult.getByRole("textbox")).toBeInTheDocument();
     expect(
       renderResult.getAllByRole("heading", { level: 6 })[1]
-    ).toHaveTextContent(/[0-8]商品/);
+    ).toHaveTextContent(/[0-8]アイテム/);
     expect(renderResult.container).toHaveTextContent(
-      "My Favorite Gearを「8商品」登録してください。"
+      "My Favorite Gearを「8アイテム」登録してください。"
     );
   });
 
   it("renders correctly when a user have registered eight items (#3)", () => {
     const renderResult = render(
-      <MakePlaylistContainer user={correctUserData} />
+      <MakeFavoriteListContainer user={correctUserData} />
     );
 
     expect(
@@ -101,7 +122,7 @@ describe("MakePlaylist", () => {
 
   it("renders loading state (#4)", () => {
     const renderResult = render(
-      <MakePlaylistContainer user={correctUserData} />
+      <MakeFavoriteListContainer user={correctUserData} />
     );
 
     expect(renderResult.getByText("読み込み中")).toBeInTheDocument();

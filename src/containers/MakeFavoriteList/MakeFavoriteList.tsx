@@ -5,13 +5,13 @@ import Progress from "components/common/progress/Progress";
 import TweetButton from "components/common/tweet/TweetButton";
 import SearchBox from "components/MakeFavoriteList/SearchBox";
 import useFavoriteList from "hooks/use-favoriteList";
-import useITunes from "hooks/use-rakutenSearch";
+import useRakutenSearch from "hooks/use-rakutenSearch";
 import type { FC } from "react";
 import React from "react";
 import type { User } from "services/models/user";
 
 const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
-  const rakutenSearch = useITunes();
+  const rakutenSearch = useRakutenSearch();
   const favoriteList = useFavoriteList({
     id: user.id,
     image: user.photoUrl,
@@ -37,7 +37,7 @@ const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
           <Typography variant="h6" gutterBottom align="center">
             {user.screenName}のMy Favorite Gear (
             {favoriteList.favoriteList.gears.length}
-            商品)
+            アイテム)
           </Typography>
           {favoriteList.favoriteList.gears.length === 8 ? (
             <>
@@ -46,7 +46,7 @@ const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
             </>
           ) : (
             <Typography paragraph align="center" color="textSecondary">
-              My Favorite Gearを「8商品」登録してください。
+              My Favorite Gearを「8アイテム」登録してください。
             </Typography>
           )}
           <GearCards
