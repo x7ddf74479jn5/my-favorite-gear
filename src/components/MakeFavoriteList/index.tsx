@@ -1,6 +1,6 @@
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
-import MakePlaylistContainer from "containers/MakePlaylist/MakePlaylist";
+import MakeFavoriteListContainer from "containers/MakeFavoriteList/MakeFavoriteList";
 import { UserContext } from "contexts";
 import type { FC } from "react";
 import React, { useContext } from "react";
@@ -15,15 +15,15 @@ const useStyles = makeStyles((theme) => {
     },
   };
 });
-const MakePlaylist: FC = () => {
+const MakeFavoriteList: FC = () => {
   const classes = useStyles();
   const { user } = useContext(UserContext);
   if (user === null) return null;
   return (
     <Container maxWidth="xs" className={classes.root}>
-      {user && <MakePlaylistContainer user={user} />}
+      {user && <MakeFavoriteListContainer user={user} />}
     </Container>
   );
 };
 
-export default MakePlaylist;
+export default MakeFavoriteList;
