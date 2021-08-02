@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SongCard matches snapshot 1`] = `
+exports[`GearCard matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="MuiPaper-root MuiCard-root makeStyles-cardRoot-1 MuiPaper-elevation1 MuiPaper-rounded"
@@ -32,18 +32,13 @@ exports[`SongCard matches snapshot 1`] = `
         <span
           class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
         >
-          artistName - collectionName
+          artistName
         </span>
       </div>
     </div>
     <div
       class="MuiCardContent-root"
     >
-      <audio
-        class="makeStyles-audio-3"
-        controls=""
-        src="https://www.preview.com"
-      />
       <button
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
         tabindex="0"
@@ -149,7 +144,7 @@ exports[`SongCard matches snapshot 1`] = `
       <a
         aria-disabled="false"
         class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation MuiTypography-colorPrimary"
-        href="https://www.trackView.com"
+        href="https://www.affiliate.com"
         rel="noopener"
         role="button"
         tabindex="0"
@@ -183,7 +178,7 @@ exports[`SongCard matches snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`SongCard matches snapshot 2`] = `
+exports[`GearCard matches snapshot 2`] = `
 <DocumentFragment>
   <div
     class="MuiPaper-root MuiCard-root makeStyles-cardRoot-1 MuiPaper-elevation1 MuiPaper-rounded"
@@ -198,7 +193,7 @@ exports[`SongCard matches snapshot 2`] = `
           class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-2"
         >
           <img
-            alt="alt 1"
+            alt="trackName 1"
             class="MuiAvatar-img"
             src="src 1"
           />
@@ -210,23 +205,18 @@ exports[`SongCard matches snapshot 2`] = `
         <span
           class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
         >
-          alt 1
+          trackName 1
         </span>
         <span
           class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
         >
-          artistName - collectionName
+          artistName 1
         </span>
       </div>
     </div>
     <div
       class="MuiCardContent-root"
     >
-      <audio
-        class="makeStyles-audio-3"
-        controls=""
-        src="https://www.preview.com"
-      />
       <button
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
         tabindex="0"
@@ -330,7 +320,7 @@ exports[`SongCard matches snapshot 2`] = `
       <a
         aria-disabled="false"
         class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation MuiTypography-colorPrimary"
-        href="https://www.trackView.com"
+        href="https://www.affiliate.com/1"
         rel="noopener"
         role="button"
         tabindex="0"

@@ -55,7 +55,7 @@ const GearCards: FC<GearCardsProps> = ({
         })
       ) : (
         <div className={classes.bottom}>
-          <Typography>表示できる曲がありません。</Typography>
+          <Typography>表示できるアイテムがありません。</Typography>
         </div>
       )}
     </div>
