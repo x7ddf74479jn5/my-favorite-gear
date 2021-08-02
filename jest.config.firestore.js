@@ -3,7 +3,8 @@ require("dotenv").config({ path: "./.env.test" });
 module.exports = {
   roots: ["<rootDir>"],
   moduleFileExtensions: ["js", "ts", "tsx", "json"],
-  testMatch: ["<rootDir>/test/hooks/*.test.(ts|tsx)"],
+  testMatch: ["<rootDir>/test/**/*.db.test.(ts|tsx)"],
+
   watchPlugins: [
     "jest-watch-typeahead/filename",
     "jest-watch-typeahead/testname",

@@ -133,10 +133,10 @@ const seedGearToFavoriteList = () => {
   const gears: Gear[] = [];
   for (let index = 0; index < GEAR_COUNT; index++) {
     gears.push({
-      productId: `trackId ${index + 1}`,
-      productName: `trackName ${index + 1}`,
-      makerName: `artistName ${index + 1}`,
-      mediumImageUrl: `src ${index + 1}`,
+      productId: `trackId${index + 1}`,
+      productName: `trackName${index + 1}`,
+      makerName: `artistName${index + 1}`,
+      mediumImageUrl: `src${index + 1}`,
       affiliateUrl: `https://www.affiliate.com/${index + 1}`,
     });
   }

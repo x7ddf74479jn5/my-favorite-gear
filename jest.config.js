@@ -5,7 +5,8 @@ module.exports = {
   moduleFileExtensions: ["js", "ts", "tsx", "json"],
   testPathIgnorePatterns: [
     "<rootDir>[/\\\\](node_modules)[/\\\\]",
-    "<rootDir>[/\\\\](test/hooks)[/\\\\]",
+    "<rootDir>[/\\\\](test)[/\\\\].+\\.db\\.test\\.(ts|tsx)$",
+    // "<rootDir>[/\\\\](test/hooks)[/\\\\]",
   ],
   watchPlugins: [
     "jest-watch-typeahead/filename",
