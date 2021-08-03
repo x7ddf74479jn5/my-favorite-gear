@@ -10,7 +10,11 @@ import { collectionName } from "services/constants";
 import type { User } from "services/models/user";
 
 const PROJECT_ID = "dev-my-favorite-gear";
-const RULES_PATH = path.resolve(__dirname, "origin-firestore.rules");
+const RULES_PATH = path.resolve(
+  process.cwd(),
+  "configs",
+  "origin-firestore.rules"
+);
 
 const createAuthApp = (auth?: { uid: string }) => {
   return firebase
@@ -80,23 +84,21 @@ describe("/users/{userId}", () => {
     test("自分のuidと異なるドキュメントは閲覧、作成、編集が出来ない", async () => {
       createAdminApp()
         .collection(collectionName.users)
-        .doc("uid_1")
+        .doc("admin")
         .set(adminData);
-      const db = createAuthApp({ uid: "uid_2" });
-      const userDocumentRef = db.collection(collectionName.users).doc("uid_1");
+      const db = createAuthApp({ uid: "uid" });
+      const userDocumentRef = db.collection(collectionName.users).doc("admin");
       await firebase.assertFails(userDocumentRef.set(correctUserData));
       await firebase.assertFails(userDocumentRef.get());
-      await firebase.assertFails(
-        userDocumentRef.update({ screenName: "uid_2" })
-      );
+      await firebase.assertFails(userDocumentRef.update({ screenName: "uid" }));
     });
 
     test("screenNameが合致したドキュメントは取得できる", async () => {
       createAdminApp()
         .collection(collectionName.users)
-        .doc("uid_1")
+        .doc("admin")
         .set(adminData);
-      const db = createAuthApp({ uid: "uid_2" });
+      const db = createAuthApp({ uid: "uid" });
       const matchedUserDocuments = db
         .collection(collectionName.users)
         .where("screenName", "==", "screenName");
@@ -114,7 +116,7 @@ describe("/users/{userId}", () => {
         userDocumentRef.set({ ...correctUserData, place: "japan" })
       );
 
-      const insufficientData = {
+      const incorrectData = {
         displayName: "displayName",
         description: "description",
         photoUrl: "https://photoUrl.com",
@@ -125,7 +127,7 @@ describe("/users/{userId}", () => {
       };
 
       // プロパティが不足している場合
-      await firebase.assertFails(userDocumentRef.set(insufficientData));
+      await firebase.assertFails(userDocumentRef.set(incorrectData));
 
       // プロパティの型が異なる場合
       await firebase.assertFails(
@@ -324,22 +326,21 @@ describe("/docCounters/users", () => {
 });
 
 describe("/favoriteLists/{favoriteListId}", () => {
-  const correctPlaylistData = {
-    id: "uid",
+  const correctFavoriteListData = {
     twitterId: "twitterId",
     image: "image_normal",
-    songs: [],
-    songsCount: 8,
+    gears: [],
+    gearsCount: 0,
     updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
   };
-  const adminPlaylistData = {
-    id: "uid",
+  const adminFavoriteListData = {
     twitterId: "twitterId",
     image: "image_normal",
-    songs: [],
-    songsCount: 8,
+    gears: [],
+    gearsCount: 8,
     updatedAt: admin.firestore.Timestamp.fromDate(new Date()),
   };
+
   describe("ユーザー認証情報の検証", () => {
     test("自分のuidと同様のドキュメントIDのユーザー情報だけを閲覧、作成、編集可能", async () => {
       const db = createAuthApp({ uid: "uid" });
@@ -347,7 +348,7 @@ describe("/favoriteLists/{favoriteListId}", () => {
         .collection(collectionName.favoriteLists)
         .doc("uid");
       await firebase.assertSucceeds(
-        favoriteListDocumentRef.set(correctPlaylistData)
+        favoriteListDocumentRef.set(correctFavoriteListData)
       );
       await firebase.assertSucceeds(favoriteListDocumentRef.get());
       await firebase.assertSucceeds(
@@ -355,21 +356,209 @@ describe("/favoriteLists/{favoriteListId}", () => {
       );
     });
 
+    test("完成したお気に入りリストは認証済みユーザーなら取得できる", async () => {
+      createAdminApp()
+        .collection(collectionName.favoriteLists)
+        .doc("admin")
+        .set(adminFavoriteListData);
+      const db = createAuthApp({ uid: "uid" });
+      const favoriteListCollectionRef = db.collection(
+        collectionName.favoriteLists
+      );
+      await firebase.assertFails(favoriteListCollectionRef.get());
+      await firebase.assertSucceeds(favoriteListCollectionRef.limit(20).get());
+    });
+
     test("自分のuidと異なるドキュメントは閲覧、作成、編集が出来ない", async () => {
       createAdminApp()
         .collection(collectionName.favoriteLists)
-        .doc("uid_1")
-        .set(adminPlaylistData);
-      const db = createAuthApp({ uid: "uid_2" });
+        .doc("admin")
+        .set(adminFavoriteListData);
+      const db = createAuthApp({ uid: "uid" });
       const favoriteListDocumentRef = db
-        .collection(collectionName.users)
-        .doc("uid_1");
+        .collection(collectionName.favoriteLists)
+        .doc("admin");
       await firebase.assertFails(
-        favoriteListDocumentRef.set(correctPlaylistData)
+        favoriteListDocumentRef.set(correctFavoriteListData)
       );
       await firebase.assertFails(favoriteListDocumentRef.get());
       await firebase.assertFails(
         favoriteListDocumentRef.update({ image: "newImage" })
+      );
+    });
+  });
+
+  describe("スキーマの検証", () => {
+    test("正しくないスキーマの場合は作成できない", async () => {
+      const db = createAuthApp({ uid: "uid" });
+      const favoriteListDocumentRef = db
+        .collection(collectionName.favoriteLists)
+        .doc("uid");
+
+      // 想定外のプロパティがある場合
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          place: "japan",
+        })
+      );
+
+      const incorrectData = {
+        id: "uid",
+      };
+
+      // プロパティが不足している場合
+      await firebase.assertFails(favoriteListDocumentRef.set(incorrectData));
+
+      // プロパティの型が異なる場合
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          gears: 1234,
+        })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          gearsCount: "1234",
+        })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          image: 1234,
+        })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          twitterId: 1234,
+        })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          updatedAt: "1",
+        })
+      );
+    });
+
+    test("正しくないスキーマの場合は編集できない", async () => {
+      createAdminApp()
+        .collection(collectionName.favoriteLists)
+        .doc("uid")
+        .set(adminData);
+      const db = createAuthApp({ uid: "uid" });
+      const favoriteListDocumentRef = db
+        .collection(collectionName.favoriteLists)
+        .doc("uid");
+
+      // 想定外のプロパティがある場合
+      await firebase.assertFails(
+        favoriteListDocumentRef.update({ place: "japan" })
+      );
+
+      // プロパティの型が異なる場合
+      await firebase.assertFails(
+        favoriteListDocumentRef.update({ gear: 1234 })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.update({ gearsCount: "1234" })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.update({ image: 1234 })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.update({ twitterId: 1234 })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.update({ createdAt: "1" })
+      );
+      await firebase.assertFails(
+        favoriteListDocumentRef.update({ updatedAt: "1" })
+      );
+    });
+  });
+
+  describe("値のバリデーション", () => {
+    test("gears, gearsCountの配列長は0以上8以下であり一致する", async () => {
+      const db = createAuthApp({ uid: "uid" });
+      const favoriteListDocumentRef = db
+        .collection(collectionName.favoriteLists)
+        .doc("uid");
+
+      await firebase.assertSucceeds(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          gears: [],
+          gearsCount: 0,
+        })
+      );
+
+      await firebase.assertSucceeds(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          gears: [1, 2, 3, 4, 5, 6, 7, 8],
+          gearsCount: 8,
+        })
+      );
+
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          gears: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+          gearsCount: 9,
+        })
+      );
+
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctUserData,
+          gears: [1, 2, 3, 4, 5, 6, 7, 8],
+          gearsCount: 0,
+        })
+      );
+    });
+
+    test("imageは0文字以上である", async () => {
+      const db = createAuthApp({ uid: "uid" });
+      const favoriteListDocumentRef = db
+        .collection(collectionName.favoriteLists)
+        .doc("uid");
+
+      await firebase.assertSucceeds(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          image: "image",
+        })
+      );
+
+      await firebase.assertSucceeds(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          image: "",
+        })
+      );
+    });
+
+    test("twitterIdは1文字以上である", async () => {
+      const db = createAuthApp({ uid: "uid" });
+      const favoriteListDocumentRef = db
+        .collection(collectionName.favoriteLists)
+        .doc("uid");
+
+      await firebase.assertSucceeds(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          twitterId: "twitterId",
+        })
+      );
+
+      await firebase.assertFails(
+        favoriteListDocumentRef.set({
+          ...correctFavoriteListData,
+          twitterId: "",
+        })
       );
     });
   });

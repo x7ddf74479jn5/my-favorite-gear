@@ -25,7 +25,7 @@ const useThreads = (options?: FavoriteListsOptions) => {
     if (!db) throw new Error("Firestore is not initialized");
     const query = db
       .collection(collectionName.favoriteLists)
-      .where("songsCount", "==", 8)
+      .where("gearsCount", "==", 8)
       .orderBy(optionsRef.current.orderbyColumn, "desc")
       .limit(optionsRef.current.limit);
 

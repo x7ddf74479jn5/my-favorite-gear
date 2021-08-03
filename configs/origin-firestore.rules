@@ -44,7 +44,7 @@ service cloud.firestore {
     function isValidCounterSchema(counter) {
       return counter.size() == 2
       && counter.keys().hasOnly(['count','updatedAt'])
-      && 'count' in counter && counter.count is number
+      && 'count' in counter && counter.count is int
       && 'updatedAt' in counter && counter.updatedAt is timestamp;
     }
 
@@ -55,11 +55,32 @@ service cloud.firestore {
       && isValidCounterSchema(request.resource.data);
     }
 
-    match /playlists/{playlistId} {
-      allow get: if isUserAuthenticated(playlistId);
-      allow list: if isAuthenticated();
-      allow create: if isUserAuthenticated(playlistId);
-      allow update: if isUserAuthenticated(playlistId);
+    function isValidFavoriteListSchema(favoriteList) {
+      return favoriteList.size() == 5
+      && favoriteList.keys().hasOnly(['gears', 'gearsCount', 'image', 'twitterId','updatedAt'])
+      && 'gears' in favoriteList && favoriteList.gears is list
+      && 'gearsCount' in favoriteList && favoriteList.gearsCount is int
+      && 'image' in favoriteList && favoriteList.image is string
+      && 'twitterId' in favoriteList && favoriteList.twitterId is string
+      && 'updatedAt' in favoriteList && favoriteList.updatedAt is timestamp;
+    }
+
+    function isValidFavoriteListData(favoriteList) {
+      return (0 <= favoriteList.gears.size() && favoriteList.gears.size() <= 8)
+      && (0 <= favoriteList.gearsCount && favoriteList.gearsCount <= 8)
+      && favoriteList.gears.size() == favoriteList.gearsCount
+      && 1 <= favoriteList.twitterId.size();
+    }
+
+    match /favoriteLists/{favoriteListId} {
+      allow get: if isUserAuthenticated(favoriteListId);
+      allow list: if request.query.limit <= 20 && isAuthenticated();
+      allow create: if isUserAuthenticated(favoriteListId)
+      && isValidFavoriteListSchema(request.resource.data)
+      && isValidFavoriteListData(request.resource.data);
+      allow update: if isUserAuthenticated(favoriteListId)
+      && isValidFavoriteListSchema(request.resource.data)
+      && isValidFavoriteListData(request.resource.data);
     }
   }
 }
