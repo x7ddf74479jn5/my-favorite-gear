@@ -99,7 +99,9 @@ describe("FavoriteList", () => {
       "twitterId"
     );
     const buttonElement = renderResult.getByRole("button");
-    expect(renderResult.container).toHaveTextContent("8品選ばれていません。");
+    expect(renderResult.container).toHaveTextContent(
+      "8アイテム選ばれていません。"
+    );
     expect(buttonElement).toHaveTextContent("編集");
     expect(buttonElement).toBeEnabled();
   });
@@ -117,7 +119,9 @@ describe("FavoriteList", () => {
       "twitterId"
     );
     const buttonElement = renderResult.getByRole("button");
-    expect(renderResult.container).toHaveTextContent("8品選ばれていません。");
+    expect(renderResult.container).toHaveTextContent(
+      "8アイテム選ばれていません。"
+    );
     expect(buttonElement).toHaveTextContent("お気に入りリストを作る");
     expect(buttonElement).toBeEnabled();
   });
