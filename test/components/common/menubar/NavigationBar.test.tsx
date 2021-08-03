@@ -4,8 +4,7 @@ import NavigationBar from "components/common/menubar/NavigationBar";
 import type { FirebaseContextValue, UserContextValue } from "contexts";
 import { createMemoryHistory } from "history";
 import React from "react";
-import { MemoryRouter } from "react-router";
-import { Router } from "react-router";
+import { MemoryRouter, Router } from "react-router";
 import { blankUser } from "services/models/user";
 
 import { waitFor, withUserAuth } from "../../../test-utils";
@@ -171,7 +170,7 @@ describe("NavigationBar", () => {
 
     expect(menuItems).toHaveLength(4);
 
-    const routes = ["/", "/playlist", "/playlists", "/"];
+    const routes = ["/", "/favoriteList", "/favoriteLists", "/"];
 
     routes.forEach((route, index) => {
       userEvent.click(menuItems[index]);

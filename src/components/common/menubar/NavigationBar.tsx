@@ -103,14 +103,14 @@ const NavigationBar: FC = () => {
                 </MenuItem>
                 <MenuItem
                   component={Link}
-                  to={`${paths.playlistRoot}${user.id}`}
+                  to={`${paths.favoriteListRoot}${user.id}`}
                   onClick={handleClose}
                 >
                   {user.screenName}のMy Favorite Gear
                 </MenuItem>
                 <MenuItem
                   component={Link}
-                  to={paths.playlists}
+                  to={paths.favoriteLists}
                   onClick={handleClose}
                 >
                   みんなのMy Favorite Gear
