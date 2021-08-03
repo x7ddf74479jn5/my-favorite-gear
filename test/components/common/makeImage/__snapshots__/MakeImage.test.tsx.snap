@@ -17,7 +17,7 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName1"
+            alt="productName1"
             src="src1"
           />
         </div>
@@ -30,7 +30,7 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName2"
+            alt="productName2"
             src="src2"
           />
         </div>
@@ -43,7 +43,7 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName3"
+            alt="productName3"
             src="src3"
           />
         </div>
@@ -56,7 +56,7 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName4"
+            alt="productName4"
             src="src4"
           />
         </div>
@@ -82,7 +82,7 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName5"
+            alt="productName5"
             src="src5"
           />
         </div>
@@ -95,7 +95,7 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName6"
+            alt="productName6"
             src="src6"
           />
         </div>
@@ -108,7 +108,7 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName7"
+            alt="productName7"
             src="src7"
           />
         </div>
@@ -121,7 +121,7 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName8"
+            alt="productName8"
             src="src8"
           />
         </div>
@@ -148,7 +148,7 @@ exports[`MakeImage matches snapshot 2`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="trackName"
+            alt="productName"
             src="src"
           />
         </div>
