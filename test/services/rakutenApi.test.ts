@@ -1,8 +1,7 @@
 import { cleanup } from "@testing-library/react";
+import { server } from "api-mock-server/server";
 import { api } from "services/constants";
-
-import { getGearsFactory } from "../../src/services/rakutenApi";
-import { server } from "../api-mock-server/server";
+import { getGearsFactory } from "services/rakutenApi";
 
 describe("getGearsFactory", () => {
   beforeAll(() => {

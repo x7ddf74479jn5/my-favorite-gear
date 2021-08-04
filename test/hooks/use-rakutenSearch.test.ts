@@ -3,9 +3,8 @@
  */
 
 import { act, cleanup, renderHook } from "@testing-library/react-hooks";
-
-import useRakutenSearch from "../../src/hooks/use-rakutenSearch";
-import { server } from "../api-mock-server/server";
+import { server } from "api-mock-server/server";
+import useRakutenSearch from "hooks/use-rakutenSearch";
 
 describe("useRakutenSearch", () => {
   beforeAll(() => {

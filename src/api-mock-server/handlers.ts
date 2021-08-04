@@ -1,7 +1,6 @@
 import { rest } from "msw";
+import { api } from "services/constants";
 import type { Gear } from "services/models/gear";
-
-import { api } from "../../src/services/constants";
 
 export const handlers = [
   rest.get(api.rakuten.baseURL, (req, res, ctx) => {
