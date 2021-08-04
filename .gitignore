@@ -36,4 +36,4 @@ ui-debug.log
 firebase.json
 firestore.rules
 /functions/public
-
+functions/.runtimeconfig.json
