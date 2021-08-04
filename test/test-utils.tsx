@@ -90,44 +90,6 @@ export * from "@testing-library/react";
 // override render method
 export { customRender as render };
 
-const seedSongsToPlaylist = () => {
-  const SONG_COUNT = 8;
-  const songs = [];
-  for (let index = 0; index < SONG_COUNT; index++) {
-    songs.push({
-      trackId: `trackId ${index + 1}`,
-      trackName: `alt ${index + 1}`,
-      artistName: "artistName",
-      collectionName: "collectionName",
-      artworkUrl100: `src ${index + 1}`,
-      artworkUrl600: `src ${index + 1}`,
-      trackViewUrl: "https://www.trackView.com",
-      previewUrl: "https://www.preview.com",
-    });
-  }
-  return songs;
-};
-
-export const testSong = {
-  trackId: "trackId",
-  trackName: "trackName",
-  artistName: "artistName",
-  collectionName: "collectionName",
-  artworkUrl100: "src",
-  artworkUrl600: "src",
-  trackViewUrl: "https://www.trackView.com",
-  previewUrl: "https://www.preview.com",
-};
-
-export const testPlaylist = {
-  id: "id",
-  twitterId: "twitterId",
-  image: "image_normal",
-  songs: seedSongsToPlaylist(),
-  songsCount: 8,
-  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
-};
-
 const seedGearsToFavoriteList = () => {
   const GEAR_COUNT = 8;
   const gears: Gear[] = [];
