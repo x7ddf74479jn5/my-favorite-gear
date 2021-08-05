@@ -105,6 +105,7 @@ const seedGearsToFavoriteList = () => {
       amazonUrl: `https://www.amazon.com/${i + 1}`,
       averagePrice: `averagePrice ${i + 1}`,
       genreName: `genreName ${i + 1}`,
+      reviewAverage: 1,
     });
   }
   return gears;
@@ -121,6 +122,7 @@ export const testGear: Gear = {
   amazonUrl: `https://www.amazon.com/`,
   averagePrice: "averagePrice",
   genreName: "genreName",
+  reviewAverage: 1,
 };
 
 export const testFavoriteList: FavoriteList = {

@@ -20,6 +20,7 @@ jest.mock("hooks/use-favoriteList", () => {
         amazonUrl: `https://www.amazon.com/${i + 1}`,
         averagePrice: `averagePrice ${i + 1}`,
         genreName: `genreName ${i + 1}`,
+        reviewAverage: 1,
       });
     }
     return gears;

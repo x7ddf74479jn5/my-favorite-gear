@@ -9,6 +9,7 @@ export type Gear = {
   amazonUrl: string;
   averagePrice: string;
   genreName: string;
+  reviewAverage: number | null;
 };
 
 export const blankGear: Gear = {
@@ -22,4 +23,5 @@ export const blankGear: Gear = {
   amazonUrl: "",
   averagePrice: "",
   genreName: "",
+  reviewAverage: null,
 };
