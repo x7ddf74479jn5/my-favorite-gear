@@ -50,7 +50,7 @@ describe("MakeImage", () => {
     expect(renderResult.getAllByRole("listitem")).toHaveLength(1);
     expect(renderResult.getAllByRole("img")).toHaveLength(1);
     const imageElement = renderResult.getByRole("img");
-    expect(imageElement).toHaveAttribute("src", "src");
+    expect(imageElement).toHaveAttribute("src", "mediumImageUrl");
     expect(imageElement).toHaveAttribute("alt", testGear.productName);
   });
 

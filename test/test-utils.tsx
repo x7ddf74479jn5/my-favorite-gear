@@ -93,24 +93,36 @@ export { customRender as render };
 const seedGearsToFavoriteList = () => {
   const GEAR_COUNT = 8;
   const gears: Gear[] = [];
-  for (let index = 0; index < GEAR_COUNT; index++) {
+  for (let i = 0; i < GEAR_COUNT; i++) {
     gears.push({
-      productId: `productId${index + 1}`,
-      productName: `productName${index + 1}`,
-      makerName: `makerName${index + 1}`,
-      mediumImageUrl: `src${index + 1}`,
-      affiliateUrl: `https://www.affiliate.com/${index + 1}`,
+      productId: `productId ${i + 1}`,
+      productName: `productName ${i + 1}`,
+      productNo: `productNo ${i + 1}`,
+      makerName: `makerName ${i + 1}`,
+      brandName: `brandName ${i + 1}`,
+      productUrlPC: `productUrlPC ${i + 1}`,
+      mediumImageUrl: `mediumImageUrl ${i + 1}`,
+      productCaption: `productCaption ${i + 1}`,
+      affiliateUrl: `https://www.affiliate.com/${i + 1}`,
+      releaseDate: `releaseDate ${i + 1}`,
+      averagePrice: `averagePrice ${i + 1}`,
     });
   }
   return gears;
 };
 
 export const testGear: Gear = {
-  productId: "productId",
-  productName: "productName",
-  makerName: "makerName",
-  mediumImageUrl: "src",
-  affiliateUrl: "https://www.affiliate.com",
+  productId: `productId`,
+  productName: `productName`,
+  productNo: `productNo`,
+  makerName: `makerName`,
+  brandName: `brandName`,
+  productUrlPC: `productUrlPC`,
+  mediumImageUrl: `mediumImageUrl`,
+  productCaption: `productCaption`,
+  affiliateUrl: `https://www.affiliate.com`,
+  releaseDate: `releaseDate`,
+  averagePrice: `averagePrice`,
 };
 
 export const testFavoriteList: FavoriteList = {

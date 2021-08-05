@@ -17,8 +17,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="productName1"
-            src="src1"
+            alt="productName 1"
+            src="mediumImageUrl 1"
           />
         </div>
       </li>
@@ -30,8 +30,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="productName2"
-            src="src2"
+            alt="productName 2"
+            src="mediumImageUrl 2"
           />
         </div>
       </li>
@@ -43,8 +43,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="productName3"
-            src="src3"
+            alt="productName 3"
+            src="mediumImageUrl 3"
           />
         </div>
       </li>
@@ -56,8 +56,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="productName4"
-            src="src4"
+            alt="productName 4"
+            src="mediumImageUrl 4"
           />
         </div>
       </li>
@@ -82,8 +82,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="productName5"
-            src="src5"
+            alt="productName 5"
+            src="mediumImageUrl 5"
           />
         </div>
       </li>
@@ -95,8 +95,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="productName6"
-            src="src6"
+            alt="productName 6"
+            src="mediumImageUrl 6"
           />
         </div>
       </li>
@@ -108,8 +108,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="productName7"
-            src="src7"
+            alt="productName 7"
+            src="mediumImageUrl 7"
           />
         </div>
       </li>
@@ -121,8 +121,8 @@ exports[`MakeImage matches snapshot 1`] = `
           class="MuiGridListTile-tile"
         >
           <img
-            alt="productName8"
-            src="src8"
+            alt="productName 8"
+            src="mediumImageUrl 8"
           />
         </div>
       </li>
@@ -149,7 +149,7 @@ exports[`MakeImage matches snapshot 2`] = `
         >
           <img
             alt="productName"
-            src="src"
+            src="mediumImageUrl"
           />
         </div>
       </li>

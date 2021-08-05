@@ -56,7 +56,10 @@ describe("GearCard", () => {
     );
 
     const imgElement = renderResult.getByRole("img");
-    expect(imgElement).toHaveAttribute("src", expect.stringMatching("src"));
+    expect(imgElement).toHaveAttribute(
+      "src",
+      expect.stringMatching("mediumImageUrl")
+    );
     expect(imgElement).toHaveAttribute(
       "alt",
       expect.stringMatching("productName")

@@ -18,9 +18,9 @@ exports[`GearCards matches snapshot 1`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName1"
+              alt="productName 1"
               class="MuiAvatar-img"
-              src="src1"
+              src="mediumImageUrl 1"
             />
           </div>
         </div>
@@ -30,12 +30,12 @@ exports[`GearCards matches snapshot 1`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName1
+            productName 1
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName1
+            makerName 1
           </span>
         </div>
       </div>
@@ -168,9 +168,9 @@ exports[`GearCards matches snapshot 1`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName2"
+              alt="productName 2"
               class="MuiAvatar-img"
-              src="src2"
+              src="mediumImageUrl 2"
             />
           </div>
         </div>
@@ -180,12 +180,12 @@ exports[`GearCards matches snapshot 1`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName2
+            productName 2
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName2
+            makerName 2
           </span>
         </div>
       </div>
@@ -341,9 +341,9 @@ exports[`GearCards matches snapshot 1`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName3"
+              alt="productName 3"
               class="MuiAvatar-img"
-              src="src3"
+              src="mediumImageUrl 3"
             />
           </div>
         </div>
@@ -353,12 +353,12 @@ exports[`GearCards matches snapshot 1`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName3
+            productName 3
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName3
+            makerName 3
           </span>
         </div>
       </div>
@@ -514,9 +514,9 @@ exports[`GearCards matches snapshot 1`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName4"
+              alt="productName 4"
               class="MuiAvatar-img"
-              src="src4"
+              src="mediumImageUrl 4"
             />
           </div>
         </div>
@@ -526,12 +526,12 @@ exports[`GearCards matches snapshot 1`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName4
+            productName 4
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName4
+            makerName 4
           </span>
         </div>
       </div>
@@ -687,9 +687,9 @@ exports[`GearCards matches snapshot 1`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName5"
+              alt="productName 5"
               class="MuiAvatar-img"
-              src="src5"
+              src="mediumImageUrl 5"
             />
           </div>
         </div>
@@ -699,12 +699,12 @@ exports[`GearCards matches snapshot 1`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName5
+            productName 5
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName5
+            makerName 5
           </span>
         </div>
       </div>
@@ -860,9 +860,9 @@ exports[`GearCards matches snapshot 1`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName6"
+              alt="productName 6"
               class="MuiAvatar-img"
-              src="src6"
+              src="mediumImageUrl 6"
             />
           </div>
         </div>
@@ -872,12 +872,12 @@ exports[`GearCards matches snapshot 1`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName6
+            productName 6
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName6
+            makerName 6
           </span>
         </div>
       </div>
@@ -1033,9 +1033,9 @@ exports[`GearCards matches snapshot 1`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName7"
+              alt="productName 7"
               class="MuiAvatar-img"
-              src="src7"
+              src="mediumImageUrl 7"
             />
           </div>
         </div>
@@ -1045,12 +1045,12 @@ exports[`GearCards matches snapshot 1`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName7
+            productName 7
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName7
+            makerName 7
           </span>
         </div>
       </div>
@@ -1206,9 +1206,9 @@ exports[`GearCards matches snapshot 1`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName8"
+              alt="productName 8"
               class="MuiAvatar-img"
-              src="src8"
+              src="mediumImageUrl 8"
             />
           </div>
         </div>
@@ -1218,12 +1218,12 @@ exports[`GearCards matches snapshot 1`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName8
+            productName 8
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName8
+            makerName 8
           </span>
         </div>
       </div>
@@ -1365,9 +1365,9 @@ exports[`GearCards matches snapshot 2`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName1"
+              alt="productName 1"
               class="MuiAvatar-img"
-              src="src1"
+              src="mediumImageUrl 1"
             />
           </div>
         </div>
@@ -1377,12 +1377,12 @@ exports[`GearCards matches snapshot 2`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName1
+            productName 1
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName1
+            makerName 1
           </span>
         </div>
       </div>
@@ -1515,9 +1515,9 @@ exports[`GearCards matches snapshot 2`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName2"
+              alt="productName 2"
               class="MuiAvatar-img"
-              src="src2"
+              src="mediumImageUrl 2"
             />
           </div>
         </div>
@@ -1527,12 +1527,12 @@ exports[`GearCards matches snapshot 2`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName2
+            productName 2
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName2
+            makerName 2
           </span>
         </div>
       </div>
@@ -1688,9 +1688,9 @@ exports[`GearCards matches snapshot 2`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName3"
+              alt="productName 3"
               class="MuiAvatar-img"
-              src="src3"
+              src="mediumImageUrl 3"
             />
           </div>
         </div>
@@ -1700,12 +1700,12 @@ exports[`GearCards matches snapshot 2`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName3
+            productName 3
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName3
+            makerName 3
           </span>
         </div>
       </div>
@@ -1861,9 +1861,9 @@ exports[`GearCards matches snapshot 2`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName4"
+              alt="productName 4"
               class="MuiAvatar-img"
-              src="src4"
+              src="mediumImageUrl 4"
             />
           </div>
         </div>
@@ -1873,12 +1873,12 @@ exports[`GearCards matches snapshot 2`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName4
+            productName 4
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName4
+            makerName 4
           </span>
         </div>
       </div>
@@ -2034,9 +2034,9 @@ exports[`GearCards matches snapshot 2`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName5"
+              alt="productName 5"
               class="MuiAvatar-img"
-              src="src5"
+              src="mediumImageUrl 5"
             />
           </div>
         </div>
@@ -2046,12 +2046,12 @@ exports[`GearCards matches snapshot 2`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName5
+            productName 5
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName5
+            makerName 5
           </span>
         </div>
       </div>
@@ -2207,9 +2207,9 @@ exports[`GearCards matches snapshot 2`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName6"
+              alt="productName 6"
               class="MuiAvatar-img"
-              src="src6"
+              src="mediumImageUrl 6"
             />
           </div>
         </div>
@@ -2219,12 +2219,12 @@ exports[`GearCards matches snapshot 2`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName6
+            productName 6
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName6
+            makerName 6
           </span>
         </div>
       </div>
@@ -2380,9 +2380,9 @@ exports[`GearCards matches snapshot 2`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName7"
+              alt="productName 7"
               class="MuiAvatar-img"
-              src="src7"
+              src="mediumImageUrl 7"
             />
           </div>
         </div>
@@ -2392,12 +2392,12 @@ exports[`GearCards matches snapshot 2`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName7
+            productName 7
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName7
+            makerName 7
           </span>
         </div>
       </div>
@@ -2553,9 +2553,9 @@ exports[`GearCards matches snapshot 2`] = `
             class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
           >
             <img
-              alt="productName8"
+              alt="productName 8"
               class="MuiAvatar-img"
-              src="src8"
+              src="mediumImageUrl 8"
             />
           </div>
         </div>
@@ -2565,12 +2565,12 @@ exports[`GearCards matches snapshot 2`] = `
           <span
             class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
           >
-            productName8
+            productName 8
           </span>
           <span
             class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            makerName8
+            makerName 8
           </span>
         </div>
       </div>
