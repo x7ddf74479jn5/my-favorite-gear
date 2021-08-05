@@ -13,8 +13,8 @@ const useRakutenSearch = () => {
     }
     setLoading(true);
     const getGears = getGearsFactory({ keyword: keyword });
-    getGears().then((songs) => {
-      setGears(songs);
+    getGears().then((gears) => {
+      setGears(gears);
       setLoading(false);
     });
   };
