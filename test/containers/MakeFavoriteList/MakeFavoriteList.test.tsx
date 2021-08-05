@@ -17,6 +17,7 @@ jest.mock("hooks/use-favoriteList", () => {
         productUrlPC: `productUrlPC ${i + 1}`,
         mediumImageUrl: `mediumImageUrl ${i + 1}`,
         affiliateUrl: `https://www.affiliate.com/${i + 1}`,
+        amazonUrl: `https://www.amazon.com/${i + 1}`,
         averagePrice: `averagePrice ${i + 1}`,
         genreName: `genreName ${i + 1}`,
       });

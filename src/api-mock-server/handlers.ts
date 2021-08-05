@@ -24,6 +24,7 @@ export const handlers = [
           productUrlPC: `productUrlPC ${i + 1}`,
           mediumImageUrl: `mediumImageUrl ${i + 1}`,
           affiliateUrl: `${affiliateId}`,
+          amazonUrl: `https://amazon.com/${keyword}`,
           averagePrice: `averagePrice ${i + 1}`,
           genreName: `genreName ${i + 1}`,
         };

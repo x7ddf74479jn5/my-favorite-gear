@@ -23,6 +23,7 @@ jest.mock("hooks/use-favoriteLists", () => {
         productUrlPC: `productUrlPC ${i + 1}`,
         mediumImageUrl: `mediumImageUrl ${i + 1}`,
         affiliateUrl: `https://www.affiliate.com/${i + 1}`,
+        amazonUrl: `https://www.amazon.com/${i + 1}`,
         averagePrice: `averagePrice ${i + 1}`,
         genreName: `genreName ${i + 1}`,
       });
@@ -89,8 +90,8 @@ describe("FavoriteLists", () => {
     // MakeImage: 8 songs and 1 twitter icon
     // SongCards: 1 song
     expect(renderResult.getAllByRole("img")).toHaveLength(9 + 1);
-    expect(renderResult.getAllByRole("button")).toHaveLength(2);
-    const linkButton = renderResult.getAllByRole("button")[1];
+    expect(renderResult.getAllByRole("button")).toHaveLength(3);
+    const linkButton = renderResult.getAllByRole("button")[2];
     expect(linkButton).toHaveTextContent("くわしくみる");
     expect(linkButton).toHaveAttribute("href", `${paths.favoriteListRoot}id`);
   });

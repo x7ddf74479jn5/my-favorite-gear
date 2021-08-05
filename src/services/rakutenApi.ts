@@ -20,15 +20,13 @@ const DEFAULT_API_CONFIG: ApiConfig = {
   elements: [
     "productId",
     "productName",
-    "productNo",
     "makerName",
     "brandName",
     "mediumImageUrl",
     "productUrlPC",
-    "productCaption",
     "affiliateUrl",
-    "releaseDate",
     "averagePrice",
+    "genreName",
   ].join(),
   keyword: "",
   applicationId: "1012659610415700155",
@@ -48,6 +46,14 @@ export const getGearsFactory = (optionConfig?: ApiConfig) => {
     timeout: config.timeout,
   });
 
+  const makeAmazonUrl = () => {
+    const url = `${api.amazon.baseURL}s?&keyword=${encodeURI(
+      config.keyword ? config.keyword : ""
+    )}&tag=${api.amazon.affiliateId}`;
+
+    return url;
+  };
+
   const getGears = async () => {
     const response = await instance.get(
       `?applicationId=${config.applicationId}&keyword=${encodeURI(
@@ -61,8 +67,10 @@ export const getGearsFactory = (optionConfig?: ApiConfig) => {
       const gears: Gear[] = [];
       return gears;
     }
-    const gears: Gear[] = response.data.Products;
-    return gears;
+    const _gears: Omit<Gear, "amazonUrl">[] = response.data.Products;
+    return _gears.map((gear) => {
+      return { ...gear, amazonUrl: makeAmazonUrl() };
+    });
   };
 
   return getGears;

@@ -6,6 +6,7 @@ export type Gear = {
   mediumImageUrl: string | null;
   productUrlPC: string;
   affiliateUrl: string;
+  amazonUrl: string;
   averagePrice: string;
   genreName: string;
 };
@@ -18,6 +19,7 @@ export const blankGear: Gear = {
   mediumImageUrl: null,
   productUrlPC: "",
   affiliateUrl: "",
+  amazonUrl: "",
   averagePrice: "",
   genreName: "",
 };
