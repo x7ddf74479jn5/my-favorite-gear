@@ -1,27 +1,23 @@
 export type Gear = {
   productId: string;
   productName: string;
-  productNo: string;
-  makerName: string;
-  brandName: string;
+  makerName: string | null;
+  brandName: string | null;
   mediumImageUrl: string | null;
   productUrlPC: string;
-  productCaption: string;
   affiliateUrl: string;
-  releaseDate: string;
   averagePrice: string;
+  genreName: string;
 };
 
 export const blankGear: Gear = {
   productId: "",
   productName: "",
-  productNo: "",
-  makerName: "",
-  brandName: "",
-  productUrlPC: "",
+  makerName: null,
+  brandName: null,
   mediumImageUrl: null,
-  productCaption: "",
+  productUrlPC: "",
   affiliateUrl: "",
-  releaseDate: "",
   averagePrice: "",
+  genreName: "",
 };

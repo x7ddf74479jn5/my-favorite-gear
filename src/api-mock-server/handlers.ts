@@ -19,15 +19,13 @@ export const handlers = [
         const product: Gear = {
           productId: `productId ${i + 1}`,
           productName: `${keyword} ${i + 1}`,
-          productNo: `productNo ${i + 1}`,
           makerName: `makerName ${i + 1}`,
           brandName: `brandName ${i + 1}`,
           productUrlPC: `productUrlPC ${i + 1}`,
           mediumImageUrl: `mediumImageUrl ${i + 1}`,
-          productCaption: `productCaption ${i + 1}`,
           affiliateUrl: `${affiliateId}`,
-          releaseDate: `releaseDate ${i + 1}`,
           averagePrice: `averagePrice ${i + 1}`,
+          genreName: `genreName ${i + 1}`,
         };
         products.push(product);
       }

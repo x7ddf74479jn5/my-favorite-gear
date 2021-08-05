@@ -8,13 +8,17 @@ jest.mock("hooks/use-favoriteList", () => {
   const seedGearsToFavoriteList = () => {
     const GEAR_COUNT = 8;
     const gears: Gear[] = [];
-    for (let index = 0; index < GEAR_COUNT; index++) {
+    for (let i = 0; i < GEAR_COUNT; i++) {
       gears.push({
-        productId: `productId${index + 1}`,
-        productName: `productName${index + 1}`,
-        makerName: `makerName${index + 1}`,
-        mediumImageUrl: `src${index + 1}`,
-        affiliateUrl: `https://www.affiliate.com/${index + 1}`,
+        productId: `productId ${i + 1}`,
+        productName: `productName ${i + 1}`,
+        makerName: `makerName ${i + 1}`,
+        brandName: `brandName ${i + 1}`,
+        productUrlPC: `productUrlPC ${i + 1}`,
+        mediumImageUrl: `mediumImageUrl ${i + 1}`,
+        affiliateUrl: `https://www.affiliate.com/${i + 1}`,
+        averagePrice: `averagePrice ${i + 1}`,
+        genreName: `genreName ${i + 1}`,
       });
     }
     return gears;

@@ -8,6 +8,7 @@ interface ApiConfig {
   timeout?: number;
   keyword?: string;
   elements?: string;
+  applicationId?: string;
   affiliateId?: string;
   hits?: number;
   formatVersion?: 1 | 2;
@@ -30,6 +31,8 @@ const DEFAULT_API_CONFIG: ApiConfig = {
     "averagePrice",
   ].join(),
   keyword: "",
+  applicationId: "1012659610415700155",
+  // applicationId: api.rakuten.applicationId,
   affiliateId: api.rakuten.affiliateId,
   hits: 20,
   formatVersion: 2,
@@ -47,11 +50,11 @@ export const getGearsFactory = (optionConfig?: ApiConfig) => {
 
   const getGears = async () => {
     const response = await instance.get(
-      `?keyword=${encodeURI(config.keyword ? config.keyword : "")}&elements=${
-        config.elements
-      }&affiliateId=${config.affiliateId}&hits=${config.hits}&formatVersion=${
-        config.formatVersion
-      }`
+      `?applicationId=${config.applicationId}&keyword=${encodeURI(
+        config.keyword ? config.keyword : ""
+      )}&elements=${config.elements}&affiliateId=${config.affiliateId}&hits=${
+        config.hits
+      }&formatVersion=${config.formatVersion}`
     );
 
     if (response.status !== 200) {

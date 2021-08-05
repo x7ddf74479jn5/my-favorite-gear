@@ -17,11 +17,15 @@ if (!db) {
 }
 
 const secondTestGear: Gear = {
-  productId: "trackId",
-  productName: "trackName",
-  makerName: "artistName",
-  mediumImageUrl: "src",
-  affiliateUrl: "https://www.affiliate.com",
+  productId: "productId2",
+  productName: "productName2",
+  makerName: "makerName2",
+  brandName: "brandName2",
+  productUrlPC: "productUrlPC2",
+  mediumImageUrl: "mediumImageUrl2",
+  affiliateUrl: "https://www.affiliate.com/2",
+  averagePrice: "averagePrice2",
+  genreName: "genreName2",
 };
 
 const testOptions = {
