@@ -71,14 +71,24 @@ describe("GearCard", () => {
     ).toBeTruthy();
 
     expect(renderResult.getByText("productName")).toBeInTheDocument();
-    expect(renderResult.getByText(`${testGear.makerName}`)).toBeInTheDocument();
+    expect(
+      renderResult.getByText(
+        `${testGear.makerName}/${testGear.brandName}/${testGear.genreName}`
+      )
+    ).toBeInTheDocument();
 
     const buttonElements = renderResult.getAllByRole("button");
-    expect(buttonElements).toHaveLength(5);
-    expect(buttonElements[4]).toHaveAttribute(
+    expect(buttonElements).toHaveLength(6);
+    expect(buttonElements[0]).toHaveAttribute(
       "href",
       expect.stringMatching(testGear.affiliateUrl)
     );
+    expect(buttonElements[1]).toHaveAttribute(
+      "href",
+      expect.stringMatching(testGear.amazonUrl)
+    );
+    expect(buttonElements[4]).toHaveTextContent("My Favorite Gearに登録");
+    expect(buttonElements[5]).toHaveTextContent("My Favorite Gearから削除");
   });
 
   it("renders correctly when user's favoriteList contains same gear", () => {
@@ -94,8 +104,8 @@ describe("GearCard", () => {
     );
 
     const buttonElements = renderResult.getAllByRole("button");
-    expect(buttonElements[2]).toHaveTextContent("My Favorite Gearに登録済み");
-    expect(buttonElements[2]).toBeDisabled();
+    expect(buttonElements[4]).toHaveTextContent("My Favorite Gearに登録済み");
+    expect(buttonElements[4]).toBeDisabled();
   });
 
   it("triggers user events", async () => {
@@ -110,10 +120,10 @@ describe("GearCard", () => {
     );
 
     const buttonElements = renderResult.getAllByRole("button");
-    const upButton = buttonElements[0];
-    const downButton = buttonElements[1];
-    const addButton = buttonElements[2];
-    const removeButton = buttonElements[3];
+    const upButton = buttonElements[2];
+    const downButton = buttonElements[3];
+    const addButton = buttonElements[4];
+    const removeButton = buttonElements[5];
 
     userEvent.click(upButton);
     expect(mockUpButton).toBeCalled();
