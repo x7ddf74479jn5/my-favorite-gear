@@ -20,7 +20,7 @@ const Footer: FC = () => {
         {"My Favorite Gear"}
       </Typography>
       <Typography variant="body2" color="textSecondary" align="center">
-        {"©2020  "}
+        {"©2021  "}
         <Link color="inherit" href="https://twitter.com/pandashark6">
           {"@pandashark6"}
         </Link>
