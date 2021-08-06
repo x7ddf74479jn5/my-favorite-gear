@@ -1,7 +1,3 @@
-/**
- * @jest-environment node
- */
-
 import { act, cleanup, renderHook } from "@testing-library/react-hooks";
 import { server } from "api-mock-server/server";
 import useRakutenSearch from "hooks/use-rakutenSearch";
