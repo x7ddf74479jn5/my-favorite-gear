@@ -24,8 +24,10 @@ const secondTestGear: Gear = {
   productUrlPC: "productUrlPC2",
   mediumImageUrl: "mediumImageUrl2",
   affiliateUrl: "https://www.affiliate.com/2",
+  amazonUrl: "https://www.amazon.com/2",
   averagePrice: "averagePrice2",
   genreName: "genreName2",
+  reviewAverage: 1,
 };
 
 const testOptions = {
