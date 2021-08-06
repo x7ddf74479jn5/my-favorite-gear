@@ -3,7 +3,6 @@ const common = require("./webpack.common.js");
 const path = require("path");
 const Dotenv = require("dotenv-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 
 // eslint-disable-next-line no-console
 console.log(
@@ -40,14 +39,6 @@ module.exports = merge(common, {
       meta: {
         description: "みんなにおすすめしたいプロダクトを紹介しましょう！",
       },
-    }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "src/mockServiceWorker.js",
-          to: "mockServiceWorker.js",
-        },
-      ],
     }),
   ],
 });
