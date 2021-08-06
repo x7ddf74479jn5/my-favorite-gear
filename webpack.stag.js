@@ -63,7 +63,7 @@ module.exports = merge(common, {
       defaultSizes: "stat",
     }),
     new CopyPlugin({
-      patterns: [{ from: "static/*", to: "[name].[ext]" }],
+      patterns: [{ from: "static/*", to: "[name][ext]" }],
     }),
   ],
 });
