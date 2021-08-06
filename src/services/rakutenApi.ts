@@ -27,10 +27,10 @@ const DEFAULT_API_CONFIG: ApiConfig = {
     "affiliateUrl",
     "averagePrice",
     "genreName",
+    "reviewAverage",
   ].join(),
   keyword: "",
-  applicationId: "1012659610415700155",
-  // applicationId: api.rakuten.applicationId,
+  applicationId: api.rakuten.applicationId,
   affiliateId: api.rakuten.affiliateId,
   hits: 20,
   formatVersion: 2,
@@ -47,7 +47,7 @@ export const getGearsFactory = (optionConfig?: ApiConfig) => {
   });
 
   const makeAmazonUrl = () => {
-    const url = `${api.amazon.baseURL}s?&keyword=${encodeURI(
+    const url = `${api.amazon.baseURL}s?&k=${encodeURI(
       config.keyword ? config.keyword : ""
     )}&tag=${api.amazon.affiliateId}`;
 

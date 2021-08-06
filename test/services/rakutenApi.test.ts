@@ -1,6 +1,5 @@
 import { cleanup } from "@testing-library/react";
 import { server } from "api-mock-server/server";
-import { api } from "services/constants";
 import { getGearsFactory } from "services/rakutenApi";
 
 describe("getGearsFactory", () => {
@@ -20,11 +19,17 @@ describe("getGearsFactory", () => {
     const gears = await getGears();
     expect(gears).toHaveLength(20);
     expect(gears[0]).toMatchObject({
-      mediumImageUrl: "mediumImageUrl 1",
-      makerName: "makerName 1",
       productId: "productId 1",
-      affiliateUrl: api.rakuten.affiliateId,
       productName: "keyword 1",
+      makerName: "makerName 1",
+      brandName: "brandName 1",
+      productUrlPC: "productUrlPC 1",
+      mediumImageUrl: "mediumImageUrl 1",
+      affiliateUrl: expect.stringContaining("rakuten"),
+      amazonUrl: expect.stringContaining("amazon"),
+      averagePrice: `averagePrice 1`,
+      genreName: `genreName 1`,
+      reviewAverage: 1,
     });
   });
 
@@ -33,11 +38,17 @@ describe("getGearsFactory", () => {
     const gears = await getGears();
     expect(gears).toHaveLength(3);
     expect(gears[0]).toMatchObject({
-      mediumImageUrl: "mediumImageUrl 1",
-      makerName: "makerName 1",
       productId: "productId 1",
-      affiliateUrl: api.rakuten.affiliateId,
       productName: "keyword 1",
+      makerName: "makerName 1",
+      brandName: "brandName 1",
+      productUrlPC: "productUrlPC 1",
+      mediumImageUrl: "mediumImageUrl 1",
+      affiliateUrl: expect.stringContaining("rakuten"),
+      amazonUrl: expect.stringContaining("amazon"),
+      averagePrice: `averagePrice 1`,
+      genreName: `genreName 1`,
+      reviewAverage: 1,
     });
   });
 
