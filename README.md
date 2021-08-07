@@ -1,6 +1,6 @@
 # My Favorite Gear
 
-自分のお気に入りのアイテムを8つ選んでtwitterに投稿できます。
+自分のお気に入りのアイテムを8つ選んでTwitterに投稿できます。
 
 ## URL
 
@@ -17,7 +17,7 @@
   - Firebase Firestore
   - Firebase Hosting
   - Cloud Functions
-- Others
+- Other
   - webpack 5
   - Jest
   
