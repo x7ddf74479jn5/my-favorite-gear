@@ -11,9 +11,9 @@ import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import DeleteIcon from "@material-ui/icons/Delete";
 import LinkIcon from "@material-ui/icons/Link";
-import StarIcon from "@material-ui/icons/Star";
-import StarHalfIcon from "@material-ui/icons/StarHalf";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
+import { brandColor } from "asset/variables";
+import ReviewStars from "components/common/card/ReviewStars";
 import type { FC } from "react";
 import React from "react";
 import type { Gear } from "services/models/gear";
@@ -51,11 +51,11 @@ const useStyles = makeStyles((theme) => {
     },
     amazon: {
       color: "white",
-      backgroundColor: "#ff9900",
+      backgroundColor: brandColor.amazon,
     },
     rakuten: {
       color: "white",
-      backgroundColor: "#bf0000",
+      backgroundColor: brandColor.rakuten,
     },
   };
 });
@@ -69,31 +69,31 @@ const GearCard: FC<GearCardProps> = ({
   downButton,
 }) => {
   const classes = useStyles();
-  const makeStarCount = () => {
-    if (gear.reviewAverage === null) return;
-    const integerPart = Math.floor(gear.reviewAverage);
-    const decimalPart = gear.reviewAverage - integerPart;
-    let starCount =
-      decimalPart < 0.25
-        ? integerPart
-        : decimalPart < 0.5
-        ? integerPart + decimalPart
-        : decimalPart < 0.75
-        ? integerPart + decimalPart
-        : Math.ceil(gear.reviewAverage);
-    const stars = [];
-    while (starCount > 0) {
-      if (starCount < 1) {
-        stars.push(<StarHalfIcon key={starCount} />);
-        break;
-      }
-      stars.push(<StarIcon key={starCount} />);
-      starCount--;
-    }
+  // const makeStarCount = () => {
+  //   if (gear.reviewAverage === null) return;
+  //   const integerPart = Math.floor(gear.reviewAverage);
+  //   const decimalPart = gear.reviewAverage - integerPart;
+  //   let starCount =
+  //     decimalPart < 0.25
+  //       ? integerPart
+  //       : decimalPart < 0.5
+  //       ? integerPart + decimalPart
+  //       : decimalPart < 0.75
+  //       ? integerPart + decimalPart
+  //       : Math.ceil(gear.reviewAverage);
+  //   const stars = [];
+  //   while (starCount > 0) {
+  //     if (starCount < 1) {
+  //       stars.push(<StarHalfIcon key={starCount} />);
+  //       break;
+  //     }
+  //     stars.push(<StarIcon key={starCount} />);
+  //     starCount--;
+  //   }
 
-    return stars;
-  };
-  const stars = makeStarCount();
+  //   return stars;
+  // };
+  // const stars = makeStarCount();
 
   return (
     <Card className={classes.cardRoot}>
@@ -114,12 +114,12 @@ const GearCard: FC<GearCardProps> = ({
       />
       <CardContent>
         <div className={classes.content}>
-          <div className={classes.review}>
-            {stars}
-            {gear.reviewAverage && (
+          {gear.reviewAverage && (
+            <div className={classes.review}>
+              <ReviewStars reviewAverage={gear.reviewAverage} />
               <Typography> : {gear.reviewAverage}</Typography>
-            )}
-          </div>
+            </div>
+          )}
           {gear.averagePrice && (
             <Typography align="right">
               平均価格: {gear.averagePrice}円
