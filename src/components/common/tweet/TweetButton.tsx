@@ -23,20 +23,27 @@ const useStyles = makeStyles((theme) => {
 const TweetButton: FC<{ favoriteList: FavoriteList }> = ({ favoriteList }) => {
   const classes = useStyles();
   const url = `${paths.urlDomain}${paths.favoriteListRoot}${favoriteList.id}`;
-  const title = `${
-    favoriteList.twitterId
-  }のMy Favorite Gear\n${favoriteList.gears
+  let title = `${favoriteList.twitterId}のMy Favorite Gear\n${favoriteList.gears
     .map((v) => {
+      if (v.productName.length > 15) {
+        return v.productName.slice(0, 15) + "…\n";
+      }
       return `『${v.productName}』`;
     })
     .join("\n")}`;
+  // 日本語全角140文字制限
+  // URL: 11.5 chars(shorten), hashtag: 17 / 2 chars
+  const limit = 140;
+  if (title.length > limit) {
+    title = title.slice(0, limit) + "…\n";
+  }
 
   return (
     <div className={classes.share}>
       <TwitterShareButton
         title={title}
         url={url}
-        hashtags={["My Favorite Gear"]}
+        hashtags={["my_favorite_gear"]}
       >
         <Button
           component="div"

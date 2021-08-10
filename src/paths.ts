@@ -1,5 +1,5 @@
 const paths = {
-  urlDomain: "https://my-otaku-song.web.app",
+  urlDomain: "https://my-favorite-gear.web.app",
   home: "/",
   favoriteList: "/favoriteList/:id",
   favoriteLists: "/favoriteLists",
