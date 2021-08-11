@@ -69,32 +69,6 @@ const GearCard: FC<GearCardProps> = ({
   downButton,
 }) => {
   const classes = useStyles();
-  // const makeStarCount = () => {
-  //   if (gear.reviewAverage === null) return;
-  //   const integerPart = Math.floor(gear.reviewAverage);
-  //   const decimalPart = gear.reviewAverage - integerPart;
-  //   let starCount =
-  //     decimalPart < 0.25
-  //       ? integerPart
-  //       : decimalPart < 0.5
-  //       ? integerPart + decimalPart
-  //       : decimalPart < 0.75
-  //       ? integerPart + decimalPart
-  //       : Math.ceil(gear.reviewAverage);
-  //   const stars = [];
-  //   while (starCount > 0) {
-  //     if (starCount < 1) {
-  //       stars.push(<StarHalfIcon key={starCount} />);
-  //       break;
-  //     }
-  //     stars.push(<StarIcon key={starCount} />);
-  //     starCount--;
-  //   }
-
-  //   return stars;
-  // };
-  // const stars = makeStarCount();
-
   return (
     <Card className={classes.cardRoot}>
       <CardHeader
@@ -122,7 +96,7 @@ const GearCard: FC<GearCardProps> = ({
           )}
           {gear.averagePrice && (
             <Typography align="right">
-              平均価格: {gear.averagePrice}円
+              平均価格: {gear.averagePrice.toLocaleString()}円
             </Typography>
           )}
         </div>
