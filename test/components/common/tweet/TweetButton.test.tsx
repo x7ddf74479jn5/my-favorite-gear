@@ -3,6 +3,11 @@ import React from "react";
 
 import { render, testFavoriteList } from "../../../test-utils";
 
+jest.mock("react-share", () => {
+  const TwitterShareButton = "mock-twitter";
+  return { TwitterShareButton };
+});
+
 describe("TweetButton", () => {
   it("matches snapshot", () => {
     const renderResult = render(

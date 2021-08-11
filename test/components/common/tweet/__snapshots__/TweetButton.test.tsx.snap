@@ -5,10 +5,14 @@ exports[`TweetButton matches snapshot 1`] = `
   <div
     class="makeStyles-share-1"
   >
-    <button
-      aria-label="twitter"
-      class="react-share__ShareButton"
-      style="background-color: transparent; padding: 0px; cursor: pointer;"
+    <mock-twitter
+      hashtags="my_favorite_gear"
+      title="twitterIdのMy Favorite Gear
+『1: productName 1』
+『2: productName 2』
+『3: productName 3』
+…全部見る→"
+      url="https://my-favorite-gear.web.app/favoriteList/id"
     >
       <div
         aria-disabled="false"
@@ -39,7 +43,7 @@ exports[`TweetButton matches snapshot 1`] = `
           class="MuiTouchRipple-root"
         />
       </div>
-    </button>
+    </mock-twitter>
   </div>
 </DocumentFragment>
 `;
