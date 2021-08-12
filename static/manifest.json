@@ -1,6 +1,7 @@
 {
   "name": "my-favorite-gear",
-  "short_name": "",
+  "short_name": "my-favorite-gear",
+  "start_url": "./index.html",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
