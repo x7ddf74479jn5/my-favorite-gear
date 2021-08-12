@@ -6,7 +6,7 @@
     "start": "webpack serve --config ./webpack.dev.js --mode development",
     "build:prod": "webpack --progress --config ./webpack.prod.js --mode production",
     "build:dev": "webpack --progress --config ./webpack.stag.js --mode production",
-    "deploy:prod": "firebase deploy --project=prod",
+    "deploy:prod": "firebase deploy --project=prod --only hosting,firestore",
     "deploy:dev": "firebase deploy --project=dev",
     "dev-deploy": "run-s setup:dev:firebase setup:prod:rules build:dev deploy:dev",
     "prod-deploy": "run-s setup:prod:* build:prod deploy:prod",
