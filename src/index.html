@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="<%= htmlWebpackPlugin.options['firebaseUIAuthCSS'] %>"
+    />
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.ico" />
     <script
       crossorigin
       defer
@@ -22,20 +30,12 @@
     ></script>
     <script
       defer
-      src="<%= htmlWebpackPlugin.options['firebaseFirestore'] %>"
+      src="<%= htmlWebpackPlugin.options['firebaseUIAuth'] %>"
     ></script>
     <script
       defer
-      src="<%= htmlWebpackPlugin.options['firebaseUIAuth'] %>"
+      src="<%= htmlWebpackPlugin.options['firebaseFirestore'] %>"
     ></script>
-    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" href="/favicon.ico" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="<%= htmlWebpackPlugin.options['firebaseUIAuthCSS'] %>"
-    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

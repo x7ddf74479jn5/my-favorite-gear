@@ -1,7 +1,6 @@
 const path = require("path");
 
-const essentialLibs =
-  /(mobx|mobx-react|react-router|react-router-dom|history|web-vital)/;
+const essentialLibs = /(react-router|react-router-dom|history|web-vital)/;
 
 module.exports = {
   entry: {
