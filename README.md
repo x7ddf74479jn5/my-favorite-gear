@@ -2,11 +2,15 @@
 
 自分のお気に入りのアイテムを8つ選んでTwitterに投稿できます。
 
+## Screenshot
+
+![My Favorite Gear Screenshot](https://raw.githubusercontent.com/x7ddf74479jn5/next-portfolio/master/public/img/samples/my-favorite-gear-eyecatch.webp)
+
 ## URL
 
 [https://my-favorite-gear.firebaseapp.com/](https://my-favorite-gear.firebaseapp.com/)
 
-## 使用技術
+## Techs
 
 - Frontend
   - React
