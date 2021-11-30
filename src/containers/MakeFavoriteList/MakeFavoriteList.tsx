@@ -1,3 +1,4 @@
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import GearCards from "components/common/card/GearCards";
 import MakeImage from "components/common/makeImage/MakeImage";
@@ -10,6 +11,14 @@ import type { FC } from "react";
 import React from "react";
 import type { User } from "services/models/user";
 
+const useStyles = makeStyles(() => {
+  return {
+    text: {
+      wordBreak: "keep-all",
+    },
+  };
+});
+
 const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
   const rakutenSearch = useRakutenSearch();
   const favoriteList = useFavoriteList({
@@ -17,6 +26,8 @@ const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
     image: user.photoUrl,
     twitterId: user.screenName,
   });
+  const classes = useStyles();
+
   return (
     <>
       <Typography variant="h6" gutterBottom align="center">
@@ -34,7 +45,12 @@ const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
       )}
       {favoriteList.favoriteList.gears.length > 0 ? (
         <>
-          <Typography variant="h6" gutterBottom align="center">
+          <Typography
+            variant="h6"
+            gutterBottom
+            align="center"
+            className={classes.text}
+          >
             {user.screenName}のMy Favorite Gear (
             {favoriteList.favoriteList.gears.length}
             アイテム)

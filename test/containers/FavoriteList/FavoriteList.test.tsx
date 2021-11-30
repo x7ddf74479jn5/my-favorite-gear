@@ -106,7 +106,7 @@ describe("FavoriteList", () => {
         </Route>
       </MemoryRouter>
     );
-
+    renderResult.debug();
     expect(renderResult.getByRole("heading", { level: 6 })).toHaveTextContent(
       "twitterId"
     );
