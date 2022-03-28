@@ -1,9 +1,10 @@
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
-import FavoriteListContainer from "containers/FavoriteList/FavoriteList";
-import { UserContext } from "contexts";
 import type { FC } from "react";
 import React, { useContext } from "react";
+
+import FavoriteListContainer from "@/containers/FavoriteList/FavoriteList";
+import { UserContext } from "@/contexts";
 
 const useStyles = makeStyles((theme) => {
   return {

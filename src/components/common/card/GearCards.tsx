@@ -2,7 +2,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import type { FC } from "react";
 import React from "react";
-import type { Gear } from "services/models/gear";
+
+import type { Gear } from "@/services/models/gear";
 
 import GearCard from "./GearCard";
 

@@ -2,7 +2,8 @@ import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import type { FC } from "react";
 import React from "react";
-import type { Gear } from "services/models/gear";
+
+import type { Gear } from "@/services/models/gear";
 
 type ReviewStarsProps = Pick<Gear, "reviewAverage">;
 

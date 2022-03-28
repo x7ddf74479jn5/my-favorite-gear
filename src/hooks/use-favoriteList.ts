@@ -1,10 +1,11 @@
-import { FirebaseContext } from "contexts";
 import firebase from "firebase";
 import { useContext, useEffect, useRef, useState } from "react";
-import { collectionName } from "services/constants";
-import type { FavoriteList } from "services/models/favoriteList";
-import { blankFavoriteList } from "services/models/favoriteList";
-import type { Gear } from "services/models/gear";
+
+import { FirebaseContext } from "@/contexts";
+import { collectionName } from "@/services/constants";
+import type { FavoriteList } from "@/services/models/favoriteList";
+import { blankFavoriteList } from "@/services/models/favoriteList";
+import type { Gear } from "@/services/models/gear";
 
 type favoriteListOptions = {
   id?: string;

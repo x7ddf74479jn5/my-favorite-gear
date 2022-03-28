@@ -11,7 +11,7 @@ import type { FavoriteList } from "services/models/favoriteList";
 import type { Gear } from "services/models/gear";
 import type { User } from "services/models/user";
 
-import { initializeFirebase } from "../firebase";
+import { initializeFirebase } from "../src/lib/firebase";
 
 initializeFirebase();
 

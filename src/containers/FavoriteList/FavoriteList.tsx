@@ -1,16 +1,17 @@
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import GearCards from "components/common/card/GearCards";
-import MakeImage from "components/common/makeImage/MakeImage";
-import Progress from "components/common/progress/Progress";
-import TweetButton from "components/common/tweet/TweetButton";
-import useFavoriteList from "hooks/use-favoriteList";
-import paths from "paths";
 import type { FC } from "react";
 import React from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-import type { User } from "services/models/user";
+
+import GearCards from "@/components/common/card/GearCards";
+import MakeImage from "@/components/common/makeImage/MakeImage";
+import Progress from "@/components/common/progress/Progress";
+import TweetButton from "@/components/common/tweet/TweetButton";
+import useFavoriteList from "@/hooks/use-favoriteList";
+import paths from "@/paths";
+import type { User } from "@/services/models/user";
 
 const FavoriteListContainer: FC<{ user: User | null }> = ({ user }) => {
   const { id } = useParams<{ id?: string }>();

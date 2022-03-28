@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type firebase from "firebase";
 import { createContext } from "react";
-import type { User } from "services/models/user";
+
+import type { User } from "@/services/models/user";
 
 export type FirebaseContextValue = {
   auth: firebase.auth.Auth | null;

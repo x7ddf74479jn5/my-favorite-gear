@@ -1,6 +1,7 @@
 import { useState } from "react";
-import type { Gear } from "services/models/gear";
-import { getGearsFactory } from "services/rakutenApi";
+
+import type { Gear } from "@/services/models/gear";
+import { getGearsFactory } from "@/services/rakutenApi";
 
 const useRakutenSearch = () => {
   const [gears, setGears] = useState<Gear[]>([]);

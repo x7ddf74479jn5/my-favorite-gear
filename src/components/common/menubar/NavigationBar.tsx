@@ -6,12 +6,13 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { FirebaseContext, UserContext } from "contexts";
-import paths from "paths";
 import type { FC } from "react";
 import React, { useContext } from "react";
 import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
+
+import { FirebaseContext, UserContext } from "@/contexts";
+import paths from "@/paths";
 
 const useStyles = makeStyles((theme) => {
   return {

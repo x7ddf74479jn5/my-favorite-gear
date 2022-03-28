@@ -3,8 +3,9 @@ import GridListTile from "@material-ui/core/GridListTile";
 import { makeStyles } from "@material-ui/core/styles";
 import type { FC } from "react";
 import React from "react";
-import type { FavoriteList } from "services/models/favoriteList";
-import type { Gear } from "services/models/gear";
+
+import type { FavoriteList } from "@/services/models/favoriteList";
+import type { Gear } from "@/services/models/gear";
 
 const useStyles = makeStyles((theme) => {
   return {

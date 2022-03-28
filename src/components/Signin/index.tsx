@@ -1,13 +1,14 @@
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import { FirebaseContext, UserContext } from "contexts";
 import firebase from "firebase";
-import paths from "paths";
 import type { FC } from "react";
 import React, { useContext } from "react";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import { useHistory } from "react-router";
+
+import { FirebaseContext, UserContext } from "@/contexts";
+import paths from "@/paths";
 
 const useStyles = makeStyles((theme) => {
   return {

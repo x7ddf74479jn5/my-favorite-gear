@@ -1,7 +1,8 @@
-import { FirebaseContext } from "contexts";
 import { useContext, useEffect, useRef, useState } from "react";
-import { collectionName } from "services/constants";
-import type { FavoriteList } from "services/models/favoriteList";
+
+import { FirebaseContext } from "@/contexts";
+import { collectionName } from "@/services/constants";
+import type { FavoriteList } from "@/services/models/favoriteList";
 
 type FavoriteListsOptions = {
   limit?: number;

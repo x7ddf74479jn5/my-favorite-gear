@@ -12,11 +12,12 @@ import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import DeleteIcon from "@material-ui/icons/Delete";
 import LinkIcon from "@material-ui/icons/Link";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
-import { brandColor } from "asset/variables";
-import ReviewStars from "components/common/card/ReviewStars";
 import type { FC } from "react";
 import React from "react";
-import type { Gear } from "services/models/gear";
+
+import { brandColor } from "@/asset/variables";
+import ReviewStars from "@/components/common/card/ReviewStars";
+import type { Gear } from "@/services/models/gear";
 
 interface GearCardProps {
   gear: Gear;

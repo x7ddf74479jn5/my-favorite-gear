@@ -1,15 +1,16 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import GearCards from "components/common/card/GearCards";
-import MakeImage from "components/common/makeImage/MakeImage";
-import Progress from "components/common/progress/Progress";
-import TweetButton from "components/common/tweet/TweetButton";
-import SearchBox from "components/MakeFavoriteList/SearchBox";
-import useFavoriteList from "hooks/use-favoriteList";
-import useRakutenSearch from "hooks/use-rakutenSearch";
 import type { FC } from "react";
 import React from "react";
-import type { User } from "services/models/user";
+
+import GearCards from "@/components/common/card/GearCards";
+import MakeImage from "@/components/common/makeImage/MakeImage";
+import Progress from "@/components/common/progress/Progress";
+import TweetButton from "@/components/common/tweet/TweetButton";
+import SearchBox from "@/components/MakeFavoriteList/SearchBox";
+import useFavoriteList from "@/hooks/use-favoriteList";
+import useRakutenSearch from "@/hooks/use-rakutenSearch";
+import type { User } from "@/services/models/user";
 
 const useStyles = makeStyles(() => {
   return {
