@@ -101,5 +101,9 @@
   },
   "msw": {
     "workerDirectory": "dist"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": false
   }
 }
