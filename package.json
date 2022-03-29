@@ -51,7 +51,6 @@
     "lodash.isempty": "4.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-firebaseui": "^5.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-share": "^4.4.0",
@@ -103,7 +102,6 @@
     "workerDirectory": "dist"
   },
   "prettier": {
-    "printWidth": 120,
     "singleQuote": false
   }
 }

@@ -2,10 +2,10 @@ import firebase from "firebase";
 import type { FC } from "react";
 import React, { useEffect, useRef, useState } from "react";
 
-import { FirebaseContext, UserContext } from "./contexts";
-import findUser from "./services/find-user";
-import type { User } from "./services/models/user";
-import writeUser from "./services/write-user";
+import { FirebaseContext, UserContext } from "@/contexts";
+import findUser from "@/services/find-user";
+import type { User } from "@/services/models/user";
+import writeUser from "@/services/write-user";
 
 const FirebaseApp: FC = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
@@ -35,6 +35,17 @@ const FirebaseApp: FC = ({ children }) => {
     return unsubscribe;
     // don't suppress trigger with using deps to enable counter
   });
+
+  useEffect(() => {
+    firebase
+      .auth()
+      .getRedirectResult()
+      .then((authResult) => {
+        if (authResult.user) {
+          setCredential(authResult);
+        }
+      });
+  }, []);
 
   return (
     <FirebaseContext.Provider value={{ auth, db }}>
