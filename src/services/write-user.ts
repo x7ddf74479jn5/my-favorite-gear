@@ -1,6 +1,5 @@
 import firebase from "firebase";
-import isEmpty from "lodash/isEmpty";
-import { sprintf } from "sprintf-js";
+import isEmpty from "lodash.isempty";
 
 import { collectionName } from "./constants";
 import type { User } from "./models/user";
@@ -41,7 +40,7 @@ const writeUser = async (
     .get();
   if (query.size) {
     const rnd = Math.floor(Math.random() * 10000);
-    screenName = `${screenName}${sprintf("%04d", rnd)}`;
+    screenName = `${screenName}${rnd.toString().padStart(4, "0")}`;
   }
   let theUser: User | null = null;
   const batch = db.batch();
