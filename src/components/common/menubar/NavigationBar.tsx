@@ -8,7 +8,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import type { FC } from "react";
 import React, { useContext } from "react";
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 
 import { FirebaseContext, UserContext } from "@/contexts";
@@ -36,12 +36,12 @@ const NavigationBar: FC = () => {
 
   const { auth } = useContext(FirebaseContext);
   const { user } = useContext(UserContext);
-  const history = useHistory();
+  const navigate = useNavigate();
   const signOut =
     auth && user
       ? () => {
           auth.signOut();
-          history.replace(paths.home);
+          navigate(paths.home);
         }
       : () => {
           return;
