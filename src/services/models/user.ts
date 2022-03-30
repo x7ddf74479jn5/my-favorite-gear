@@ -1,4 +1,4 @@
-import type firebase from "firebase";
+import { Timestamp } from "firebase/firestore";
 
 export type User = {
   id?: string;
@@ -8,8 +8,8 @@ export type User = {
   photoUrl: string | null;
   provider: string;
   providerUid: string;
-  createdAt: firebase.firestore.Timestamp | null;
-  updatedAt: firebase.firestore.Timestamp | null;
+  createdAt: Timestamp | null;
+  updatedAt: Timestamp | null;
 };
 
 export const blankUser: User = {
@@ -21,4 +21,40 @@ export const blankUser: User = {
   providerUid: "",
   createdAt: null,
   updatedAt: null,
+};
+
+export const assertUser: (data: unknown) => asserts data is User = (data) => {
+  const d = data as Partial<User>;
+  const validate = () => {
+    if (d.id) {
+      return typeof d.id === "string";
+    }
+    if (!(typeof d.screenName === "string")) {
+      return false;
+    }
+    if (d.displayName) {
+      return typeof d.displayName === "string";
+    }
+    if (d.description) {
+      return typeof d.description === "string";
+    }
+    if (d.photoUrl) {
+      return typeof d.photoUrl === "string";
+    }
+    if (!(d.provider === "twitter")) {
+      return false;
+    }
+    if (!(typeof d.providerUid === "string")) {
+      return false;
+    }
+    if (d.createdAt) {
+      return d.createdAt instanceof Timestamp;
+    }
+    if (d.updatedAt) {
+      return d.updatedAt instanceof Timestamp;
+    }
+  };
+  if (!validate()) {
+    throw new Error("data is not User type");
+  }
 };
