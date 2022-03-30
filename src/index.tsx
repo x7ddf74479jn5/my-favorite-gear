@@ -2,19 +2,17 @@ import "./index.css";
 
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-
-import { initializeFirebase } from "@/lib/firebase";
 
 import App from "./App";
 import theme from "./asset/theme";
 import FirebaseApp from "./FirebaseApp";
 import reportWebVitals from "./reportWebVitals";
 
-initializeFirebase();
-
-ReactDOM.render(
+createRoot(
+  document.getElementById("root") || document.createElement("div") // for test
+).render(
   <React.StrictMode>
     <BrowserRouter>
       <MuiThemeProvider theme={theme}>
@@ -23,8 +21,7 @@ ReactDOM.render(
         </FirebaseApp>
       </MuiThemeProvider>
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById("root") || document.createElement("div") // for test
+  </React.StrictMode>
 );
 
 reportWebVitals();
