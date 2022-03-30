@@ -24,7 +24,8 @@ const FavoriteListContainer: FC<{ user: User | null }> = ({ user }) => {
     return (
       <>
         <Typography variant="h6" gutterBottom align="center">
-          {favoriteList.favoriteList.twitterId}のMy Favorite gear
+          {favoriteList.favoriteList.twitterId || user?.displayName}のMy
+          Favorite gear
         </Typography>
         <Typography paragraph align="center" color="textSecondary">
           8アイテム選ばれていません。
