@@ -1,12 +1,12 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import type firebase from "firebase";
+import type { Auth, UserCredential } from "firebase/auth";
+import type { Firestore } from "firebase/firestore";
 import { createContext } from "react";
 
 import type { User } from "@/services/models/user";
 
 export type FirebaseContextValue = {
-  auth: firebase.auth.Auth | null;
-  db: firebase.firestore.Firestore | null;
+  auth: Auth | null;
+  db: Firestore | null;
 };
 
 export const FirebaseContext = createContext<FirebaseContextValue>({
@@ -16,8 +16,8 @@ export const FirebaseContext = createContext<FirebaseContextValue>({
 
 export type UserContextValue = {
   user: User | null;
-  credential: firebase.auth.UserCredential | null;
-  setCredential: (credential: firebase.auth.UserCredential | null) => void;
+  credential: UserCredential | null;
+  setCredential: (credential: UserCredential | null) => void;
 };
 
 export const UserContext = createContext<UserContextValue>({

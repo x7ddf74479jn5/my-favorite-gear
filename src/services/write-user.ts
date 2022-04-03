@@ -1,14 +1,19 @@
-import firebase from "firebase";
+import type { User, UserCredential } from "firebase/auth";
+import { getAdditionalUserInfo } from "firebase/auth";
+import type { Firestore } from "firebase/firestore";
+import { increment, serverTimestamp } from "firebase/firestore";
+import { getDoc, writeBatch } from "firebase/firestore";
+import { collection, doc, getDocs, query, where } from "firebase/firestore";
 import isEmpty from "lodash.isempty";
 
 import { collectionName } from "./constants";
-import type { User } from "./models/user";
-import { blankUser } from "./models/user";
+import type { User as TheUser } from "./models/user";
+import { assertUser, blankUser } from "./models/user";
 
 const writeUser = async (
-  db: firebase.firestore.Firestore,
-  firebaseUser: firebase.User,
-  credential: firebase.auth.UserCredential
+  db: Firestore,
+  firebaseUser: User,
+  credential: UserCredential
 ) => {
   const id = firebaseUser.uid;
   const { displayName } = firebaseUser;
@@ -16,16 +21,16 @@ const writeUser = async (
   let providerUid = "";
   let screenName = "";
   let description = "";
+  const additionalUserInfo = getAdditionalUserInfo(credential);
 
-  if (credential.additionalUserInfo) {
-    if (credential.additionalUserInfo.username) {
-      screenName = credential.additionalUserInfo.username;
+  if (additionalUserInfo) {
+    if (additionalUserInfo.username) {
+      screenName = additionalUserInfo.username;
     }
-    if (credential.additionalUserInfo.profile) {
+    if (additionalUserInfo.profile) {
       /* eslint-disable @typescript-eslint/no-explicit-any */
-      providerUid = (credential.additionalUserInfo.profile as any).id_str;
-      description =
-        (credential.additionalUserInfo.profile as any).description || "";
+      providerUid = (additionalUserInfo.profile as any).id_str;
+      description = (additionalUserInfo.profile as any).description || "";
       /* eslint-enable */
     }
   }
@@ -34,20 +39,22 @@ const writeUser = async (
     throw new Error("Invalid credential information.");
   }
   // resolve screenname duplication
-  const query = await db
-    .collection(collectionName.users)
-    .where("screenName", "==", screenName)
-    .get();
-  if (query.size) {
+  const userCollectionRef = collection(db, collectionName.users);
+  const snap = await getDocs(
+    query(userCollectionRef, where("screenName", "==", screenName))
+  );
+  if (snap.size > 0) {
     const rnd = Math.floor(Math.random() * 10000);
     screenName = `${screenName}${rnd.toString().padStart(4, "0")}`;
   }
-  let theUser: User | null = null;
-  const batch = db.batch();
-  const userDoc = await db.collection(collectionName.users).doc(id).get();
-  if (userDoc.exists) {
-    const user = userDoc.data() as User;
-    const diff: Partial<User> = {};
+  let theUser: TheUser | null = null;
+
+  const batch = writeBatch(db);
+  const userDoc = await getDoc(doc(db, collectionName.users, id));
+  if (userDoc.exists()) {
+    const user = userDoc.data();
+    assertUser(user);
+    const diff: Partial<TheUser> = {};
     if (user.description !== description) {
       diff.description = description;
     }
@@ -60,12 +67,12 @@ const writeUser = async (
     if (!isEmpty(diff)) {
       batch.update(userDoc.ref, {
         ...diff,
-        updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+        updatedAt: serverTimestamp(),
       });
     }
     theUser = { ...user, ...diff, id: userDoc.id };
   } else {
-    const user: User = {
+    const user: TheUser = {
       ...blankUser,
       providerUid,
       screenName,
@@ -75,18 +82,20 @@ const writeUser = async (
     };
     batch.set(userDoc.ref, {
       ...user,
-      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-      updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+      createdAt: serverTimestamp(),
+      updatedAt: serverTimestamp(),
     });
     theUser = { ...user, id: userDoc.id };
-    const counterDoc = db
-      .collection(collectionName.docCounters)
-      .doc(collectionName.users);
+    const counterDoc = doc(
+      db,
+      collectionName.docCounters,
+      collectionName.users
+    );
     batch.set(
       counterDoc,
       {
-        count: firebase.firestore.FieldValue.increment(1),
-        updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+        count: increment(1),
+        updatedAt: serverTimestamp(),
       },
       { merge: true }
     );

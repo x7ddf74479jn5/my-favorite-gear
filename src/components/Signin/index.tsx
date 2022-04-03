@@ -2,12 +2,13 @@ import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import firebase from "firebase";
+import { Twitter } from "@material-ui/icons";
+import { signInWithRedirect, TwitterAuthProvider } from "firebase/auth";
 import type { FC } from "react";
 import React from "react";
 
-import { TwitterLogo } from "@/asset/TwitterLogo";
 import { brandColor } from "@/asset/variables";
+import { useAuth } from "@/lib/firebase";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -37,18 +38,16 @@ const useStyles = makeStyles((theme) => {
 
 const Signin: FC = () => {
   const classes = useStyles();
+  const auth = useAuth();
 
   const handleLogin = () => {
-    const provider = new firebase.auth.TwitterAuthProvider();
+    const provider = new TwitterAuthProvider();
     provider.setCustomParameters({ lang: "ja" });
-    firebase
-      .auth()
-      .signInWithRedirect(provider)
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.error(`code:${errorCode}, message:${errorMessage}`);
-      });
+    signInWithRedirect(auth, provider).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.error(`code:${errorCode}, message:${errorMessage}`);
+    });
   };
 
   return (
@@ -63,7 +62,7 @@ const Signin: FC = () => {
       <div className={classes.buttonWrapper}>
         <Button
           variant="contained"
-          startIcon={<TwitterLogo width={18} height={18} />}
+          startIcon={<Twitter width={18} height={18} />}
           className={classes.loginButton}
           onClick={handleLogin}
         >

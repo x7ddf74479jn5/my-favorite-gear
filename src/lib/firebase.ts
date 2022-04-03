@@ -1,4 +1,8 @@
-import firebase from "firebase";
+import { getApp, getApps, initializeApp } from "firebase/app";
+import { connectAuthEmulator, getAuth } from "firebase/auth";
+import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
+
+const isEmulating = () => import.meta.env.VITE_USE_FIREBASE_EMULATOR === "true";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
@@ -10,14 +14,24 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENTID,
 };
 
-export const initializeFirebase = () => {
-  if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-  }
+const app = !getApps.length ? initializeApp(firebaseConfig) : getApp();
 
-  const isEmulating = import.meta.env.NODE_ENV === "test";
-  if (isEmulating) {
-    firebase.auth().useEmulator("http://localhost:9099");
-    firebase.firestore().useEmulator("localhost", 8080);
+let firestore: ReturnType<typeof getFirestore>;
+
+export const useAuth = () => {
+  const auth = getAuth(app);
+  if (isEmulating()) {
+    connectAuthEmulator(auth, "http://localhost:9099");
   }
+  return auth;
+};
+
+export const useFirestore = () => {
+  if (!firestore) {
+    firestore = getFirestore();
+    if (isEmulating()) {
+      connectFirestoreEmulator(firestore, "localhost", 8080);
+    }
+  }
+  return firestore;
 };

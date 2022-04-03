@@ -1,19 +1,21 @@
-import firebase from "firebase";
+import type { UserCredential } from "firebase/auth";
+import { getRedirectResult } from "firebase/auth";
 import type { FC } from "react";
 import React, { useEffect, useRef, useState } from "react";
 
 import { FirebaseContext, UserContext } from "@/contexts";
+import { useAuth, useFirestore } from "@/lib/firebase";
 import findUser from "@/services/find-user";
 import type { User } from "@/services/models/user";
 import writeUser from "@/services/write-user";
 
 const FirebaseApp: FC = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
-  const [credential, setCredential] =
-    useState<firebase.auth.UserCredential | null>(null);
+  const [credential, setCredential] = useState<UserCredential | null>(null);
   const counterRef = useRef(0);
-  const auth = firebase.auth();
-  const db = firebase.firestore();
+  const mountedRef = useRef(false);
+  const auth = useAuth();
+  const db = useFirestore();
 
   const unsubscribe = auth.onAuthStateChanged(async (firebaseUser) => {
     if (firebaseUser) {
@@ -37,14 +39,18 @@ const FirebaseApp: FC = ({ children }) => {
   });
 
   useEffect(() => {
-    firebase
-      .auth()
-      .getRedirectResult()
-      .then((authResult) => {
-        if (authResult.user) {
+    if (!mountedRef.current) {
+      getRedirectResult(auth).then((authResult) => {
+        if (authResult?.user) {
           setCredential(authResult);
         }
       });
+      mountedRef.current = true;
+    }
+    return () => {
+      mountedRef.current = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

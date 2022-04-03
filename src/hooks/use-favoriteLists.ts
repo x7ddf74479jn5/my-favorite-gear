@@ -1,3 +1,11 @@
+import {
+  collection,
+  getDocs,
+  limit,
+  orderBy,
+  query,
+  where,
+} from "firebase/firestore";
 import { useContext, useEffect, useRef, useState } from "react";
 
 import { FirebaseContext } from "@/contexts";
@@ -24,16 +32,17 @@ const useThreads = (options?: FavoriteListsOptions) => {
   useEffect(() => {
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
-    const query = db
-      .collection(collectionName.favoriteLists)
-      .where("gearsCount", "==", 8)
-      .orderBy(optionsRef.current.orderbyColumn, "desc")
-      .limit(optionsRef.current.limit);
-
+    const collectionRef = collection(db, collectionName.favoriteLists);
+    const q = query(
+      collectionRef,
+      where("gearsCount", "==", 8),
+      orderBy(optionsRef.current.orderbyColumn, "desc"),
+      limit(optionsRef.current.limit)
+    );
     const load = async () => {
       setLoading(true);
       try {
-        const snap = await query.get();
+        const snap = await getDocs(q);
         const favoriteListsData = snap.docs.map((doc) => {
           return {
             ...(doc.data() as FavoriteList),
@@ -43,7 +52,9 @@ const useThreads = (options?: FavoriteListsOptions) => {
         setFavoriteLists(favoriteListsData);
         setError(null);
       } catch (err) {
-        setError(err);
+        if (err instanceof Error) {
+          setError(err);
+        }
       }
       setLoading(false);
     };

@@ -1,4 +1,4 @@
-import firebase from "firebase";
+import { doc, getDoc, setDoc, Timestamp } from "firebase/firestore";
 import { useContext, useEffect, useRef, useState } from "react";
 
 import { FirebaseContext } from "@/contexts";
@@ -30,14 +30,15 @@ const useFavoriteList = (options: favoriteListOptions) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
-    const query = db
-      .collection(collectionName.favoriteLists)
-      .doc(optionsRef.current.id);
-
+    const userDocRef = doc(
+      db,
+      collectionName.favoriteLists,
+      optionsRef.current.id
+    );
     const load = async () => {
       setLoading(true);
       try {
-        const snap = await query.get();
+        const snap = await getDoc(userDocRef);
         const favoriteListData = {
           ...blankFavoriteList,
           ...(snap.data() as FavoriteList),
@@ -46,7 +47,9 @@ const useFavoriteList = (options: favoriteListOptions) => {
         setFavoriteList(favoriteListData);
         setError(null);
       } catch (err) {
-        setError(err);
+        if (err instanceof Error) {
+          setError(err);
+        }
       }
       setLoading(false);
     };
@@ -57,10 +60,11 @@ const useFavoriteList = (options: favoriteListOptions) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
-    const query = db
-      .collection(collectionName.favoriteLists)
-      .doc(optionsRef.current.id);
-
+    const favoriteListsDocRef = doc(
+      db,
+      collectionName.favoriteLists,
+      optionsRef.current.id
+    );
     if (favoriteList.gears.length >= 8) {
       alert("9アイテム以上はお気に入りに登録できません。");
       return;
@@ -71,16 +75,18 @@ const useFavoriteList = (options: favoriteListOptions) => {
         ...favoriteList,
         gears: [...favoriteList.gears, gear],
       };
-      await query.set({
+      await setDoc(favoriteListsDocRef, {
         gears: newFavoriteList.gears,
         gearsCount: newFavoriteList.gears.length,
         image: optionsRef.current.image,
         twitterId: optionsRef.current.twitterId,
-        updatedAt: firebase.firestore.Timestamp.now(),
+        updatedAt: Timestamp.now(),
       });
       setFavoriteList(newFavoriteList);
     } catch (err) {
-      setError(err);
+      if (err instanceof Error) {
+        setError(err);
+      }
     }
     setLoading(false);
   };
@@ -89,10 +95,12 @@ const useFavoriteList = (options: favoriteListOptions) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
-    const query = db
-      .collection(collectionName.favoriteLists)
-      .doc(optionsRef.current.id);
 
+    const favoriteListsDocRef = doc(
+      db,
+      collectionName.favoriteLists,
+      optionsRef.current.id
+    );
     setLoading(true);
     try {
       const newFavoriteList = {
@@ -101,16 +109,18 @@ const useFavoriteList = (options: favoriteListOptions) => {
           return favoriteListGear !== gear;
         }),
       };
-      await query.set({
+      await setDoc(favoriteListsDocRef, {
         gears: newFavoriteList.gears,
         gearsCount: newFavoriteList.gears.length,
         image: optionsRef.current.image,
         twitterId: optionsRef.current.twitterId,
-        updatedAt: firebase.firestore.Timestamp.now(),
+        updatedAt: Timestamp.now(),
       });
       setFavoriteList(newFavoriteList);
     } catch (err) {
-      setError(err);
+      if (err instanceof Error) {
+        setError(err);
+      }
     }
     setLoading(false);
   };
@@ -119,9 +129,11 @@ const useFavoriteList = (options: favoriteListOptions) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
-    const query = db
-      .collection(collectionName.favoriteLists)
-      .doc(optionsRef.current.id);
+    const favoriteListDocRef = doc(
+      db,
+      collectionName.favoriteLists,
+      optionsRef.current.id
+    );
     setLoading(true);
     try {
       const index = favoriteList.gears.indexOf(gear);
@@ -132,21 +144,22 @@ const useFavoriteList = (options: favoriteListOptions) => {
         favoriteList.gears[index],
         favoriteList.gears[index - 1]
       );
-
       const newFavoriteList = {
         ...favoriteList,
         gears: spliced,
       };
-      await query.set({
+      await setDoc(favoriteListDocRef, {
         gears: newFavoriteList.gears,
         gearsCount: newFavoriteList.gears.length,
         image: optionsRef.current.image,
         twitterId: optionsRef.current.twitterId,
-        updatedAt: firebase.firestore.Timestamp.now(),
+        updatedAt: Timestamp.now(),
       });
       setFavoriteList(newFavoriteList);
     } catch (err) {
-      setError(err);
+      if (err instanceof Error) {
+        setError(err);
+      }
     }
     setLoading(false);
   };
@@ -154,9 +167,11 @@ const useFavoriteList = (options: favoriteListOptions) => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
-    const query = db
-      .collection(collectionName.favoriteLists)
-      .doc(optionsRef.current.id);
+    const favoliteListDocRef = doc(
+      db,
+      collectionName.favoriteLists,
+      optionsRef.current.id
+    );
     setLoading(true);
     try {
       const index = favoriteList.gears.indexOf(gear);
@@ -171,16 +186,18 @@ const useFavoriteList = (options: favoriteListOptions) => {
         ...favoriteList,
         gears: spliced,
       };
-      await query.set({
+      await setDoc(favoliteListDocRef, {
         gears: newFavoriteList.gears,
         gearsCount: newFavoriteList.gears.length,
         image: optionsRef.current.image,
         twitterId: optionsRef.current.twitterId,
-        updatedAt: firebase.firestore.Timestamp.now(),
+        updatedAt: Timestamp.now(),
       });
       setFavoriteList(newFavoriteList);
     } catch (err) {
-      setError(err);
+      if (err instanceof Error) {
+        setError(err);
+      }
     }
     setLoading(false);
   };
