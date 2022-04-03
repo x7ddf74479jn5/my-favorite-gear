@@ -7,11 +7,11 @@ export const collectionName = {
 export const api = {
   amazon: {
     baseURL: "https://www.amazon.co.jp/",
-    affiliateId: import.meta.env.AMAZON_AFFILIATE_ID,
+    affiliateId: String(import.meta.env.VITE_AMAZON_AFFILIATEID),
   },
   rakuten: {
     baseURL: "https://app.rakuten.co.jp/services/api/Product/Search/20170426",
-    affiliateId: import.meta.env.RAKUTEN_AFFILIATE_ID,
-    applicationId: import.meta.env.RAKUTEN_APP_ID,
+    affiliateId: String(import.meta.env.VITE_RAKUTEN_AFFILIATEID),
+    applicationId: String(import.meta.env.VITE_RAKUTEN_APPID),
   },
 } as const;
