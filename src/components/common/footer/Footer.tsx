@@ -1,21 +1,17 @@
-import Link from "@material-ui/core/Link";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/system";
 import type { FC } from "react";
 import React from "react";
 
-const useStyles = makeStyles((theme) => {
-  return {
-    footer: {
-      padding: theme.spacing(2),
-      marginTop: "auto",
-    },
-  };
-});
+const Container = styled("footer")(({ theme }) => ({
+  padding: theme.spacing(2),
+  marginTop: "auto",
+}));
+
 const Footer: FC = () => {
-  const classes = useStyles();
   return (
-    <footer className={classes.footer}>
+    <Container>
       <Typography variant="body1" color="textSecondary" align="center">
         {"My Favorite Gear"}
       </Typography>
@@ -25,7 +21,7 @@ const Footer: FC = () => {
           {"@pandashark6"}
         </Link>
       </Typography>
-    </footer>
+    </Container>
   );
 };
 

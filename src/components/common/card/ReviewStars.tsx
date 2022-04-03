@@ -1,5 +1,5 @@
-import StarIcon from "@material-ui/icons/Star";
-import StarHalfIcon from "@material-ui/icons/StarHalf";
+import StarIcon from "@mui/icons-material/Star";
+import StarHalfIcon from "@mui/icons-material/StarHalf";
 import type { FC } from "react";
 import React from "react";
 

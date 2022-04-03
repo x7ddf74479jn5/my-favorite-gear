@@ -1,17 +1,17 @@
-import Avatar from "@material-ui/core/Avatar";
-import Button from "@material-ui/core/Button";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import CardHeader from "@material-ui/core/CardHeader";
-import IconButton from "@material-ui/core/IconButton";
-import Link from "@material-ui/core/Link";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import DeleteIcon from "@material-ui/icons/Delete";
-import LinkIcon from "@material-ui/icons/Link";
-import ThumbUpIcon from "@material-ui/icons/ThumbUp";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import DeleteIcon from "@mui/icons-material/Delete";
+import LinkIcon from "@mui/icons-material/Link";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import IconButton from "@mui/material/IconButton";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/system";
 import type { FC } from "react";
 import React from "react";
 
@@ -28,38 +28,20 @@ interface GearCardProps {
   downButton?: (gear: Gear) => void;
 }
 
-const useStyles = makeStyles((theme) => {
-  return {
-    cardRoot: {
-      width: "100%",
-      margin: theme.spacing(1, 0),
-    },
-    avatar: {
-      width: theme.spacing(9),
-      height: theme.spacing(9),
-    },
-    content: {
-      display: "flex",
-      justifyContent: "space-between",
-    },
-    review: {
-      display: "flex",
-    },
-    linkContainer: {
-      display: "flex",
-      gap: theme.spacing(2),
-      margin: theme.spacing(2, 0, 2, 0),
-    },
-    amazon: {
-      color: "white",
-      backgroundColor: brandColor.amazon,
-    },
-    rakuten: {
-      color: "white",
-      backgroundColor: brandColor.rakuten,
-    },
-  };
+const Content = styled("div")({
+  display: "flex",
+  justifyContent: "space-between",
 });
+
+const Review = styled("div")({
+  display: "flex",
+});
+
+const LinkContainer = styled("div")(({ theme }) => ({
+  display: "flex",
+  gap: theme.spacing(2),
+  margin: theme.spacing(2, 0, 2, 0),
+}));
 
 const GearCard: FC<GearCardProps> = ({
   gear,
@@ -69,42 +51,56 @@ const GearCard: FC<GearCardProps> = ({
   upButton,
   downButton,
 }) => {
-  const classes = useStyles();
   return (
-    <Card className={classes.cardRoot}>
+    <Card
+      sx={{
+        width: "100%",
+        margin: (theme) => theme.spacing(1, 0),
+      }}
+    >
       <CardHeader
         avatar={
           gear.mediumImageUrl ? (
             <Avatar
               src={gear.mediumImageUrl}
               alt={gear.productName}
-              className={classes.avatar}
+              sx={{
+                width: (theme) => theme.spacing(9),
+                height: (theme) => theme.spacing(9),
+              }}
             />
           ) : (
-            <Avatar className={classes.avatar}>{gear.productName}</Avatar>
+            <Avatar
+              sx={{
+                width: (theme) => theme.spacing(9),
+                height: (theme) => theme.spacing(9),
+              }}
+            >
+              {gear.productName}
+            </Avatar>
           )
         }
         title={gear.productName}
         subheader={`${gear.makerName}/${gear.brandName}/${gear.genreName}`}
       />
       <CardContent>
-        <div className={classes.content}>
+        <Content>
           {gear.reviewAverage && (
-            <div className={classes.review}>
+            <Review>
               <ReviewStars reviewAverage={gear.reviewAverage} />
               <Typography> : {gear.reviewAverage}</Typography>
-            </div>
+            </Review>
           )}
           {gear.averagePrice && (
             <Typography align="right">
               平均価格: {gear.averagePrice.toLocaleString()}円
             </Typography>
           )}
-        </div>
-        <div className={classes.linkContainer}>
+        </Content>
+        <LinkContainer>
           {gear.affiliateUrl && (
             <Button
-              className={classes.rakuten}
+              sx={{ color: "white", backgroundColor: brandColor.rakuten }}
               component={Link}
               href={gear.affiliateUrl}
               startIcon={<LinkIcon />}
@@ -118,7 +114,7 @@ const GearCard: FC<GearCardProps> = ({
           )}
           {gear.affiliateUrl && (
             <Button
-              className={classes.amazon}
+              sx={{ color: "white", backgroundColor: brandColor.amazon }}
               component={Link}
               href={gear.amazonUrl}
               startIcon={<LinkIcon />}
@@ -130,7 +126,7 @@ const GearCard: FC<GearCardProps> = ({
               Amazonで見る
             </Button>
           )}
-        </div>
+        </LinkContainer>
         {upButton && (
           <IconButton
             onClick={() => {

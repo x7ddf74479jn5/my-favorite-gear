@@ -1,7 +1,6 @@
-import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import type { FC } from "react";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import type { VFC } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -11,16 +10,7 @@ import Progress from "@/components/common/progress/Progress";
 import useFavoriteLists from "@/hooks/use-favoriteLists";
 import paths from "@/paths";
 
-const useStyles = makeStyles((theme) => {
-  return {
-    button: {
-      marginTop: theme.spacing(1),
-      marginBottom: theme.spacing(4),
-    },
-  };
-});
-const FavoriteListContainer: FC = () => {
-  const classes = useStyles();
+const FavoriteListContainer: VFC = () => {
   const favoriteLists = useFavoriteLists();
   if (favoriteLists.loading) return <Progress />;
   return (
@@ -47,7 +37,10 @@ const FavoriteListContainer: FC = () => {
                 fullWidth
                 component={Link}
                 to={`${paths.favoriteListRoot}${favoriteList.id}`}
-                className={classes.button}
+                sx={{
+                  marginTop: (theme) => theme.spacing(1),
+                  marginBottom: (theme) => theme.spacing(4),
+                }}
               >
                 くわしくみる
               </Button>

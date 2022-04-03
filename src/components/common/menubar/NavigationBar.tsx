@@ -1,11 +1,11 @@
-import AppBar from "@material-ui/core/AppBar";
-import Avatar from "@material-ui/core/Avatar";
-import IconButton from "@material-ui/core/IconButton";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import { makeStyles } from "@material-ui/core/styles";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+import AppBar from "@mui/material/AppBar";
+import Avatar from "@mui/material/Avatar";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/system";
 import type { FC } from "react";
 import React, { useContext } from "react";
 import { useNavigate } from "react-router";
@@ -14,26 +14,13 @@ import { Link } from "react-router-dom";
 import { FirebaseContext, UserContext } from "@/contexts";
 import paths from "@/paths";
 
-const useStyles = makeStyles((theme) => {
-  return {
-    appbar: {
-      background: theme.palette.primary.main,
-    },
-
-    titleLink: {
-      textDecoration: "none",
-      color: "unset",
-      flexGrow: 1,
-    },
-    Avatar: {
-      width: theme.spacing(4),
-      height: theme.spacing(4),
-    },
-  };
+const HomeLink = styled(Link)({
+  textDecoration: "none",
+  color: "unset",
+  flexGrow: 1,
 });
-const NavigationBar: FC = () => {
-  const classes = useStyles();
 
+const NavigationBar: FC = () => {
   const { auth } = useContext(FirebaseContext);
   const { user } = useContext(UserContext);
   const navigate = useNavigate();
@@ -58,13 +45,13 @@ const NavigationBar: FC = () => {
 
   return (
     <>
-      <AppBar className={classes.appbar}>
+      <AppBar sx={{ background: (theme) => theme.palette.primary.main }}>
         <Toolbar>
-          <Link to={paths.home} className={classes.titleLink}>
+          <HomeLink to={paths.home}>
             <Typography variant="h6" noWrap>
               My Favorite Gear
             </Typography>
-          </Link>
+          </HomeLink>
           {user ? (
             <>
               <IconButton
@@ -77,7 +64,10 @@ const NavigationBar: FC = () => {
                 <Avatar
                   alt={user.screenName}
                   src={user.photoUrl ? user.photoUrl : ""}
-                  className={classes.Avatar}
+                  sx={{
+                    width: (theme) => theme.spacing(4),
+                    height: (theme) => theme.spacing(4),
+                  }}
                 />
               </IconButton>
               <Menu

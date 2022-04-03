@@ -1,6 +1,6 @@
 import "./index.css";
 
-import { MuiThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
@@ -15,11 +15,11 @@ createRoot(
 ).render(
   <React.StrictMode>
     <BrowserRouter>
-      <MuiThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <FirebaseApp>
           <App />
         </FirebaseApp>
-      </MuiThemeProvider>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

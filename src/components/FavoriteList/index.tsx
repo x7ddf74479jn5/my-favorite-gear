@@ -1,27 +1,23 @@
-import Container from "@material-ui/core/Container";
-import { makeStyles } from "@material-ui/core/styles";
-import type { FC } from "react";
+import Container from "@mui/material/Container";
+import type { VFC } from "react";
 import React, { useContext } from "react";
 
 import FavoriteListContainer from "@/containers/FavoriteList/FavoriteList";
 import { UserContext } from "@/contexts";
 
-const useStyles = makeStyles((theme) => {
-  return {
-    root: {
-      marginTop: theme.spacing(1),
-      marginBottom: theme.spacing(1),
-      padding: theme.spacing(2),
-      backgroundColor: theme.palette.background.paper,
-    },
-  };
-});
-const FavoriteList: FC = () => {
-  const classes = useStyles();
+const FavoriteList: VFC = () => {
   const { user } = useContext(UserContext);
 
   return (
-    <Container maxWidth="xs" className={classes.root}>
+    <Container
+      maxWidth="xs"
+      sx={{
+        marginTop: (theme) => theme.spacing(1),
+        marginBottom: (theme) => theme.spacing(1),
+        padding: (theme) => theme.spacing(2),
+        backgroundColor: (theme) => theme.palette.background.paper,
+      }}
+    >
       <FavoriteListContainer user={user} />
     </Container>
   );

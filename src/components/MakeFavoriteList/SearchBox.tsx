@@ -1,35 +1,30 @@
-import Container from "@material-ui/core/Container";
-import IconButton from "@material-ui/core/IconButton";
-import InputBase from "@material-ui/core/InputBase";
-import Paper from "@material-ui/core/Paper";
-import type { Theme } from "@material-ui/core/styles";
-import { createStyles, makeStyles } from "@material-ui/core/styles";
-import SearchIcon from "@material-ui/icons/Search";
+import SearchIcon from "@mui/icons-material/Search";
+import Container from "@mui/material/Container";
+import IconButton from "@mui/material/IconButton";
+import InputBase from "@mui/material/InputBase";
+import Paper from "@mui/material/Paper";
 import type { FC } from "react";
 import React, { useState } from "react";
 
-const useStyles = makeStyles((theme: Theme) => {
-  return createStyles({
-    root: { display: "flex", margin: theme.spacing(1) },
-    input: { flex: 1, paddingLeft: theme.spacing(1) },
-  });
-});
 interface SearchBoxProps {
   handler: (str: string) => void;
 }
 const SearchBox: FC<SearchBoxProps> = ({ handler }) => {
-  const classes = useStyles();
   const [term, setTerm] = useState<string>("");
-  const onSubmit = (event: React.FormEvent<HTMLDivElement>) => {
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     handler(term);
   };
   return (
     <Container maxWidth="xs">
-      <Paper component="form" className={classes.root} onSubmit={onSubmit}>
+      <Paper
+        component="form"
+        sx={{ display: "flex", margin: (theme) => theme.spacing(1) }}
+        onSubmit={onSubmit}
+      >
         <InputBase
           fullWidth
-          className={classes.input}
+          sx={{ flex: 1, paddingLeft: (theme) => theme.spacing(1) }}
           placeholder="商品を検索"
           inputProps={{ "aria-label": "商品を検索" }}
           value={term}

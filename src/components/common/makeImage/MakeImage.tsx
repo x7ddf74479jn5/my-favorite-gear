@@ -1,29 +1,18 @@
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import { makeStyles } from "@material-ui/core/styles";
+import Grid from "@mui/material/Grid";
+import { styled } from "@mui/system";
 import type { FC } from "react";
 import React from "react";
 
 import type { FavoriteList } from "@/services/models/favoriteList";
 import type { Gear } from "@/services/models/gear";
 
-const useStyles = makeStyles((theme) => {
-  return {
-    root: {
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: "space-around",
-      margin: theme.spacing(2, 0),
-    },
-    gridlist: {
-      width: 360,
-      height: 360,
-    },
-    gridimage: {
-      width: "100%",
-    },
-  };
-});
+const Root = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "space-around",
+  margin: theme.spacing(2, 0),
+}));
+
 interface Tile {
   src: string;
   alt: string;
@@ -32,7 +21,6 @@ const GridImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
   favoriteList,
   gear,
 }) => {
-  const classes = useStyles();
   if (favoriteList) {
     const tile: Tile[] = favoriteList.gears.map((v) => {
       return {
@@ -47,48 +35,44 @@ const GridImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
 
     return (
       <>
-        <GridList
-          cols={3}
+        <Grid
+          container
+          columns={3}
           spacing={0}
-          className={classes.gridlist}
-          cellHeight={120}
+          sx={{ width: 360, height: 360 }}
         >
           {tile.map((item: Tile, index) => {
             return (
-              <GridListTile key={`${item.src}-${index}`} cols={1}>
+              <Grid item key={`${item.src}-${index}`} columns={1}>
                 <img src={item.src} alt={item.alt} />
-              </GridListTile>
+              </Grid>
             );
           })}
-        </GridList>
+        </Grid>
       </>
     );
   }
+
   return (
     <>
-      <GridList
-        cols={3}
-        spacing={0}
-        className={classes.gridlist}
-        cellHeight={120}
-      >
-        <GridListTile cols={3} rows={3}>
+      <Grid container columns={3} spacing={0} sx={{ width: 360, height: 360 }}>
+        <Grid item columns={3}>
           <img src={gear?.mediumImageUrl || ""} alt={gear?.productName || ""} />
-        </GridListTile>
-      </GridList>
+        </Grid>
+      </Grid>
     </>
   );
 };
+
 const MakeImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
   favoriteList,
   gear,
 }) => {
-  const classes = useStyles();
   return (
     <>
-      <div className={classes.root}>
+      <Root>
         <GridImage favoriteList={favoriteList} gear={gear} />
-      </div>
+      </Root>
     </>
   );
 };

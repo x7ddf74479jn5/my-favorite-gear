@@ -1,22 +1,14 @@
-import CircularProgress from "@material-ui/core/CircularProgress";
-import Container from "@material-ui/core/Container";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
+import CircularProgress from "@mui/material/CircularProgress";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 import type { FC } from "react";
 import React from "react";
 
-const useStyles = makeStyles((theme) => {
-  return {
-    styledContainer: {
-      textAlign: "center",
-      margin: theme.spacing(4, 0),
-    },
-  };
-});
 const Progress: FC = () => {
-  const classes = useStyles();
   return (
-    <Container className={classes.styledContainer}>
+    <Container
+      sx={{ textAlign: "center", margin: (theme) => theme.spacing(4, 0) }}
+    >
       <Typography>読み込み中</Typography>
       <CircularProgress size={50} />
     </Container>

@@ -1,6 +1,6 @@
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import type { FC } from "react";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import type { VFC } from "react";
 import React from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ import useFavoriteList from "@/hooks/use-favoriteList";
 import paths from "@/paths";
 import type { User } from "@/services/models/user";
 
-const FavoriteListContainer: FC<{ user: User | null }> = ({ user }) => {
+const FavoriteListContainer: VFC<{ user: User | null }> = ({ user }) => {
   const { id } = useParams<{ id?: string }>();
   const favoriteList = useFavoriteList({
     id: id,

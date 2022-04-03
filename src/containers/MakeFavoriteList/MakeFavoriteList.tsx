@@ -1,6 +1,5 @@
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import type { FC } from "react";
+import Typography from "@mui/material/Typography";
+import type { VFC } from "react";
 import React from "react";
 
 import GearCards from "@/components/common/card/GearCards";
@@ -12,22 +11,13 @@ import useFavoriteList from "@/hooks/use-favoriteList";
 import useRakutenSearch from "@/hooks/use-rakutenSearch";
 import type { User } from "@/services/models/user";
 
-const useStyles = makeStyles(() => {
-  return {
-    text: {
-      wordBreak: "keep-all",
-    },
-  };
-});
-
-const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
+const MakeFavoriteListContainer: VFC<{ user: User }> = ({ user }) => {
   const rakutenSearch = useRakutenSearch();
   const favoriteList = useFavoriteList({
     id: user.id,
     image: user.photoUrl,
     twitterId: user.screenName,
   });
-  const classes = useStyles();
 
   return (
     <>
@@ -50,7 +40,7 @@ const MakeFavoriteListContainer: FC<{ user: User }> = ({ user }) => {
             variant="h6"
             gutterBottom
             align="center"
-            className={classes.text}
+            sx={{ wordBreak: "keep-all" }}
           >
             {user.screenName}のMy Favorite Gear (
             {favoriteList.favoriteList.gears.length}

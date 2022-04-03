@@ -1,5 +1,5 @@
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/system";
 import type { FC } from "react";
 import React from "react";
 
@@ -16,19 +16,17 @@ interface GearCardsProps {
   downButton?: (gear: Gear) => void;
 }
 
-const useStyles = makeStyles((theme) => {
-  return {
-    root: {
-      display: "flex",
-      alignItems: "center",
-      flexDirection: "column",
-      margin: theme.spacing(2, 0),
-    },
-    bottom: {
-      margin: theme.spacing(4),
-    },
-  };
-});
+const Root = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  flexDirection: "column",
+  margin: theme.spacing(2, 0),
+}));
+
+const Bottom = styled("div")(({ theme }) => ({
+  margin: theme.spacing(4),
+}));
+
 const GearCards: FC<GearCardsProps> = ({
   gears,
   addButton,
@@ -37,9 +35,8 @@ const GearCards: FC<GearCardsProps> = ({
   upButton,
   downButton,
 }) => {
-  const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <Root>
       {gears.length > 0 ? (
         gears.map((gear, index, self) => {
           return (
@@ -55,11 +52,11 @@ const GearCards: FC<GearCardsProps> = ({
           );
         })
       ) : (
-        <div className={classes.bottom}>
+        <Bottom>
           <Typography>表示できるアイテムがありません。</Typography>
-        </div>
+        </Bottom>
       )}
-    </div>
+    </Root>
   );
 };
 
