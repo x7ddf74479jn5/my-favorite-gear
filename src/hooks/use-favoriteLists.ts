@@ -6,9 +6,10 @@ import {
   query,
   where,
 } from "firebase/firestore";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 
 import { FirebaseContext } from "@/contexts";
+import { useMountedFn } from "@/hooks/use-mountedFn";
 import { collectionName } from "@/services/constants";
 import type { FavoriteList } from "@/services/models/favoriteList";
 
@@ -29,7 +30,7 @@ const useThreads = (options?: FavoriteListsOptions) => {
   const firebaseRef = useRef(useContext(FirebaseContext));
   const optionsRef = useRef({ ...defaultOptions, ...options });
 
-  useEffect(() => {
+  useMountedFn(() => {
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
     const collectionRef = collection(db, collectionName.favoriteLists);
@@ -60,7 +61,7 @@ const useThreads = (options?: FavoriteListsOptions) => {
     };
 
     load();
-  }, []);
+  });
 
   return { favoriteLists, loading, error };
 };

@@ -1,7 +1,8 @@
 import { doc, getDoc, setDoc, Timestamp } from "firebase/firestore";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 
 import { FirebaseContext } from "@/contexts";
+import { useMountedFn } from "@/hooks/use-mountedFn";
 import { collectionName } from "@/services/constants";
 import type { FavoriteList } from "@/services/models/favoriteList";
 import { blankFavoriteList } from "@/services/models/favoriteList";
@@ -26,7 +27,7 @@ const useFavoriteList = (options: favoriteListOptions) => {
   const firebaseRef = useRef(useContext(FirebaseContext));
   const optionsRef = useRef({ ...defaultOptions, ...options });
 
-  useEffect(() => {
+  useMountedFn(() => {
     if (!optionsRef.current.id) return;
     const { db } = firebaseRef.current;
     if (!db) throw new Error("Firestore is not initialized");
@@ -54,7 +55,7 @@ const useFavoriteList = (options: favoriteListOptions) => {
       setLoading(false);
     };
     load();
-  }, []);
+  });
 
   const addGear = async (gear: Gear) => {
     if (!optionsRef.current.id) return;
