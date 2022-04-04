@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 import type { Gear } from "@/services/models/gear";
 import { getGearsFactory } from "@/services/rakutenApi";
@@ -7,7 +7,7 @@ const useRakutenSearch = () => {
   const [gears, setGears] = useState<Gear[]>([]);
   const [loading, setLoading] = useState(false);
 
-  const searchGears = (keyword: string) => {
+  const searchGears = useCallback((keyword: string) => {
     if (keyword.trim() === "") {
       setGears([]);
       return;
@@ -18,7 +18,8 @@ const useRakutenSearch = () => {
       setGears(gears);
       setLoading(false);
     });
-  };
+  }, []);
+
   return { gears, loading, searchGears };
 };
 
