@@ -1,10 +1,10 @@
 import CircularProgress from "@mui/material/CircularProgress";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import type { FC } from "react";
+import type { VFC } from "react";
 import React from "react";
 
-const Progress: FC = () => {
+const Progress: VFC = () => {
   return (
     <Container
       sx={{ textAlign: "center", margin: (theme) => theme.spacing(4, 0) }}

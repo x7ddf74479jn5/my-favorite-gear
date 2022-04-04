@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/system";
-import type { FC } from "react";
-import React from "react";
+import type { VFC } from "react";
+import React, { memo } from "react";
 
 import type { FavoriteList } from "@/services/models/favoriteList";
 import type { Gear } from "@/services/models/gear";
@@ -17,7 +17,7 @@ interface Tile {
   src: string;
   alt: string;
 }
-const GridImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
+const GridImage: VFC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
   favoriteList,
   gear,
 }) => {
@@ -64,7 +64,7 @@ const GridImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
   );
 };
 
-const MakeImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
+const MakeImage: VFC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
   favoriteList,
   gear,
 }) => {
@@ -77,4 +77,4 @@ const MakeImage: FC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
   );
 };
 
-export default MakeImage;
+export default memo(MakeImage);

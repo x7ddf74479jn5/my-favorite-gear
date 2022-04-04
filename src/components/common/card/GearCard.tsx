@@ -12,7 +12,7 @@ import IconButton from "@mui/material/IconButton";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
-import type { FC } from "react";
+import type { VFC } from "react";
 import React from "react";
 
 import { brandColor } from "@/asset/variables";
@@ -43,7 +43,7 @@ const LinkContainer = styled("div")(({ theme }) => ({
   margin: theme.spacing(2, 0, 2, 0),
 }));
 
-const GearCard: FC<GearCardProps> = ({
+const GearCard: VFC<GearCardProps> = ({
   gear,
   addButton,
   favoriteList,

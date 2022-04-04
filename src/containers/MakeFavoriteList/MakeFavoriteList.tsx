@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
 import type { VFC } from "react";
-import React from "react";
+import React, { memo } from "react";
 
 import GearCards from "@/components/common/card/GearCards";
 import MakeImage from "@/components/common/makeImage/MakeImage";
@@ -70,4 +70,4 @@ const MakeFavoriteListContainer: VFC<{ user: User }> = ({ user }) => {
   );
 };
 
-export default MakeFavoriteListContainer;
+export default memo(MakeFavoriteListContainer);

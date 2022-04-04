@@ -1,7 +1,7 @@
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
-import type { FC } from "react";
+import type { VFC } from "react";
 import React from "react";
 
 const Container = styled("footer")(({ theme }) => ({
@@ -9,7 +9,7 @@ const Container = styled("footer")(({ theme }) => ({
   marginTop: "auto",
 }));
 
-const Footer: FC = () => {
+const Footer: VFC = () => {
   return (
     <Container>
       <Typography variant="body1" color="textSecondary" align="center">

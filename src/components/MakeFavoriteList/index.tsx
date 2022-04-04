@@ -1,11 +1,11 @@
 import Container from "@mui/material/Container";
-import type { FC } from "react";
+import type { VFC } from "react";
 import React, { useContext } from "react";
 
 import MakeFavoriteListContainer from "@/containers/MakeFavoriteList/MakeFavoriteList";
 import { UserContext } from "@/contexts";
 
-const MakeFavoriteList: FC = () => {
+const MakeFavoriteList: VFC = () => {
   const { user } = useContext(UserContext);
   if (user === null) return null;
   return (

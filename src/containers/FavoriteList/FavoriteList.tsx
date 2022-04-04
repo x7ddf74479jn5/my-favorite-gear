@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import type { VFC } from "react";
-import React from "react";
+import React, { memo } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
@@ -67,4 +67,4 @@ const FavoriteListContainer: VFC<{ user: User | null }> = ({ user }) => {
   );
 };
 
-export default FavoriteListContainer;
+export default memo(FavoriteListContainer);

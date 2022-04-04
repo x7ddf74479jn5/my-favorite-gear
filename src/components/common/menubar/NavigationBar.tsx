@@ -6,7 +6,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
-import type { FC } from "react";
+import type { VFC } from "react";
 import React, { useContext } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ const HomeLink = styled(Link)({
   flexGrow: 1,
 });
 
-const NavigationBar: FC = () => {
+const NavigationBar: VFC = () => {
   const { auth } = useContext(FirebaseContext);
   const { user } = useContext(UserContext);
   const navigate = useNavigate();

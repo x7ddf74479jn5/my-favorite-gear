@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import { signInWithRedirect, TwitterAuthProvider } from "firebase/auth";
-import type { FC } from "react";
+import type { VFC } from "react";
 import React from "react";
 
 import { brandColor } from "@/asset/variables";
@@ -15,7 +15,7 @@ const ButtonWrapper = styled("div")({
   justifyContent: "center",
 });
 
-const Signin: FC = () => {
+const Signin: VFC = () => {
   const auth = useAuth();
 
   const handleLogin = () => {

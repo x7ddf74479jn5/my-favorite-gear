@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
-import type { FC } from "react";
+import type { VFC } from "react";
 import React from "react";
 
 import type { Gear } from "@/services/models/gear";
@@ -27,7 +27,7 @@ const Bottom = styled("div")(({ theme }) => ({
   margin: theme.spacing(4),
 }));
 
-const GearCards: FC<GearCardsProps> = ({
+const GearCards: VFC<GearCardsProps> = ({
   gears,
   addButton,
   favoriteList,

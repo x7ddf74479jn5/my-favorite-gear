@@ -1,7 +1,7 @@
 import StarIcon from "@mui/icons-material/Star";
 import StarHalfIcon from "@mui/icons-material/StarHalf";
 import type { FC } from "react";
-import React from "react";
+import React, { memo } from "react";
 
 import type { Gear } from "@/services/models/gear";
 
@@ -33,4 +33,4 @@ const ReviewStars: FC<ReviewStarsProps> = ({ reviewAverage }) => {
   return <>{stars}</>;
 };
 
-export default ReviewStars;
+export default memo(ReviewStars);

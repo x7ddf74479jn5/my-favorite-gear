@@ -1,8 +1,8 @@
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/system";
-import type { FC } from "react";
-import React from "react";
+import type { VFC } from "react";
+import React, { memo } from "react";
 import { TwitterShareButton } from "react-share";
 
 import paths from "@/paths";
@@ -17,7 +17,7 @@ const Share = styled("div")(({ theme }) => ({
   },
 }));
 
-const TweetButton: FC<{ favoriteList: FavoriteList }> = ({ favoriteList }) => {
+const TweetButton: VFC<{ favoriteList: FavoriteList }> = ({ favoriteList }) => {
   const url = `${paths.urlDomain}${paths.favoriteListRoot}${favoriteList.id}`;
   const limit = 3;
   const title =
@@ -50,4 +50,4 @@ const TweetButton: FC<{ favoriteList: FavoriteList }> = ({ favoriteList }) => {
   );
 };
 
-export default TweetButton;
+export default memo(TweetButton);

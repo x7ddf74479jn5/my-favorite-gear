@@ -3,13 +3,13 @@ import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import Paper from "@mui/material/Paper";
-import type { FC } from "react";
-import React, { useState } from "react";
+import type { VFC } from "react";
+import React, { memo, useState } from "react";
 
 interface SearchBoxProps {
   handler: (str: string) => void;
 }
-const SearchBox: FC<SearchBoxProps> = ({ handler }) => {
+const SearchBox: VFC<SearchBoxProps> = ({ handler }) => {
   const [term, setTerm] = useState<string>("");
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -40,4 +40,4 @@ const SearchBox: FC<SearchBoxProps> = ({ handler }) => {
   );
 };
 
-export default SearchBox;
+export default memo(SearchBox);
