@@ -7,11 +7,13 @@ import type { User } from "@/services/models/user";
 export type FirebaseContextValue = {
   auth: Auth | null;
   db: Firestore | null;
+  isLoading: boolean;
 };
 
 export const FirebaseContext = createContext<FirebaseContextValue>({
   auth: null,
   db: null,
+  isLoading: false,
 });
 
 export type UserContextValue = {

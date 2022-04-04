@@ -11,6 +11,7 @@ import type { User } from "@/services/models/user";
 import writeUser from "@/services/write-user";
 
 const FirebaseApp: FC = ({ children }) => {
+  const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState<User | null>(null);
   const [credential, setCredential] = useState<UserCredential | null>(null);
   const counterRef = useRef(0);
@@ -19,6 +20,7 @@ const FirebaseApp: FC = ({ children }) => {
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (firebaseUser) => {
+      setIsLoading(true);
       if (firebaseUser) {
         if (counterRef.current === 1 && credential) {
           const theUser = await writeUser(db, firebaseUser, credential);
@@ -30,6 +32,7 @@ const FirebaseApp: FC = ({ children }) => {
       } else {
         setUser(null);
       }
+      setIsLoading(false);
     });
 
     if (credential) counterRef.current += 1;
@@ -47,7 +50,7 @@ const FirebaseApp: FC = ({ children }) => {
   );
 
   return (
-    <FirebaseContext.Provider value={{ auth, db }}>
+    <FirebaseContext.Provider value={{ auth, db, isLoading }}>
       <UserContext.Provider value={{ user, credential, setCredential }}>
         {children}
       </UserContext.Provider>
