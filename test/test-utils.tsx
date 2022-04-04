@@ -1,19 +1,18 @@
-import { MuiThemeProvider } from "@material-ui/core/styles";
+/* eslint-disable react-hooks/rules-of-hooks */
+import { ThemeProvider } from "@mui/material/styles";
 import type Queries from "@testing-library/dom/types/queries";
 import type { RenderResult } from "@testing-library/react";
 import { render } from "@testing-library/react";
-import theme from "asset/theme";
-import type { FirebaseContextValue, UserContextValue } from "contexts";
-import { FirebaseContext, UserContext } from "contexts";
-import firebase from "firebase/app";
+import { Timestamp } from "firebase/firestore";
 import React from "react";
-import type { FavoriteList } from "services/models/favoriteList";
-import type { Gear } from "services/models/gear";
-import type { User } from "services/models/user";
 
-import { initializeFirebase } from "../src/lib/firebase";
-
-initializeFirebase();
+import theme from "@/asset/theme";
+import type { FirebaseContextValue, UserContextValue } from "@/contexts";
+import { FirebaseContext, UserContext } from "@/contexts";
+import { useAuth, useFirestore } from "@/lib/firebase";
+import type { FavoriteList } from "@/services/models/favoriteList";
+import type { Gear } from "@/services/models/gear";
+import type { User } from "@/services/models/user";
 
 export const correctUserData: User = {
   id: "id",
@@ -23,13 +22,14 @@ export const correctUserData: User = {
   photoUrl: "https://photoUrl.com",
   provider: "twitter",
   providerUid: "providerUid",
-  createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
-  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+  createdAt: Timestamp.fromDate(new Date()),
+  updatedAt: Timestamp.fromDate(new Date()),
 };
 
 export const mockFirebaseContextValue: FirebaseContextValue = {
-  auth: firebase.auth(),
-  db: firebase.firestore(),
+  auth: useAuth(),
+  db: useFirestore(),
+  isLoading: false,
 };
 
 const mockUserContextValue: UserContextValue = {
@@ -46,13 +46,13 @@ export const withUserAuth = (
   userContextValue: UserContextValue = mockUserContextValue
 ) => {
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <FirebaseContext.Provider value={firebaseContextValue}>
         <UserContext.Provider value={userContextValue}>
           {children}
         </UserContext.Provider>
       </FirebaseContext.Provider>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 };
 
@@ -60,13 +60,13 @@ export const Providers: React.ComponentType<{ children?: any }> = ({
   children,
 }) => {
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <FirebaseContext.Provider value={mockFirebaseContextValue}>
         <UserContext.Provider value={mockUserContextValue}>
           {children}
         </UserContext.Provider>
       </FirebaseContext.Provider>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 };
 
@@ -131,5 +131,5 @@ export const testFavoriteList: FavoriteList = {
   image: "image_normal",
   gears: seedGearsToFavoriteList(),
   gearsCount: 8,
-  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+  updatedAt: Timestamp.fromDate(new Date()),
 };

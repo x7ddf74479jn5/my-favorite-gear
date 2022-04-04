@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,7 +18,8 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "outDir": "./dist/"
+    "outDir": "./dist/",
+    "types": ["vitest/globals"]
   },
   "exclude": ["node_modules", "build", "dist", "functions"],
   "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
