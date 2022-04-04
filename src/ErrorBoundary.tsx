@@ -19,6 +19,9 @@ const FallbackComponent = ({ error }: FallbackProps) => {
       }}
     >
       <Typography align="center" gutterBottom variant="h4">
+        Error
+      </Typography>
+      <Typography paragraph align="center" color="textSecondary">
         サイト上で問題が発生しました
       </Typography>
       <Button
