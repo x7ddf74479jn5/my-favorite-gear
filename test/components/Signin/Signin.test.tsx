@@ -1,9 +1,11 @@
-import Signin from "components/Signin";
 import React from "react";
+import { describe, expect, it, vi } from "vitest";
+
+import Signin from "@/components/Signin";
 
 import { render } from "../../test-utils";
 
-jest.mock("react-firebaseui/StyledFirebaseAuth", () => {
+vi.mock("react-firebaseui/StyledFirebaseAuth", () => {
   const StyledFirebaseAuth = () => {
     return <div>StyledFirebaseAuth</div>;
   };

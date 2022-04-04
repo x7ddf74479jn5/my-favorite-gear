@@ -1,8 +1,10 @@
-import FavoriteListContainer from "containers/FavoriteLists/FavoriteLists";
-import paths from "paths";
 import React from "react";
 import { MemoryRouter } from "react-router";
-import type { Gear } from "services/models/gear";
+import { describe, expect, it, vi } from "vitest";
+
+import FavoriteListContainer from "@/containers/FavoriteLists/FavoriteLists";
+import paths from "@/paths";
+import type { Gear } from "@/services/models/gear";
 
 import { render } from "../../test-utils";
 
@@ -10,7 +12,7 @@ import { render } from "../../test-utils";
  * should run all the tests, don't change the test case orders
  */
 
-jest.mock("hooks/use-favoriteLists", () => {
+vi.mock("hooks/use-favoriteLists", () => {
   const seedGearsToFavoriteList = () => {
     const GEAR_COUNT = 8;
     const gears: Gear[] = [];
@@ -40,7 +42,7 @@ jest.mock("hooks/use-favoriteLists", () => {
     updatedAt: "updatedAt",
   };
   // @return {FavoriteLists} each test case
-  const useFavoriteLists = jest
+  const useFavoriteLists = vi
     .fn()
     .mockReturnValueOnce({
       // #1

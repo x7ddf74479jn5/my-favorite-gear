@@ -1,5 +1,7 @@
-import Footer from "components/common/footer/Footer";
 import React from "react";
+import { describe, expect, it } from "vitest";
+
+import Footer from "@/components/common/footer/Footer";
 
 import { render } from "../../../test-utils";
 

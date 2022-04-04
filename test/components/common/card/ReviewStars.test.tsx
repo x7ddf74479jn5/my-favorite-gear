@@ -1,5 +1,7 @@
-import ReviewStars from "components/common/card/ReviewStars";
 import React from "react";
+import { describe, expect, it } from "vitest";
+
+import ReviewStars from "@/components/common/card/ReviewStars";
 
 import { render } from "../../../test-utils";
 

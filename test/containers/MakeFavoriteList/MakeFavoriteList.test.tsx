@@ -1,10 +1,12 @@
-import MakeFavoriteListContainer from "containers/MakeFavoriteList/MakeFavoriteList";
 import React from "react";
-import type { Gear } from "services/models/gear";
+import { describe, expect, it, vi } from "vitest";
+
+import MakeFavoriteListContainer from "@/containers/MakeFavoriteList/MakeFavoriteList";
+import type { Gear } from "@/services/models/gear";
 
 import { correctUserData, render } from "../../test-utils";
 
-jest.mock("hooks/use-favoriteList", () => {
+vi.mock("hooks/use-favoriteList", () => {
   const seedGearsToFavoriteList = () => {
     const GEAR_COUNT = 8;
     const gears: Gear[] = [];
@@ -25,7 +27,7 @@ jest.mock("hooks/use-favoriteList", () => {
     }
     return gears;
   };
-  const useFavoriteList = jest
+  const useFavoriteList = vi
     .fn()
     .mockReturnValueOnce({
       favoriteList: {
@@ -58,29 +60,29 @@ jest.mock("hooks/use-favoriteList", () => {
   return useFavoriteList;
 });
 
-jest.mock("hooks/use-rakutenSearch", () => {
+vi.mock("hooks/use-rakutenSearch", () => {
   // {return} 1st: case #1, 2nd: case #2, ...rest
-  const useITunes = jest
+  const useITunes = vi
     .fn()
     .mockReturnValueOnce({
       loading: false,
       gears: [],
-      searchGears: jest.fn(),
+      searchGears: vi.fn(),
     })
     .mockReturnValueOnce({
       loading: false,
       gears: [],
-      searchGears: jest.fn(),
+      searchGears: vi.fn(),
     })
     .mockReturnValueOnce({
       loading: false,
       gears: [],
-      searchGears: jest.fn(),
+      searchGears: vi.fn(),
     })
     .mockReturnValueOnce({
       loading: true,
       gears: [],
-      searchGears: jest.fn(),
+      searchGears: vi.fn(),
     });
   return useITunes;
 });

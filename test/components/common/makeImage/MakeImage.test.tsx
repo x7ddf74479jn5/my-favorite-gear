@@ -1,5 +1,7 @@
-import MakeImage from "components/common/makeImage/MakeImage";
 import React from "react";
+import { describe, expect, it } from "vitest";
+
+import MakeImage from "@/components/common/makeImage/MakeImage";
 
 import { render, testFavoriteList, testGear } from "../../../test-utils";
 

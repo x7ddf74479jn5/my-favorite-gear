@@ -1,10 +1,12 @@
 import userEvent from "@testing-library/user-event";
-import SearchBox from "components/MakeFavoriteList/SearchBox";
 import React from "react";
+import { describe, expect, it, vi } from "vitest";
+
+import SearchBox from "@/components/MakeFavoriteList/SearchBox";
 
 import { render } from "../../test-utils";
 
-const mockHandler = jest.fn();
+const mockHandler = vi.fn();
 
 describe("SearchBox", () => {
   it("matches snapshot", () => {

@@ -2,12 +2,15 @@
  * @jest-environment node
  */
 
+import { serverTimestamp } from "@firebase/firestore";
 import * as firebase from "@firebase/rules-unit-testing";
-import * as admin from "firebase-admin";
+import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 import * as fs from "fs";
 import * as path from "path";
-import { collectionName } from "services/constants";
-import type { User } from "services/models/user";
+import { afterAll, afterEach, beforeAll, describe } from "vitest";
+
+import { collectionName } from "@/services/constants";
+import type { User } from "@/services/models/user";
 
 const PROJECT_ID = "dev-my-favorite-gear";
 const RULES_PATH = path.resolve(
@@ -16,36 +19,24 @@ const RULES_PATH = path.resolve(
   "origin-firestore.rules"
 );
 
-const createAuthApp = (auth?: { uid: string }) => {
-  return firebase
-    .initializeTestApp({ projectId: PROJECT_ID, auth: auth })
-    .firestore();
-};
-
-const createAdminApp = () => {
-  return firebase.initializeAdminApp({ projectId: PROJECT_ID }).firestore();
-};
+let testEnv: firebase.RulesTestEnvironment;
 
 beforeAll(async () => {
-  await firebase.loadFirestoreRules({
+  testEnv = await firebase.initializeTestEnvironment({
     projectId: PROJECT_ID,
-    rules: fs.readFileSync(RULES_PATH, "utf8"),
+    firestore: {
+      rules: fs.readFileSync(RULES_PATH, "utf8"),
+    },
   });
 });
 
 afterEach(async () => {
-  await firebase.clearFirestoreData({ projectId: PROJECT_ID });
+  await testEnv.clearFirestore();
 });
 
 afterAll(async () => {
-  await Promise.all(
-    firebase.apps().map((app) => {
-      return app.delete();
-    })
-  );
+  testEnv.cleanup();
 });
-
-jest.setTimeout(15000);
 
 const correctUserData: User = {
   screenName: "screenName",
@@ -54,39 +45,30 @@ const correctUserData: User = {
   photoUrl: "https://photoUrl.com",
   provider: "twitter",
   providerUid: "providerUid",
-  createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
-  updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
-};
-
-const adminData: User = {
-  screenName: "screenName",
-  displayName: "displayName",
-  description: "description",
-  photoUrl: "https://photoUrl.com",
-  provider: "twitter",
-  providerUid: "providerUid",
-  createdAt: admin.firestore.Timestamp.fromDate(new Date()),
-  updatedAt: admin.firestore.Timestamp.fromDate(new Date()),
+  createdAt: serverTimestamp(),
+  updatedAt: serverTimestamp(),
 };
 
 describe("/users/{userId}", () => {
   describe("ユーザー認証情報の検証", () => {
     test("自分のuidと同様のドキュメントIDのユーザー情報だけを閲覧、作成、編集可能", async () => {
-      const db = createAuthApp({ uid: "uid" });
-      const userDocumentRef = db.collection(collectionName.users).doc("uid");
-      await firebase.assertSucceeds(userDocumentRef.set(correctUserData));
-      await firebase.assertSucceeds(userDocumentRef.get());
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
+      const userDocumentRef = doc(db, collectionName.users, "uid");
+      await firebase.assertSucceeds(setDoc(userDocumentRef, correctUserData));
+      await firebase.assertSucceeds(getDoc(userDocumentRef));
       await firebase.assertSucceeds(
-        userDocumentRef.update({ screenName: "newUid" })
+        updateDoc(userDocumentRef, { screenName: "newUid" })
       );
     });
 
     test("自分のuidと異なるドキュメントは閲覧、作成、編集が出来ない", async () => {
-      createAdminApp()
-        .collection(collectionName.users)
-        .doc("admin")
-        .set(adminData);
-      const db = createAuthApp({ uid: "uid" });
+      await testEnv.withSecurityRulesDisabled(async (context) => {
+        const db = context.firestore();
+        setDoc(doc(db, collectionName.users, "admin"), correctUserData);
+      });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const userDocumentRef = db.collection(collectionName.users).doc("admin");
       await firebase.assertFails(userDocumentRef.set(correctUserData));
       await firebase.assertFails(userDocumentRef.get());
@@ -94,11 +76,12 @@ describe("/users/{userId}", () => {
     });
 
     test("screenNameが合致したドキュメントは取得できる", async () => {
-      createAdminApp()
-        .collection(collectionName.users)
-        .doc("admin")
-        .set(adminData);
-      const db = createAuthApp({ uid: "uid" });
+      await testEnv.withSecurityRulesDisabled(async (context) => {
+        const db = context.firestore();
+        setDoc(doc(db, collectionName.users, "admin"), correctUserData);
+      });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const matchedUserDocuments = db
         .collection(collectionName.users)
         .where("screenName", "==", "screenName");
@@ -108,7 +91,8 @@ describe("/users/{userId}", () => {
 
   describe("スキーマの検証", () => {
     test("正しくないスキーマの場合は作成できない", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const userDocumentRef = db.collection(collectionName.users).doc("uid");
 
       // 想定外のプロパティがある場合
@@ -122,8 +106,8 @@ describe("/users/{userId}", () => {
         photoUrl: "https://photoUrl.com",
         provider: "twitter",
         providerUid: "providerUid",
-        createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
-        updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+        createdAt: serverTimestamp(),
+        updatedAt: serverTimestamp(),
       };
 
       // プロパティが不足している場合
@@ -160,11 +144,12 @@ describe("/users/{userId}", () => {
     });
 
     test("正しくないスキーマの場合は編集できない", async () => {
-      createAdminApp()
-        .collection(collectionName.users)
-        .doc("uid")
-        .set(adminData);
-      const db = createAuthApp({ uid: "uid" });
+      await testEnv.withSecurityRulesDisabled(async (context) => {
+        const db = context.firestore();
+        setDoc(doc(db, collectionName.users, "uid"), correctUserData);
+      });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const userDocumentRef = db.collection(collectionName.users).doc("uid");
 
       // 想定外のプロパティがある場合
@@ -185,7 +170,8 @@ describe("/users/{userId}", () => {
 
   describe("値のバリデーション", () => {
     test("screenNameは1文字以上である", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const userDocumentRef = db.collection(collectionName.users).doc("uid");
 
       await firebase.assertSucceeds(
@@ -201,7 +187,8 @@ describe("/users/{userId}", () => {
     });
 
     test("displayは1文字以上である", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const userDocumentRef = db.collection(collectionName.users).doc("uid");
 
       await firebase.assertSucceeds(
@@ -217,7 +204,8 @@ describe("/users/{userId}", () => {
     });
 
     test("photoUrlはURL(https)である", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const userDocumentRef = db.collection(collectionName.users).doc("uid");
 
       await firebase.assertSucceeds(
@@ -239,7 +227,8 @@ describe("/users/{userId}", () => {
     });
 
     test("providerはtwitterである", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const userDocumentRef = db.collection(collectionName.users).doc("uid");
 
       await firebase.assertSucceeds(
@@ -261,7 +250,8 @@ describe("/users/{userId}", () => {
     });
 
     test("providerUidは1文字以上である", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const userDocumentRef = db.collection(collectionName.users).doc("uid");
 
       await firebase.assertSucceeds(
@@ -281,11 +271,12 @@ describe("/users/{userId}", () => {
 describe("/docCounters/users", () => {
   const correctCounterData = {
     count: 1,
-    updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+    updatedAt: serverTimestamp(),
   };
 
   test("ユーザーが認証済みの場合は書き込みできる", async () => {
-    const db = createAuthApp({ uid: "uid" });
+    const context = testEnv.authenticatedContext("uid");
+    const db = context.firestore();
     const usersDocumentRef = db
       .collection(collectionName.docCounters)
       .doc("users");
@@ -294,7 +285,8 @@ describe("/docCounters/users", () => {
   });
 
   test("正しくないスキーマの場合は書き込みできない", async () => {
-    const db = createAuthApp({ uid: "uid" });
+    const context = testEnv.authenticatedContext("uid");
+    const db = context.firestore();
     const usersDocumentRef = db
       .collection(collectionName.docCounters)
       .doc("users");
@@ -314,7 +306,7 @@ describe("/docCounters/users", () => {
     await firebase.assertFails(
       usersDocumentRef.set({
         ...correctCounterData,
-        createdAt: firebase.firestore.Timestamp.now(),
+        createdAt: serverTimestamp(),
       })
     );
     await firebase.assertFails(
@@ -331,19 +323,20 @@ describe("/favoriteLists/{favoriteListId}", () => {
     image: "image_normal",
     gears: [],
     gearsCount: 0,
-    updatedAt: firebase.firestore.Timestamp.fromDate(new Date()),
+    updatedAt: serverTimestamp(),
   };
   const adminFavoriteListData = {
     twitterId: "twitterId",
     image: "image_normal",
     gears: [],
     gearsCount: 8,
-    updatedAt: admin.firestore.Timestamp.fromDate(new Date()),
+    updatedAt: serverTimestamp(),
   };
 
   describe("ユーザー認証情報の検証", () => {
     test("自分のuidと同様のドキュメントIDのユーザー情報だけを閲覧、作成、編集可能", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const favoriteListDocumentRef = db
         .collection(collectionName.favoriteLists)
         .doc("uid");
@@ -357,11 +350,15 @@ describe("/favoriteLists/{favoriteListId}", () => {
     });
 
     test("完成したお気に入りリストは認証済みユーザーなら取得できる", async () => {
-      createAdminApp()
-        .collection(collectionName.favoriteLists)
-        .doc("admin")
-        .set(adminFavoriteListData);
-      const db = createAuthApp({ uid: "uid" });
+      await testEnv.withSecurityRulesDisabled(async (context) => {
+        const db = context.firestore();
+        setDoc(
+          doc(db, collectionName.favoriteLists, "admin"),
+          adminFavoriteListData
+        );
+      });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const favoriteListCollectionRef = db.collection(
         collectionName.favoriteLists
       );
@@ -370,11 +367,15 @@ describe("/favoriteLists/{favoriteListId}", () => {
     });
 
     test("自分のuidと異なるドキュメントは閲覧、作成、編集が出来ない", async () => {
-      createAdminApp()
-        .collection(collectionName.favoriteLists)
-        .doc("admin")
-        .set(adminFavoriteListData);
-      const db = createAuthApp({ uid: "uid" });
+      await testEnv.withSecurityRulesDisabled(async (context) => {
+        const db = context.firestore();
+        setDoc(
+          doc(db, collectionName.favoriteLists, "admin"),
+          adminFavoriteListData
+        );
+      });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const favoriteListDocumentRef = db
         .collection(collectionName.favoriteLists)
         .doc("admin");
@@ -390,7 +391,8 @@ describe("/favoriteLists/{favoriteListId}", () => {
 
   describe("スキーマの検証", () => {
     test("正しくないスキーマの場合は作成できない", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const favoriteListDocumentRef = db
         .collection(collectionName.favoriteLists)
         .doc("uid");
@@ -444,11 +446,15 @@ describe("/favoriteLists/{favoriteListId}", () => {
     });
 
     test("正しくないスキーマの場合は編集できない", async () => {
-      createAdminApp()
-        .collection(collectionName.favoriteLists)
-        .doc("uid")
-        .set(adminData);
-      const db = createAuthApp({ uid: "uid" });
+      await testEnv.withSecurityRulesDisabled(async (context) => {
+        const db = context.firestore();
+        setDoc(
+          doc(db, collectionName.favoriteLists, "admin"),
+          adminFavoriteListData
+        );
+      });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const favoriteListDocumentRef = db
         .collection(collectionName.favoriteLists)
         .doc("uid");
@@ -482,7 +488,8 @@ describe("/favoriteLists/{favoriteListId}", () => {
 
   describe("値のバリデーション", () => {
     test("gears, gearsCountの配列長は0以上8以下であり一致する", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const favoriteListDocumentRef = db
         .collection(collectionName.favoriteLists)
         .doc("uid");
@@ -521,7 +528,8 @@ describe("/favoriteLists/{favoriteListId}", () => {
     });
 
     test("imageは0文字以上である", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const favoriteListDocumentRef = db
         .collection(collectionName.favoriteLists)
         .doc("uid");
@@ -542,7 +550,8 @@ describe("/favoriteLists/{favoriteListId}", () => {
     });
 
     test("twitterIdは1文字以上である", async () => {
-      const db = createAuthApp({ uid: "uid" });
+      const context = testEnv.authenticatedContext("uid");
+      const db = context.firestore();
       const favoriteListDocumentRef = db
         .collection(collectionName.favoriteLists)
         .doc("uid");

@@ -1,6 +1,8 @@
 import { act, cleanup, renderHook } from "@testing-library/react-hooks";
-import { server } from "api-mock-server/server";
-import useRakutenSearch from "hooks/use-rakutenSearch";
+import { afterAll, afterEach, beforeAll, describe, expect, it } from "vitest";
+
+import { server } from "@/api-mock-server/server";
+import useRakutenSearch from "@/hooks/use-rakutenSearch";
 
 describe("useRakutenSearch", () => {
   beforeAll(() => {

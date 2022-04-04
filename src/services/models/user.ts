@@ -1,3 +1,4 @@
+import type { FieldValue } from "firebase/firestore";
 import { Timestamp } from "firebase/firestore";
 
 export type User = {
@@ -8,8 +9,8 @@ export type User = {
   photoUrl: string | null;
   provider: string;
   providerUid: string;
-  createdAt: Timestamp | null;
-  updatedAt: Timestamp | null;
+  createdAt: FieldValue | null;
+  updatedAt: FieldValue | null;
 };
 
 export const blankUser: User = {

@@ -1,5 +1,7 @@
-import Progress from "components/common/progress/Progress";
 import React from "react";
+import { describe, expect, it } from "vitest";
+
+import Progress from "@/components/common/progress/Progress";
 
 import { render } from "../../../test-utils";
 

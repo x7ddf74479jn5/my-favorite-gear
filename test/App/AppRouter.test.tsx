@@ -1,34 +1,35 @@
 import { render } from "@testing-library/react";
-import App from "App";
-import type { UserContextValue } from "contexts";
 import React from "react";
 import { MemoryRouter } from "react-router";
-import { blankUser } from "services/models/user";
+
+import { AppRouter } from "@/AppRouter";
+import type { UserContextValue } from "@/contexts";
+import { blankUser } from "@/services/models/user";
 
 import { withUserAuth } from "../test-utils";
 
-jest.mock("components/Signin", () => {
+vi.mock("components/Signin", () => {
   const Singnin = () => {
     return <div>Signin</div>;
   };
   return Singnin;
 });
 
-jest.mock("components/FavoriteList", () => {
+vi.mock("components/FavoriteList", () => {
   const FavoriteList = () => {
     return <div>FavoriteList</div>;
   };
   return FavoriteList;
 });
 
-jest.mock("components/FavoriteLists", () => {
+vi.mock("components/FavoriteLists", () => {
   const FavoriteLists = () => {
     return <div>FavoriteLists</div>;
   };
   return FavoriteLists;
 });
 
-jest.mock("components/MakeFavoriteList", () => {
+vi.mock("components/MakeFavoriteList", () => {
   const MakeFavoriteList = () => {
     return <div>MakeFavoriteLists</div>;
   };
@@ -37,27 +38,21 @@ jest.mock("components/MakeFavoriteList", () => {
 
 const mockUserContextValue: UserContextValue = {
   user: null,
-  credential: {
-    credential: null,
-    user: null,
-  },
-  setCredential: jest.fn(),
+  credential: null,
+  setCredential: vi.fn(),
 };
 
-describe("App", () => {
+describe("AppRouter", () => {
   it("renders root with an auth user", () => {
     const mockUserContextValue: UserContextValue = {
       user: blankUser,
-      credential: {
-        credential: null,
-        user: null,
-      },
-      setCredential: jest.fn(),
+      credential: null,
+      setCredential: vi.fn(),
     };
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={["/"]}>
-          <App />
+          <AppRouter />
         </MemoryRouter>,
         undefined,
         mockUserContextValue
@@ -71,7 +66,7 @@ describe("App", () => {
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={["/"]}>
-          <App />
+          <AppRouter />
         </MemoryRouter>,
         undefined,
 
@@ -86,7 +81,7 @@ describe("App", () => {
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={["/favoriteLists"]}>
-          <App />
+          <AppRouter />
         </MemoryRouter>,
         undefined,
         mockUserContextValue
@@ -100,7 +95,7 @@ describe("App", () => {
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={["/favoriteList/1"]}>
-          <App />
+          <AppRouter />
         </MemoryRouter>,
         undefined,
         mockUserContextValue
@@ -114,7 +109,7 @@ describe("App", () => {
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={[""]}>
-          <App />
+          <AppRouter />
         </MemoryRouter>,
         undefined,
         mockUserContextValue

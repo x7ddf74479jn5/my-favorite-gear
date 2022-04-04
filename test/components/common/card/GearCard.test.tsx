@@ -1,13 +1,17 @@
+import "@testing-library/jest-dom"; // jestのアサーションがエラーになる場合は明示的にimport
+
 import userEvent from "@testing-library/user-event";
-import GearCard from "components/common/card/GearCard";
 import React from "react";
+import { describe, expect, it, vi } from "vitest";
+
+import GearCard from "@/components/common/card/GearCard";
 
 import { render, testFavoriteList, testGear } from "../../../test-utils";
 
-const mockAddButton = jest.fn();
-const mockRemoveButton = jest.fn();
-const mockUpButton = jest.fn();
-const mockDownButton = jest.fn();
+const mockAddButton = vi.fn();
+const mockRemoveButton = vi.fn();
+const mockUpButton = vi.fn();
+const mockDownButton = vi.fn();
 
 describe("GearCard", () => {
   it("matches snapshot", () => {

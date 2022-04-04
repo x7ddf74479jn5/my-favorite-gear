@@ -1,9 +1,11 @@
-import TweetButton from "components/common/tweet/TweetButton";
 import React from "react";
+import { describe, expect, it, vi } from "vitest";
+
+import TweetButton from "@/components/common/tweet/TweetButton";
 
 import { render, testFavoriteList } from "../../../test-utils";
 
-jest.mock("react-share", () => {
+vi.mock("react-share", () => {
   const TwitterShareButton = "mock-twitter";
   return { TwitterShareButton };
 });

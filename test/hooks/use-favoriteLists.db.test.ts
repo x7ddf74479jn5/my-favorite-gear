@@ -3,8 +3,17 @@
  */
 
 import { renderHook } from "@testing-library/react-hooks";
-import useFavoriteLists from "hooks/use-favoriteLists";
-import { collectionName } from "services/constants";
+import {
+  collection,
+  doc,
+  getDocs,
+  setDoc,
+  writeBatch,
+} from "firebase/firestore";
+import { afterAll, beforeAll, describe, expect, it } from "vitest";
+
+import useFavoriteLists from "@/hooks/use-favoriteLists";
+import { collectionName } from "@/services/constants";
 
 import { Providers, testFavoriteList } from "../test-utils";
 import { mockFirebaseContextValue } from "../test-utils";
@@ -25,14 +34,14 @@ const defaultLimit = 30;
 
 const seed = async () => {
   for (let i = 0; i < defaultLimit; i++) {
-    const ref = db.collection(collectionName.favoriteLists).doc(`${i}`);
-    await ref.set(testFavoriteList);
+    const ref = doc(db, collectionName.favoriteLists, `${i}`);
+    await setDoc(ref, testFavoriteList);
   }
 };
 
 const resetDatabase = async () => {
-  const snapshot = await db.collection(collectionName.favoriteLists).get();
-  const batch = db.batch();
+  const snapshot = await getDocs(collection(db, collectionName.favoriteLists));
+  const batch = writeBatch(db);
   snapshot.docs.forEach((doc) => {
     batch.delete(doc.ref);
   });

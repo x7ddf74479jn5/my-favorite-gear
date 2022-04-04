@@ -1,12 +1,14 @@
-import GearCards from "components/common/card/GearCards";
 import React from "react";
+import { describe, expect, it, vi } from "vitest";
+
+import GearCards from "@/components/common/card/GearCards";
 
 import { render, testFavoriteList } from "../../../test-utils";
 
-const mockAddButton = jest.fn();
-const mockRemoveButton = jest.fn();
-const mockUpButton = jest.fn();
-const mockDownButton = jest.fn();
+const mockAddButton = vi.fn();
+const mockRemoveButton = vi.fn();
+const mockUpButton = vi.fn();
+const mockDownButton = vi.fn();
 
 describe("GearCards", () => {
   it("matches snapshot", () => {

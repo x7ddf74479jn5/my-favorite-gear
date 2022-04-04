@@ -1,12 +1,14 @@
-import { collectionName } from "services/constants";
-import findUser from "services/find-user";
+import { expect, it, vi } from "vitest";
+
+import { collectionName } from "@/services/constants";
+import findUser from "@/services/find-user";
 
 import { correctUserData } from "../test-utils";
 
-const mockGet = jest.fn();
-const mockDoc = jest.fn();
-const mockData = jest.fn();
-const mockCollection = jest.fn();
+const mockGet = vi.fn();
+const mockDoc = vi.fn();
+const mockData = vi.fn();
+const mockCollection = vi.fn();
 const id = "uid";
 
 let mockFirestore = {
@@ -16,8 +18,8 @@ let mockFirestore = {
 } as any;
 
 beforeEach(() => {
-  jest.resetAllMocks();
-  jest.clearAllMocks();
+  vi.resetAllMocks();
+  vi.clearAllMocks();
   mockDoc.mockReturnValueOnce({ get: mockGet });
   mockCollection.mockReturnValueOnce({
     doc: mockDoc,

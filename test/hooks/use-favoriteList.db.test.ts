@@ -3,10 +3,13 @@
  */
 
 import { act, renderHook } from "@testing-library/react-hooks";
-import useFavoriteList from "hooks/use-favoriteList";
-import { collectionName } from "services/constants";
-import { blankFavoriteList } from "services/models/favoriteList";
-import type { Gear } from "services/models/gear";
+import { deleteDoc, doc } from "firebase/firestore";
+import { afterAll, beforeEach, describe, expect, it } from "vitest";
+
+import useFavoriteList from "@/hooks/use-favoriteList";
+import { collectionName } from "@/services/constants";
+import { blankFavoriteList } from "@/services/models/favoriteList";
+import type { Gear } from "@/services/models/gear";
 
 import { Providers, testGear } from "../test-utils";
 import { mockFirebaseContextValue } from "../test-utils";
@@ -37,8 +40,8 @@ const testOptions = {
 };
 
 const resetDatabase = async () => {
-  const ref = db.collection(collectionName.favoriteLists).doc(testOptions.id);
-  await ref.delete();
+  const ref = doc(db, collectionName.favoriteLists, testOptions.id);
+  await deleteDoc(ref);
 };
 
 beforeEach(() => {

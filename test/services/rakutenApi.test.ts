@@ -1,6 +1,8 @@
 import { cleanup } from "@testing-library/react";
-import { server } from "api-mock-server/server";
-import { getGearsFactory } from "services/rakutenApi";
+import { afterAll, afterEach, beforeAll, describe, expect, test } from "vitest";
+
+import { server } from "@/api-mock-server/server";
+import { getGearsFactory } from "@/services/rakutenApi";
 
 describe("getGearsFactory", () => {
   beforeAll(() => {

@@ -1,8 +1,8 @@
-jest.setTimeout(10000);
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { collectionName } from "services/constants";
-import { blankUser } from "services/models/user";
-import writeUser from "services/write-user";
+import { collectionName } from "@/services/constants";
+import { blankUser } from "@/services/models/user";
+import writeUser from "@/services/write-user";
 
 import { mockFirebaseContextValue } from "../test-utils";
 
@@ -11,12 +11,12 @@ if (!db) {
   throw new Error("Firestore must be initialized.");
 }
 
-const mockBatchSet = jest.fn();
-const mockBatchUpdate = jest.fn();
-const mockBatchCommit = jest.fn();
-const mockGet = jest.fn();
-const mockCollection = jest.fn();
-const mockWhere = jest.fn();
+const mockBatchSet = vi.fn();
+const mockBatchUpdate = vi.fn();
+const mockBatchCommit = vi.fn();
+const mockGet = vi.fn();
+const mockCollection = vi.fn();
+const mockWhere = vi.fn();
 
 let mockFirestore = {
   collection: () => {
@@ -32,18 +32,18 @@ let mockFirestore = {
 } as any;
 
 beforeEach(async () => {
-  jest.resetAllMocks();
-  jest.clearAllMocks();
+  vi.resetAllMocks();
+  vi.clearAllMocks();
   //1st: resolve screenname duplication, 2nd: search current user, 3rd: counterDoc
   mockCollection
     .mockReturnValueOnce({
       where: mockWhere.mockReturnValueOnce({ get: mockGet }),
     })
     .mockReturnValueOnce({
-      doc: jest.fn().mockReturnValueOnce({ get: mockGet }),
+      doc: vi.fn().mockReturnValueOnce({ get: mockGet }),
     })
     .mockReturnValueOnce({
-      doc: jest.fn(() => {
+      doc: vi.fn(() => {
         return "counterDoc";
       }),
     });

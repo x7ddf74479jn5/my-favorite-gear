@@ -1,15 +1,17 @@
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import NavigationBar from "components/common/menubar/NavigationBar";
-import type { FirebaseContextValue, UserContextValue } from "contexts";
 import { createMemoryHistory } from "history";
 import React from "react";
-import { MemoryRouter, Router } from "react-router";
-import { blankUser } from "services/models/user";
+import { MemoryRouter } from "react-router";
+import { describe, expect, it, vi } from "vitest";
+
+import NavigationBar from "@/components/common/menubar/NavigationBar";
+import type { FirebaseContextValue, UserContextValue } from "@/contexts";
+import { blankUser } from "@/services/models/user";
 
 import { waitFor, withUserAuth } from "../../../test-utils";
 
-const mockSignOut = jest.fn();
+const mockSignOut = vi.fn();
 const mockAuth = {
   signOut: mockSignOut,
 };
@@ -19,15 +21,13 @@ describe("NavigationBar", () => {
     const mockFirebaseContextValue: FirebaseContextValue = {
       auth: null,
       db: null,
+      isLoading: false,
     };
 
     const mockUserContextValue: UserContextValue = {
       user: null,
-      credential: {
-        credential: null,
-        user: null,
-      },
-      setCredential: jest.fn(),
+      credential: null,
+      setCredential: vi.fn(),
     };
     const renderResult = render(
       withUserAuth(
@@ -59,15 +59,13 @@ describe("NavigationBar", () => {
     const mockFirebaseContextValue: FirebaseContextValue = {
       auth: mockAuth as any,
       db: null,
+      isLoading: false,
     };
 
     const mockUserContextValue: UserContextValue = {
       user: blankUser,
-      credential: {
-        credential: null,
-        user: null,
-      },
-      setCredential: jest.fn(),
+      credential: null,
+      setCredential: vi.fn(),
     };
     const renderResult = render(
       withUserAuth(
@@ -93,15 +91,13 @@ describe("NavigationBar", () => {
     const mockFirebaseContextValue: FirebaseContextValue = {
       auth: mockAuth as any,
       db: null,
+      isLoading: false,
     };
 
     const mockUserContextValue: UserContextValue = {
       user: blankUser,
-      credential: {
-        credential: null,
-        user: null,
-      },
-      setCredential: jest.fn(),
+      credential: null,
+      setCredential: vi.fn(),
     };
     const renderResult = render(
       withUserAuth(
@@ -137,24 +133,22 @@ describe("NavigationBar", () => {
     const mockFirebaseContextValue: FirebaseContextValue = {
       auth: mockAuth as any,
       db: null,
+      isLoading: false,
     };
 
     const mockUserContextValue: UserContextValue = {
       user: blankUser,
-      credential: {
-        credential: null,
-        user: null,
-      },
-      setCredential: jest.fn(),
+      credential: null,
+      setCredential: vi.fn(),
     };
 
     const history = createMemoryHistory();
 
     const renderResult = render(
       withUserAuth(
-        <Router history={history}>
+        <MemoryRouter {...history}>
           <NavigationBar />
-        </Router>,
+        </MemoryRouter>,
         mockFirebaseContextValue,
         mockUserContextValue
       )

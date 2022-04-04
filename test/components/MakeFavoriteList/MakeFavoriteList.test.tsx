@@ -1,9 +1,11 @@
-import MakeFavoriteList from "components/MakeFavoriteList";
 import React from "react";
+import { describe, expect, it, vi } from "vitest";
+
+import MakeFavoriteList from "@/components/MakeFavoriteList";
 
 import { render } from "../../test-utils";
 
-jest.mock("containers/MakeFavoriteList/MakeFavoriteList", () => {
+vi.mock("containers/MakeFavoriteList/MakeFavoriteList", () => {
   const MakeFavoriteListContainer = () => {
     return <div data-testid="MakeFavoriteListContainer"></div>;
   };
