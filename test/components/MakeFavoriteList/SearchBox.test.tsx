@@ -1,10 +1,11 @@
-import userEvent from "@testing-library/user-event";
+import "@testing-library/jest-dom";
+
 import React from "react";
 import { describe, expect, it, vi } from "vitest";
 
 import SearchBox from "@/components/MakeFavoriteList/SearchBox";
 
-import { render } from "../../test-utils";
+import { fireEvent, render } from "../../test-utils";
 
 const mockHandler = vi.fn();
 
@@ -22,7 +23,7 @@ describe("SearchBox", () => {
       renderResult.container.getElementsByTagName("form")[0]
     ).toHaveAttribute("class", expect.stringContaining("root"));
 
-    const inputElement = renderResult.getByRole("textbox");
+    const inputElement = renderResult.getByRole("searchbox");
     expect(inputElement).toHaveAttribute("aria-label", "商品を検索");
     expect(inputElement).toHaveAttribute("placeholder", "商品を検索");
     expect(inputElement).toHaveAttribute("type", "text");
@@ -39,12 +40,14 @@ describe("SearchBox", () => {
   it("triggers a submit event", () => {
     const renderResult = render(<SearchBox handler={mockHandler} />);
 
-    const inputElement = renderResult.getByRole("textbox");
-    userEvent.type(inputElement, "test");
+    const inputElement = renderResult.getByRole("searchbox");
+    fireEvent.change(inputElement, { target: { value: "test" } });
     expect(inputElement).toHaveValue("test");
-
     const buttonElement = renderResult.getByRole("button");
-    userEvent.click(buttonElement);
+    renderResult.debug();
+    fireEvent.click(buttonElement);
+    // broken in Vitest
+    expect(mockHandler).toHaveBeenCalledTimes(1);
     expect(mockHandler).toBeCalledWith("test");
   });
 });
