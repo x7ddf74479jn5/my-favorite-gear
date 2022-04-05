@@ -1,3 +1,4 @@
+import { styled } from "@mui/system";
 import type { VFC } from "react";
 import React, { lazy, Suspense, useContext } from "react";
 import { Route, Routes } from "react-router";
@@ -6,6 +7,11 @@ import Progress from "@/components/common/progress/Progress";
 import { FirebaseContext, UserContext } from "@/contexts";
 import { ErrorBoundary } from "@/ErrorBoundary";
 import paths from "@/paths";
+
+const Container = styled("div")({
+  display: "flex",
+  justifyContent: "center",
+});
 
 export const AppRouter: VFC = () => {
   const { user } = useContext(UserContext);
@@ -16,12 +22,22 @@ export const AppRouter: VFC = () => {
   const Signin = lazy(() => import("@/components/Signin"));
 
   if (isLoading) {
-    return <Progress />;
+    return (
+      <Container>
+        <Progress />
+      </Container>
+    );
   }
 
   return (
     <ErrorBoundary>
-      <Suspense fallback={<Progress />}>
+      <Suspense
+        fallback={
+          <Container>
+            <Progress />
+          </Container>
+        }
+      >
         <Routes>
           <Route path={paths.favoriteList} element={<FavoriteList />} />
           <Route path={paths.favoriteLists} element={<FavoriteLists />} />

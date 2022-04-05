@@ -13,6 +13,16 @@ const Root = styled("div")(({ theme }) => ({
   margin: theme.spacing(2, 0),
 }));
 
+const GridRow = styled("div")({
+  height: "120px",
+});
+
+const Image = styled("img")({
+  width: "100%",
+  height: "100%",
+  objectFit: "contain",
+});
+
 interface Tile {
   src: string;
   alt: string;
@@ -43,8 +53,10 @@ const GridImage: VFC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
         >
           {tile.map((item: Tile, index) => {
             return (
-              <Grid item key={`${item.src}-${index}`} columns={1}>
-                <img src={item.src} alt={item.alt} />
+              <Grid item key={`${item.src}-${index}`} xs={1}>
+                <GridRow>
+                  <Image src={item.src} alt={item.alt} />
+                </GridRow>
               </Grid>
             );
           })}
@@ -55,9 +67,14 @@ const GridImage: VFC<{ favoriteList?: FavoriteList; gear?: Gear }> = ({
 
   return (
     <>
-      <Grid container columns={3} spacing={0} sx={{ width: 360, height: 360 }}>
-        <Grid item columns={3}>
-          <img src={gear?.mediumImageUrl || ""} alt={gear?.productName || ""} />
+      <Grid container xs={3} spacing={0} sx={{ width: 360, height: 360 }}>
+        <Grid item xs={3}>
+          <GridRow>
+            <Image
+              src={gear?.mediumImageUrl || ""}
+              alt={gear?.productName || ""}
+            />
+          </GridRow>
         </Grid>
       </Grid>
     </>
