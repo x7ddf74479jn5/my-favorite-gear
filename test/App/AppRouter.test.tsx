@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import React from "react";
 import { MemoryRouter } from "react-router";
 
@@ -8,34 +8,6 @@ import { blankUser } from "@/services/models/user";
 
 import { withUserAuth } from "../test-utils";
 
-vi.mock("components/Signin", () => {
-  const Singnin = () => {
-    return <div>Signin</div>;
-  };
-  return Singnin;
-});
-
-vi.mock("components/FavoriteList", () => {
-  const FavoriteList = () => {
-    return <div>FavoriteList</div>;
-  };
-  return FavoriteList;
-});
-
-vi.mock("components/FavoriteLists", () => {
-  const FavoriteLists = () => {
-    return <div>FavoriteLists</div>;
-  };
-  return FavoriteLists;
-});
-
-vi.mock("components/MakeFavoriteList", () => {
-  const MakeFavoriteList = () => {
-    return <div>MakeFavoriteLists</div>;
-  };
-  return MakeFavoriteList;
-});
-
 const mockUserContextValue: UserContextValue = {
   user: null,
   credential: null,
@@ -43,7 +15,7 @@ const mockUserContextValue: UserContextValue = {
 };
 
 describe("AppRouter", () => {
-  it("renders root with an auth user", () => {
+  it("renders root with an auth user", async () => {
     const mockUserContextValue: UserContextValue = {
       user: blankUser,
       credential: null,
@@ -59,10 +31,12 @@ describe("AppRouter", () => {
       )
     );
 
-    expect(renderResult.container).toHaveTextContent("MakeFavoriteLists");
+    await waitFor(() =>
+      expect(renderResult.container).toHaveTextContent("商品検索")
+    );
   });
 
-  it("renders root without an auth user", () => {
+  it("renders root without an auth user", async () => {
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={["/"]}>
@@ -74,10 +48,12 @@ describe("AppRouter", () => {
       )
     );
 
-    expect(renderResult.container).toHaveTextContent("Signin");
+    await waitFor(() =>
+      expect(renderResult.container).toHaveTextContent("読み込み中")
+    );
   });
 
-  it("renders favoriteLists", () => {
+  it("renders favoriteLists", async () => {
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={["/favoriteLists"]}>
@@ -88,24 +64,30 @@ describe("AppRouter", () => {
       )
     );
 
-    expect(renderResult.container).toHaveTextContent("FavoriteLists");
+    await waitFor(() =>
+      expect(renderResult.container).toHaveTextContent(
+        "みんなのMy Favorite gear"
+      )
+    );
   });
 
-  it("renders favoriteList", () => {
+  it("renders favoriteList", async () => {
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={["/favoriteList/1"]}>
           <AppRouter />
         </MemoryRouter>,
         undefined,
-        mockUserContextValue
+        { ...mockUserContextValue, user: { ...blankUser, screenName: "user" } }
       )
     );
 
-    expect(renderResult.container).toHaveTextContent("FavoriteList");
+    await waitFor(() =>
+      expect(renderResult.container).toHaveTextContent("userのMy Favorite gear")
+    );
   });
 
-  it("redirects to root when router path doesn't match any defined path", () => {
+  it("redirects to root when router path doesn't match any defined path", async () => {
     const renderResult = render(
       withUserAuth(
         <MemoryRouter initialEntries={[""]}>
@@ -116,6 +98,8 @@ describe("AppRouter", () => {
       )
     );
 
-    expect(renderResult.container).toHaveTextContent("Signin");
+    await waitFor(() =>
+      expect(renderResult.container).toHaveTextContent("ログイン")
+    );
   });
 });
