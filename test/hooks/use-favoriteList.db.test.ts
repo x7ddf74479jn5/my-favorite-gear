@@ -52,6 +52,7 @@ afterAll(() => {
   resetDatabase();
 });
 
+// broken in Vitest & React V18
 describe("useFavoriteList", () => {
   it("should return when id is null", () => {
     const { result } = renderHook(() => {

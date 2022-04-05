@@ -11,7 +11,7 @@
     "dev-deploy": "run-s setup:dev:firebase setup:prod:rules build deploy:dev",
     "prod-deploy": "run-s setup:prod:* build deploy:prod",
     "test": "vitest",
-    "test:fs": "run-s setup:test:rules \"vitest --config vitest.config.firestore.ts\"",
+    "test:fs": "run-s setup:test:rules \"test --config vitest.config.firestore.ts\"",
     "test-all": "run-s \"firebase emulators:start\" test test:fs stop-all",
     "stop-all": "lsof -t -i:4000 -i:4001 -i:4400 -i:4500 -i:5000 -i:8080 -i:9099 | xargs kill -9",
     "lint": "run-p -l -c --aggregate-output lint:*",
