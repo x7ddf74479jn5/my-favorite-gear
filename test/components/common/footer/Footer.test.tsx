@@ -14,10 +14,6 @@ describe("Footer", () => {
   it("renders correctly", () => {
     const renderResult = render(<Footer />);
 
-    expect(renderResult.getByRole("contentinfo")).toHaveAttribute(
-      "class",
-      expect.stringContaining("footer")
-    );
     expect(renderResult.container).toHaveTextContent("My Favorite Gear");
     const linkElement = renderResult.getByRole("link");
     expect(linkElement).toHaveTextContent("@pandashark6");

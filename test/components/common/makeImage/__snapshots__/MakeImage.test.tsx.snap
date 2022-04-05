@@ -1,4 +1,160 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
+
+exports[`MakeImage > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1l5swbn"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container css-1vrgf1w-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName 1"
+            class="css-r91awh"
+            src="mediumImageUrl 1"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName 2"
+            class="css-r91awh"
+            src="mediumImageUrl 2"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName 3"
+            class="css-r91awh"
+            src="mediumImageUrl 3"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName 4"
+            class="css-r91awh"
+            src="mediumImageUrl 4"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="twitterId"
+            class="css-r91awh"
+            src="image"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName 5"
+            class="css-r91awh"
+            src="mediumImageUrl 5"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName 6"
+            class="css-r91awh"
+            src="mediumImageUrl 6"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName 7"
+            class="css-r91awh"
+            src="mediumImageUrl 7"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-gj1fbr-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName 8"
+            class="css-r91awh"
+            src="mediumImageUrl 8"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MakeImage > matches snapshot 2`] = `
+<DocumentFragment>
+  <div
+    class="css-1l5swbn"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-grid-xs-3 css-1sepnj5-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+      >
+        <div
+          class="css-6gxhc5"
+        >
+          <img
+            alt="productName"
+            class="css-r91awh"
+            src="mediumImageUrl"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
 
 exports[`MakeImage matches snapshot 1`] = `
 <DocumentFragment>

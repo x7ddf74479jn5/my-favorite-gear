@@ -23,17 +23,9 @@ describe("MakeImage", () => {
       <MakeImage favoriteList={testFavoriteList} gear={undefined} />
     );
 
-    const listElement = renderResult.getByRole("list");
-    expect(listElement).toBeInTheDocument();
-    expect(listElement).toHaveAttribute(
-      "class",
-      expect.stringContaining("gridlist")
-    );
-    expect(renderResult.getAllByRole("listitem")).toHaveLength(9);
-    expect(renderResult.getAllByRole("listitem")[0]).toHaveStyle({
-      height: "120px",
-    });
-    const twitterTileImg = renderResult.getAllByRole("img")[4];
+    const imageElements = renderResult.getAllByRole("img");
+    expect(imageElements).toHaveLength(9);
+    const twitterTileImg = imageElements[4];
     expect(twitterTileImg).toHaveAttribute("src", "image");
     expect(twitterTileImg).toHaveAttribute("alt", "twitterId");
   });
@@ -43,13 +35,6 @@ describe("MakeImage", () => {
       <MakeImage favoriteList={undefined} gear={testGear} />
     );
 
-    const listElement = renderResult.getByRole("list");
-    expect(listElement).toBeInTheDocument();
-    expect(listElement).toHaveAttribute(
-      "class",
-      expect.stringContaining("gridlist")
-    );
-    expect(renderResult.getAllByRole("listitem")).toHaveLength(1);
     expect(renderResult.getAllByRole("img")).toHaveLength(1);
     const imageElement = renderResult.getByRole("img");
     expect(imageElement).toHaveAttribute("src", "mediumImageUrl");
@@ -61,17 +46,6 @@ describe("MakeImage", () => {
       <MakeImage favoriteList={undefined} gear={undefined} />
     );
 
-    const rootElement = renderResult.container.firstChild;
-    expect(rootElement).toHaveAttribute(
-      "class",
-      expect.stringContaining("root")
-    );
-    const listElement = renderResult.getByRole("list");
-    expect(listElement).toBeInTheDocument();
-    expect(listElement).toHaveAttribute(
-      "class",
-      expect.stringContaining("gridlist")
-    );
-    expect(renderResult.getAllByRole("listitem")).toHaveLength(1);
+    expect(renderResult.getAllByRole("img")).toHaveLength(1);
   });
 });

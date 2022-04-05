@@ -1,4 +1,29 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
+
+exports[`Footer > matches snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="css-1f9yhiv"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-y7759j-MuiTypography-root"
+    >
+      My Favorite Gear
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-9dbpsu-MuiTypography-root"
+    >
+      ©2021  
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kgfegd-MuiTypography-root-MuiLink-root"
+        href="https://twitter.com/pandashark6"
+      >
+        @pandashark6
+      </a>
+    </p>
+  </footer>
+</DocumentFragment>
+`;
 
 exports[`Footer matches snapshot 1`] = `
 <DocumentFragment>

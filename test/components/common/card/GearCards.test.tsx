@@ -50,10 +50,6 @@ describe("GearCards", () => {
       />
     );
 
-    expect(renderResult.container.firstElementChild).toHaveAttribute(
-      "class",
-      expect.stringContaining("root")
-    );
     expect(renderResult.getAllByRole("img")).toHaveLength(8);
   });
 
@@ -68,16 +64,6 @@ describe("GearCards", () => {
       />
     );
 
-    const rootElement = renderResult.container.firstElementChild;
-
-    expect(rootElement).toHaveAttribute(
-      "class",
-      expect.stringContaining("root")
-    );
-    expect(rootElement?.firstElementChild).toHaveAttribute(
-      "class",
-      expect.stringContaining("bottom")
-    );
     expect(
       renderResult.getByText("表示できるアイテムがありません。")
     ).toBeInTheDocument();

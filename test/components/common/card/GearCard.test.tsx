@@ -1,12 +1,16 @@
-import "@testing-library/jest-dom"; // jestのアサーションがエラーになる場合は明示的にimport
+import "@testing-library/jest-dom";
 
-import userEvent from "@testing-library/user-event";
 import React from "react";
 import { describe, expect, it, vi } from "vitest";
 
 import GearCard from "@/components/common/card/GearCard";
 
-import { render, testFavoriteList, testGear } from "../../../test-utils";
+import {
+  fireEvent,
+  render,
+  testFavoriteList,
+  testGear,
+} from "../../../test-utils";
 
 const mockAddButton = vi.fn();
 const mockRemoveButton = vi.fn();
@@ -68,11 +72,6 @@ describe("GearCard", () => {
       "alt",
       expect.stringMatching("productName")
     );
-    expect(
-      renderResult.container.getElementsByClassName(
-        expect.stringContaining("avatar")
-      )
-    ).toBeTruthy();
 
     expect(renderResult.getByText("productName")).toBeInTheDocument();
     expect(
@@ -81,18 +80,21 @@ describe("GearCard", () => {
       )
     ).toBeInTheDocument();
 
-    const buttonElements = renderResult.getAllByRole("button");
-    expect(buttonElements).toHaveLength(6);
-    expect(buttonElements[0]).toHaveAttribute(
+    const ankerElements = renderResult.getAllByRole("link");
+    expect(ankerElements.length).toBe(2);
+    expect(ankerElements[0]).toHaveAttribute(
       "href",
       expect.stringMatching(testGear.affiliateUrl)
     );
-    expect(buttonElements[1]).toHaveAttribute(
+    expect(ankerElements[1]).toHaveAttribute(
       "href",
       expect.stringMatching(testGear.amazonUrl)
     );
-    expect(buttonElements[4]).toHaveTextContent("My Favorite Gearに登録");
-    expect(buttonElements[5]).toHaveTextContent("My Favorite Gearから削除");
+
+    const buttonElements = renderResult.getAllByRole("button");
+    expect(buttonElements).toHaveLength(4);
+    expect(buttonElements[2]).toHaveTextContent("My Favorite Gearに登録");
+    expect(buttonElements[3]).toHaveTextContent("My Favorite Gearから削除");
   });
 
   it("renders correctly when user's favoriteList contains same gear", () => {
@@ -108,8 +110,8 @@ describe("GearCard", () => {
     );
 
     const buttonElements = renderResult.getAllByRole("button");
-    expect(buttonElements[4]).toHaveTextContent("My Favorite Gearに登録済み");
-    expect(buttonElements[4]).toBeDisabled();
+    expect(buttonElements[2]).toHaveTextContent("My Favorite Gearに登録済み");
+    expect(buttonElements[2]).toBeDisabled();
   });
 
   it("triggers user events", async () => {
@@ -124,21 +126,21 @@ describe("GearCard", () => {
     );
 
     const buttonElements = renderResult.getAllByRole("button");
-    const upButton = buttonElements[2];
-    const downButton = buttonElements[3];
-    const addButton = buttonElements[4];
-    const removeButton = buttonElements[5];
+    const upButton = buttonElements[0];
+    const downButton = buttonElements[1];
+    const addButton = buttonElements[2];
+    const removeButton = buttonElements[3];
 
-    userEvent.click(upButton);
+    fireEvent.click(upButton);
     expect(mockUpButton).toBeCalled();
 
-    userEvent.click(downButton);
+    fireEvent.click(downButton);
     expect(mockDownButton).toBeCalled();
 
-    userEvent.click(addButton);
+    fireEvent.click(addButton);
     expect(mockAddButton).toBeCalled();
 
-    userEvent.click(removeButton);
+    fireEvent.click(removeButton);
     expect(mockRemoveButton).toBeCalled();
   });
 });

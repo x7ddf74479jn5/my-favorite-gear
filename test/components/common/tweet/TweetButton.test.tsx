@@ -24,11 +24,6 @@ describe("TweetButton", () => {
       <TweetButton favoriteList={testFavoriteList} />
     );
 
-    expect(renderResult.container.firstChild).toHaveAttribute(
-      "class",
-      expect.stringContaining("share")
-    );
-
     const buttonElement = renderResult.getAllByRole("button")[0];
     expect(buttonElement).toHaveTextContent("ツイート");
     expect(buttonElement).toBeEnabled();
