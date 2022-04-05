@@ -1,7 +1,7 @@
 import { Button, Container, Typography } from "@mui/material";
+import React from "react";
 import type { FallbackProps } from "react-error-boundary";
 import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary";
-import { Link } from "react-router-dom";
 
 import paths from "@/paths";
 
@@ -24,13 +24,7 @@ const FallbackComponent = ({ error }: FallbackProps) => {
       <Typography paragraph align="center" color="textSecondary">
         サイト上で問題が発生しました
       </Typography>
-      <Button
-        variant="contained"
-        color="secondary"
-        fullWidth
-        component={Link}
-        to={paths.home}
-      >
+      <Button variant="contained" color="secondary" fullWidth href={paths.home}>
         ホームに戻る
       </Button>
     </Container>
