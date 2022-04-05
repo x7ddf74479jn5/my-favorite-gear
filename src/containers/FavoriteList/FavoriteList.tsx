@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import type { VFC } from "react";
+import { Suspense } from "react";
 import React, { memo } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -49,20 +50,22 @@ const FavoriteListContainer: VFC<{ user: User | null }> = ({ user }) => {
       <Typography variant="h6" gutterBottom align="center">
         {favoriteList.favoriteList.twitterId}のMy Favorite gear
       </Typography>
-      <MakeImage favoriteList={favoriteList.favoriteList} />
-      <TweetButton favoriteList={favoriteList.favoriteList} />
-      <GearCards gears={favoriteList.favoriteList.gears} />
-      <Button
-        variant="contained"
-        color="secondary"
-        fullWidth
-        component={Link}
-        to={paths.home}
-      >
-        {user && user.id === favoriteList.favoriteList.id
-          ? "編集"
-          : "自分もMy Favorite gearを作る"}
-      </Button>
+      <Suspense fallback={<Progress />}>
+        <MakeImage favoriteList={favoriteList.favoriteList} />
+        <TweetButton favoriteList={favoriteList.favoriteList} />
+        <GearCards gears={favoriteList.favoriteList.gears} />
+        <Button
+          variant="contained"
+          color="secondary"
+          fullWidth
+          component={Link}
+          to={paths.home}
+        >
+          {user && user.id === favoriteList.favoriteList.id
+            ? "編集"
+            : "自分もMy Favorite gearを作る"}
+        </Button>
+      </Suspense>
     </>
   );
 };
