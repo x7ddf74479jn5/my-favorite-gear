@@ -10,9 +10,8 @@ import theme from "./asset/theme";
 import FirebaseApp from "./FirebaseApp";
 import reportWebVitals from "./reportWebVitals";
 
-createRoot(
-  document.getElementById("root") || document.createElement("div") // for test
-).render(
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider theme={theme}>
