@@ -55,6 +55,10 @@ service cloud.firestore {
       && isValidCounterSchema(request.resource.data);
     }
 
+    function isMatchedTwitterUser() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.screenName == resource.data.twitterId;
+    }
+
     function isValidFavoriteListSchema(favoriteList) {
       return favoriteList.size() == 5
       && favoriteList.keys().hasOnly(['gears', 'gearsCount', 'image', 'twitterId','updatedAt'])
@@ -73,12 +77,14 @@ service cloud.firestore {
     }
 
     match /favoriteLists/{favoriteListId} {
-      allow get: if isUserAuthenticated(favoriteListId);
-      allow list: if request.query.limit <= 20 && isAuthenticated();
-      allow create: if isUserAuthenticated(favoriteListId)
+      allow get: if isAuthenticated();
+      allow list: if isAuthenticated();
+      allow create: if isAuthenticated()
+      && isMatchedTwitterUser()
       && isValidFavoriteListSchema(request.resource.data)
       && isValidFavoriteListData(request.resource.data);
-      allow update: if isUserAuthenticated(favoriteListId)
+      allow update: if isAuthenticated()
+      && isMatchedTwitterUser()
       && isValidFavoriteListSchema(request.resource.data)
       && isValidFavoriteListData(request.resource.data);
     }
