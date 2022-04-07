@@ -8,6 +8,11 @@ import { FirebaseContext, UserContext } from "@/contexts";
 import { ErrorBoundary } from "@/ErrorBoundary";
 import paths from "@/paths";
 
+const FavoriteList = lazy(() => import("@/components/FavoriteList"));
+const FavoriteLists = lazy(() => import("@/components/FavoriteLists"));
+const MakeFavoriteList = lazy(() => import("@/components/MakeFavoriteList"));
+const Signin = lazy(() => import("@/components/Signin"));
+
 const Container = styled("div")({
   display: "flex",
   justifyContent: "center",
@@ -16,10 +21,6 @@ const Container = styled("div")({
 export const AppRouter: VFC = () => {
   const { user } = useContext(UserContext);
   const { isLoading } = useContext(FirebaseContext);
-  const FavoriteList = lazy(() => import("@/components/FavoriteList"));
-  const FavoriteLists = lazy(() => import("@/components/FavoriteLists"));
-  const MakeFavoriteList = lazy(() => import("@/components/MakeFavoriteList"));
-  const Signin = lazy(() => import("@/components/Signin"));
 
   if (isLoading) {
     return (
