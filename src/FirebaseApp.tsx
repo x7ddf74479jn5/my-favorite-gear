@@ -1,7 +1,6 @@
 import type { UserCredential } from "firebase/auth";
 import { getRedirectResult } from "firebase/auth";
 import type { FC } from "react";
-import { memo } from "react";
 import React, { useEffect, useRef, useState } from "react";
 
 import { FirebaseContext, UserContext } from "@/contexts";
@@ -59,4 +58,4 @@ const FirebaseApp: FC = ({ children }) => {
   );
 };
 
-export default memo(FirebaseApp);
+export default FirebaseApp;
