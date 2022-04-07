@@ -24,7 +24,7 @@ const defaultOptions: Required<FavoriteListsOptions> = {
 
 const useThreads = (options?: FavoriteListsOptions) => {
   const [favoriteLists, setFavoriteLists] = useState<FavoriteList[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
   const firebaseRef = useRef(useContext(FirebaseContext));

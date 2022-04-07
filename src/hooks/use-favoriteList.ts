@@ -21,7 +21,7 @@ const defaultOptions = {
 const useFavoriteList = (options: favoriteListOptions) => {
   const [favoriteList, setFavoriteList] =
     useState<FavoriteList>(blankFavoriteList);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
   const firebaseRef = useRef(useContext(FirebaseContext));
