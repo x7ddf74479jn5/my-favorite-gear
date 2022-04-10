@@ -31,10 +31,9 @@ ui-debug.log
 .eslintcache
 
 # project
-/refs
-/docs
 .firebase
 firebase.json
 firestore.rules
 /functions/public
 functions/.runtimeconfig.json
+configs/origin-firestore.rules
