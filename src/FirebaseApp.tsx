@@ -1,6 +1,6 @@
 import type { UserCredential } from "firebase/auth";
 import { getRedirectResult } from "firebase/auth";
-import type { FC } from "react";
+import type { FC, ReactNode } from "react";
 import React, { useEffect, useRef, useState } from "react";
 
 import { FirebaseContext, UserContext } from "@/contexts";
@@ -10,7 +10,7 @@ import findUser from "@/services/find-user";
 import type { User } from "@/services/models/user";
 import writeUser from "@/services/write-user";
 
-const FirebaseApp: FC = ({ children }) => {
+const FirebaseApp: FC<{ children: ReactNode }> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState<User | null>(null);
   const [credential, setCredential] = useState<UserCredential | null>(null);

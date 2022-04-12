@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "@mui/material";
+import type { FC, ReactNode } from "react";
 import React from "react";
 import type { FallbackProps } from "react-error-boundary";
 import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary";
@@ -31,9 +32,7 @@ const FallbackComponent = ({ error }: FallbackProps) => {
   );
 };
 
-export const ErrorBoundary: React.FC<{
-  children: React.ReactNode;
-}> = ({ children }) => {
+export const ErrorBoundary: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <ReactErrorBoundary FallbackComponent={FallbackComponent}>
       {children}
