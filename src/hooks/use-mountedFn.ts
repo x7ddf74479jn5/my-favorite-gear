@@ -1,14 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 export const useMountedFn = (cb: () => void) => {
   const isFirstRender = useRef(true);
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isFirstRender.current) {
       cb();
       isFirstRender.current = false;
     }
-    return () => {
-      isFirstRender.current = false;
-    };
   }, [cb]);
 };

@@ -6,7 +6,7 @@ import {
   query,
   where,
 } from "firebase/firestore";
-import { useContext, useRef, useState } from "react";
+import { useContext, useState } from "react";
 
 import { FirebaseContext } from "@/contexts";
 import { useMountedFn } from "@/hooks/use-mountedFn";
@@ -24,21 +24,21 @@ const defaultOptions: Required<FavoriteListsOptions> = {
 
 const useThreads = (options?: FavoriteListsOptions) => {
   const [favoriteLists, setFavoriteLists] = useState<FavoriteList[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
-  const firebaseRef = useRef(useContext(FirebaseContext));
-  const optionsRef = useRef({ ...defaultOptions, ...options });
+  const firebase = useContext(FirebaseContext);
+  const finalOptions = { ...defaultOptions, ...options };
 
   useMountedFn(() => {
-    const { db } = firebaseRef.current;
+    const { db } = firebase;
     if (!db) throw new Error("Firestore is not initialized");
     const collectionRef = collection(db, collectionName.favoriteLists);
     const q = query(
       collectionRef,
       where("gearsCount", "==", 8),
-      orderBy(optionsRef.current.orderbyColumn, "desc"),
-      limit(optionsRef.current.limit)
+      orderBy(finalOptions.orderbyColumn, "desc"),
+      limit(finalOptions.limit)
     );
     const load = async () => {
       setLoading(true);
