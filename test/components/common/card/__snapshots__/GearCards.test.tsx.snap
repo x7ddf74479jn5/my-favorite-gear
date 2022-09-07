@@ -75,7 +75,7 @@ exports[`GearCards > matches snapshot 1`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/1"
             rel="noopener"
             tabindex="0"
@@ -102,7 +102,7 @@ exports[`GearCards > matches snapshot 1`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/1"
             rel="noopener"
             tabindex="0"
@@ -150,7 +150,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -175,7 +175,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -271,7 +271,7 @@ exports[`GearCards > matches snapshot 1`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/2"
             rel="noopener"
             tabindex="0"
@@ -298,7 +298,7 @@ exports[`GearCards > matches snapshot 1`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/2"
             rel="noopener"
             tabindex="0"
@@ -366,7 +366,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -391,7 +391,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -487,7 +487,7 @@ exports[`GearCards > matches snapshot 1`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/3"
             rel="noopener"
             tabindex="0"
@@ -514,7 +514,7 @@ exports[`GearCards > matches snapshot 1`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/3"
             rel="noopener"
             tabindex="0"
@@ -582,7 +582,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -607,7 +607,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -703,7 +703,7 @@ exports[`GearCards > matches snapshot 1`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/4"
             rel="noopener"
             tabindex="0"
@@ -730,7 +730,7 @@ exports[`GearCards > matches snapshot 1`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/4"
             rel="noopener"
             tabindex="0"
@@ -798,7 +798,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -823,7 +823,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -919,7 +919,7 @@ exports[`GearCards > matches snapshot 1`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/5"
             rel="noopener"
             tabindex="0"
@@ -946,7 +946,7 @@ exports[`GearCards > matches snapshot 1`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/5"
             rel="noopener"
             tabindex="0"
@@ -1014,7 +1014,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1039,7 +1039,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1135,7 +1135,7 @@ exports[`GearCards > matches snapshot 1`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/6"
             rel="noopener"
             tabindex="0"
@@ -1162,7 +1162,7 @@ exports[`GearCards > matches snapshot 1`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/6"
             rel="noopener"
             tabindex="0"
@@ -1230,7 +1230,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1255,7 +1255,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1351,7 +1351,7 @@ exports[`GearCards > matches snapshot 1`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/7"
             rel="noopener"
             tabindex="0"
@@ -1378,7 +1378,7 @@ exports[`GearCards > matches snapshot 1`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/7"
             rel="noopener"
             tabindex="0"
@@ -1446,7 +1446,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1471,7 +1471,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1567,7 +1567,7 @@ exports[`GearCards > matches snapshot 1`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/8"
             rel="noopener"
             tabindex="0"
@@ -1594,7 +1594,7 @@ exports[`GearCards > matches snapshot 1`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/8"
             rel="noopener"
             tabindex="0"
@@ -1642,7 +1642,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1667,7 +1667,7 @@ exports[`GearCards > matches snapshot 1`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1772,7 +1772,7 @@ exports[`GearCards > matches snapshot 2`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/1"
             rel="noopener"
             tabindex="0"
@@ -1799,7 +1799,7 @@ exports[`GearCards > matches snapshot 2`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/1"
             rel="noopener"
             tabindex="0"
@@ -1847,7 +1847,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1872,7 +1872,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -1968,7 +1968,7 @@ exports[`GearCards > matches snapshot 2`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/2"
             rel="noopener"
             tabindex="0"
@@ -1995,7 +1995,7 @@ exports[`GearCards > matches snapshot 2`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/2"
             rel="noopener"
             tabindex="0"
@@ -2063,7 +2063,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2088,7 +2088,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2184,7 +2184,7 @@ exports[`GearCards > matches snapshot 2`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/3"
             rel="noopener"
             tabindex="0"
@@ -2211,7 +2211,7 @@ exports[`GearCards > matches snapshot 2`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/3"
             rel="noopener"
             tabindex="0"
@@ -2279,7 +2279,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2304,7 +2304,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2400,7 +2400,7 @@ exports[`GearCards > matches snapshot 2`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/4"
             rel="noopener"
             tabindex="0"
@@ -2427,7 +2427,7 @@ exports[`GearCards > matches snapshot 2`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/4"
             rel="noopener"
             tabindex="0"
@@ -2495,7 +2495,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2520,7 +2520,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2616,7 +2616,7 @@ exports[`GearCards > matches snapshot 2`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/5"
             rel="noopener"
             tabindex="0"
@@ -2643,7 +2643,7 @@ exports[`GearCards > matches snapshot 2`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/5"
             rel="noopener"
             tabindex="0"
@@ -2711,7 +2711,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2736,7 +2736,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2832,7 +2832,7 @@ exports[`GearCards > matches snapshot 2`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/6"
             rel="noopener"
             tabindex="0"
@@ -2859,7 +2859,7 @@ exports[`GearCards > matches snapshot 2`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/6"
             rel="noopener"
             tabindex="0"
@@ -2927,7 +2927,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -2952,7 +2952,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -3048,7 +3048,7 @@ exports[`GearCards > matches snapshot 2`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/7"
             rel="noopener"
             tabindex="0"
@@ -3075,7 +3075,7 @@ exports[`GearCards > matches snapshot 2`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/7"
             rel="noopener"
             tabindex="0"
@@ -3143,7 +3143,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -3168,7 +3168,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -3264,7 +3264,7 @@ exports[`GearCards > matches snapshot 2`] = `
           class="css-1yj626v"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-10gy8ko-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-x6yic9-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.affiliate.com/8"
             rel="noopener"
             tabindex="0"
@@ -3291,7 +3291,7 @@ exports[`GearCards > matches snapshot 2`] = `
             />
           </a>
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root  css-qagj0w-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth css-1yf2m96-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
             href="https://www.amazon.com/8"
             rel="noopener"
             tabindex="0"
@@ -3339,7 +3339,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-1jyq7yo-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -3364,7 +3364,7 @@ exports[`GearCards > matches snapshot 2`] = `
           />
         </button>
         <button
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation MuiButtonBase-root  css-19bi5f5-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-disableElevation css-19bi5f5-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -3386,3724 +3386,6 @@ exports[`GearCards > matches snapshot 2`] = `
           My Favorite Gearから削除
           <span
             class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`GearCards matches snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="makeStyles-root-1"
-  >
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 1"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 1"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 1
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 1/brandName 1/genreName 1
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 1円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/1"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/1"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 2"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 2"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 2
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 2/brandName 2/genreName 2
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 2円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/2"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/2"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 3"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 3"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 3
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 3/brandName 3/genreName 3
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 3円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/3"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/3"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 4"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 4"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 4
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 4/brandName 4/genreName 4
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 4円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/4"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/4"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 5"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 5"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 5
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 5/brandName 5/genreName 5
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 5円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/5"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/5"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 6"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 6"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 6
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 6/brandName 6/genreName 6
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 6円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/6"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/6"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 7"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 7"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 7
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 7/brandName 7/genreName 7
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 7円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/7"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/7"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 8"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 8"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 8
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 8/brandName 8/genreName 8
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 8円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/8"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/8"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`GearCards matches snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="makeStyles-root-1"
-  >
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 1"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 1"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 1
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 1/brandName 1/genreName 1
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 1円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/1"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/1"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 2"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 2"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 2
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 2/brandName 2/genreName 2
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 2円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/2"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/2"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 3"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 3"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 3
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 3/brandName 3/genreName 3
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 3円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/3"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/3"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 4"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 4"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 4
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 4/brandName 4/genreName 4
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 4円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/4"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/4"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 5"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 5"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 5
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 5/brandName 5/genreName 5
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 5円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/5"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/5"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 6"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 6"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 6
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 6/brandName 6/genreName 6
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 6円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/6"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/6"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 7"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 7"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 7
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 7/brandName 7/genreName 7
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 7円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/7"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/7"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-3 MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <div
-        class="MuiCardHeader-root"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <div
-            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-4"
-          >
-            <img
-              alt="productName 8"
-              class="MuiAvatar-img"
-              src="mediumImageUrl 8"
-            />
-          </div>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
-          >
-            productName 8
-          </span>
-          <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            makerName 8/brandName 8/genreName 8
-          </span>
-        </div>
-      </div>
-      <div
-        class="MuiCardContent-root"
-      >
-        <div
-          class="makeStyles-content-5"
-        >
-          <div
-            class="makeStyles-review-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-              />
-            </svg>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-               : 1
-            </p>
-          </div>
-          <p
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight"
-          >
-            平均価格: averagePrice 8円
-          </p>
-        </div>
-        <div
-          class="makeStyles-linkContainer-7"
-        >
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-rakuten-9 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.affiliate.com/8"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              楽天で見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-          <a
-            aria-disabled="false"
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-amazon-8 MuiButton-disableElevation MuiButton-fullWidth MuiTypography-colorPrimary"
-            href="https://www.amazon.com/8"
-            rel="noopener"
-            role="button"
-            tabindex="0"
-            target="_blank"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <span
-                class="MuiButton-startIcon MuiButton-iconSizeMedium"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  />
-                </svg>
-              </span>
-              Amazonで見る
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </a>
-        </div>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearに登録
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit MuiButton-disableElevation"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            <span
-              class="MuiButton-startIcon MuiButton-iconSizeMedium"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                />
-              </svg>
-            </span>
-            My Favorite Gearから削除
-          </span>
-          <span
-            class="MuiTouchRipple-root"
           />
         </button>
       </div>

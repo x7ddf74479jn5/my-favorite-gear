@@ -19,7 +19,7 @@ exports[`Signin > matches snapshot 1`] = `
       class="css-1l4w6pd"
     >
       <button
-        class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-b37978-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-b37978-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
@@ -45,28 +45,6 @@ exports[`Signin > matches snapshot 1`] = `
           class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
         />
       </button>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Signin matches snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="MuiContainer-root makeStyles-root-1 MuiContainer-maxWidthXs"
-  >
-    <h4
-      class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom MuiTypography-alignCenter"
-    >
-      ログイン
-    </h4>
-    <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-paragraph MuiTypography-alignCenter"
-    >
-      「My Favorite Gear」のご利用にはログインが必須です。Twitterアカウントでログインできます。
-    </p>
-    <div>
-      StyledFirebaseAuth
     </div>
   </div>
 </DocumentFragment>

@@ -15,32 +15,7 @@ exports[`Footer > matches snapshot 1`] = `
     >
       ©2021  
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kgfegd-MuiTypography-root-MuiLink-root"
-        href="https://twitter.com/pandashark6"
-      >
-        @pandashark6
-      </a>
-    </p>
-  </footer>
-</DocumentFragment>
-`;
-
-exports[`Footer matches snapshot 1`] = `
-<DocumentFragment>
-  <footer
-    class="makeStyles-footer-1"
-  >
-    <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
-    >
-      My Favorite Gear
-    </p>
-    <p
-      class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
-    >
-      ©2021  
-      <a
-        class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1cghntr-MuiTypography-root-MuiLink-root"
         href="https://twitter.com/pandashark6"
       >
         @pandashark6

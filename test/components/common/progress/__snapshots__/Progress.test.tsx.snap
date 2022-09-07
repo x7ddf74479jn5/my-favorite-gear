@@ -32,36 +32,3 @@ exports[`Progress > matches snapshot 1`] = `
   </div>
 </DocumentFragment>
 `;
-
-exports[`Progress matches snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="MuiContainer-root makeStyles-styledContainer-1 MuiContainer-maxWidthLg"
-  >
-    <p
-      class="MuiTypography-root MuiTypography-body1"
-    >
-      読み込み中
-    </p>
-    <div
-      class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
-      role="progressbar"
-      style="width: 50px; height: 50px;"
-    >
-      <svg
-        class="MuiCircularProgress-svg"
-        viewBox="22 22 44 44"
-      >
-        <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-          cx="44"
-          cy="44"
-          fill="none"
-          r="20.2"
-          stroke-width="3.6"
-        />
-      </svg>
-    </div>
-  </div>
-</DocumentFragment>
-`;

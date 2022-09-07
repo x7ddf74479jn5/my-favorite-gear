@@ -1,4 +1,4 @@
-import { act, cleanup, renderHook } from "@testing-library/react-hooks";
+import { act, cleanup, renderHook, waitFor } from "@testing-library/react";
 import { afterAll, afterEach, beforeAll, describe, expect, it } from "vitest";
 
 import { server } from "@/api-mock-server/server";
@@ -38,22 +38,20 @@ describe("useRakutenSearch", () => {
   });
 
   it("should return gears when provided non-blank keyword", async () => {
-    const { result, waitForValueToChange } = renderHook(() => {
+    const { result } = renderHook(() => {
       return useRakutenSearch();
     });
 
-    await act(async () => {
+    act(async () => {
       result.current.searchGears("keyword");
-      await waitForValueToChange(() => {
-        return result.current.gears.length > 0;
+      await waitFor(() => {
+        expect(result.current.gears).toHaveLength(20);
+        expect(result.current.gears[0]).toEqual(
+          expect.objectContaining({
+            productName: expect.stringContaining("keyword"),
+          })
+        );
       });
-
-      expect(result.current.gears).toHaveLength(20);
-      expect(result.current.gears[0]).toEqual(
-        expect.objectContaining({
-          productName: expect.stringContaining("keyword"),
-        })
-      );
     });
   });
 });
