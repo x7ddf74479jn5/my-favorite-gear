@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "**",
-        "function": "firebaseAuth"
+        "function": "basicAuth.firebaseAuth"
       }
     ]
   },
