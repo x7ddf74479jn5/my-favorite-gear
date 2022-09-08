@@ -1,6 +1,6 @@
-import * as functions from 'firebase-functions'
-import * as express from 'express'
-import basicAuth from "basic-auth-connect"
+import * as functions from "firebase-functions";
+import * as express from "express";
+import basicAuth from "basic-auth-connect";
 
 const runtimeOpts = {
   timeoutSeconds: 180,
@@ -22,7 +22,6 @@ app.all(
 app.use(express.static(process.cwd() + "/public/"));
 
 export const firebaseAuth = functions
-  .region("us-")
-  .runWith(runtimeOpts).https
-  .onRequest(app);
-
+  .region("us-central1")
+  .runWith(runtimeOpts)
+  .https.onRequest(app);

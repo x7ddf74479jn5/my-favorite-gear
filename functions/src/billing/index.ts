@@ -1,4 +1,4 @@
-import notifySlack from './notify-slack';
-import stopBilling from './stopBilling'
+import notifySlack from "./notify-slack";
+import stopBilling from "./stopBilling";
 
-export {notifySlack,stopBilling }
+export { notifySlack, stopBilling };
