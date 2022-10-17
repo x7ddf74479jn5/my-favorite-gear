@@ -112,6 +112,7 @@ importers:
   functions:
     specifiers:
       '@google-cloud/billing': 3.1.1
+      '@google-cloud/compute': 3.5.1
       '@types/express': 4.17.13
       basic-auth-connect: ^1.0.0
       express: ^4.17.1
@@ -122,6 +123,7 @@ importers:
       typescript: ^3.8.0
     dependencies:
       '@google-cloud/billing': 3.1.1
+      '@google-cloud/compute': 3.5.1
       basic-auth-connect: 1.0.0
       express: 4.18.1
       firebase-admin: 9.12.0
@@ -1081,6 +1083,16 @@ packages:
 
   /@google-cloud/billing/3.1.1:
     resolution: {integrity: sha512-1AfpElHcGhvNLa8+UwZFnpGrn6N2hN36knGKLQtandr/SWP2P43jEcNt0ka+MM3jYC/oRMlECOO4396xQX757Q==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      google-gax: 3.4.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: false
+
+  /@google-cloud/compute/3.5.1:
+    resolution: {integrity: sha512-d8HSe8DULox4JiGDhkqqUYxWVvcJrwb47pVAbv9+ILiepJEnZHzK+HHeUKuzEiNwvgCK2NaR/0xVj5nRmio/hA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       google-gax: 3.4.0

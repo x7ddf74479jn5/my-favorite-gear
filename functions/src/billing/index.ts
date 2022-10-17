@@ -1,4 +1,2 @@
-import notifySlack from "./notify-slack";
-import stopBilling from "./stopBilling";
-
-export { notifySlack, stopBilling };
+export { notifySlack } from "./notify-slack";
+export { limitUse } from "./limit-use";

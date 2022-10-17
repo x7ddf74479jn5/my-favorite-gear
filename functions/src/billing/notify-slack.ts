@@ -12,7 +12,7 @@ process.env.TZ = timezone;
 const BOT_ACCESS_TOKEN = process.env.BOT_ACCESS_TOKEN;
 const CHANNEL = process.env.SLACK_CHANNEL || "general";
 
-export const stopBilling = functions
+export const notifySlack = functions
   .region("asia-northeast1")
   .runWith(runtimeOpts)
   .pubsub.topic("budget-notifications")
